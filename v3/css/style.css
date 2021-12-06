@@ -899,6 +899,25 @@
     width: 86px;
 }
 
+.recipe-ingredients .tab-bar-ingredients-cook {
+    align-items: flex-start;
+    background-color: #e2e8eab2;
+    border-radius: 46px;
+    display: flex;
+    height: 38px;
+    left: 101px;
+    min-width: 311px;
+    padding: 2px 3px;
+    position: absolute;
+    top: 382px;
+}
+
+.recipe-ingredients .overlap-group4 {
+    height: 33px;
+    position: relative;
+    width: 153px;
+}
+
 
 /* ------------- 
 
