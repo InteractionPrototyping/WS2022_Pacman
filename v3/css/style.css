@@ -127,6 +127,18 @@
     min-width: 280px;
 }
 
+.button-green-pos {
+    align-items: center;
+    align-self: center;
+    background-color: var(--green---fdy);
+    border-radius: 16px;
+    display: flex;
+    height: 62px;
+    min-width: 280px;
+    position: absolute;
+    top: 640px;
+}
+
 .button-green-text {
     color: var(--white);
     font-family: var(--font-family-inter);
@@ -173,6 +185,8 @@
     display: flex;
     border: 3px solid #434343;
     border-radius: 16px;
+    position: absolute;
+    top: 705px;
 }
 
 .button-without-outline-text {
@@ -668,7 +682,7 @@
     position: absolute;
     padding-top: 15px;
     width: 280px;
-    height: 280px;
+    height: 355px;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -749,6 +763,56 @@
     background: #F6D7A7;
     justify-content: space-between;
 }
+
+/* ------------- 
+
+##################################
+####### PANTRY SELECTED ##########
+################################## 
+
+---------------*/
+
+.category-container-selected {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px 10px 0px;
+    height: 250px;
+    width: 280px;
+    border-radius: 30px;
+    position: relative;
+    background: #89B5AF;
+    justify-content: space-between;
+}
+
+.close {
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    left: 115px;
+    top: 244px;
+}
+
+.text-3-if-selected {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    display: flex;
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    height: 22px;
+    letter-spacing: 0;
+}
+
+.food-icon-if-selected {
+    position: relative;
+    display: flex;
+    right: 5px;
+    bottom: 40.5px;
+}
+
+
 
 
 /* ------------- 
