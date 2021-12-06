@@ -68,6 +68,14 @@
     font-style: normal;
 }
 
+.inter-fontweight500-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    font-style: normal;
+}
+
 .inter-medium-white-18px {
     color: var(--white);
     font-family: var(--font-family-inter);
@@ -81,14 +89,6 @@
     font-family: var(--font-family-inter);
     font-size: var(--font-size-xl);
     font-weight: 300;
-    font-style: normal;
-}
-
-.inter-semi-bold-white-16px {
-    color: var(--white);
-    font-family: var(--font-family-inter-semibold);
-    font-size: var(--font-size-m);
-    font-weight: 600;
     font-style: normal;
 }
 
@@ -541,6 +541,362 @@
     position: absolute;
     top: 314px;
     width: 151px;
+}
+
+.recipe-ingredients {
+    align-items: flex-start;
+    display: flex;
+    height: 760px;
+    overflow: hidden;
+    width: 360px;
+}
+
+.recipe-ingredients .overlap-group5 {
+    height: 932px;
+    margin-left: -76px;
+    margin-top: -110.87px;
+    position: relative;
+    width: 546px;
+}
+
+.recipe-ingredients .screen_size {
+    background-color: var(--darkgrey);
+    border-radius: 32px;
+    height: 584px;
+    left: 76px;
+    position: absolute;
+    top: 348px;
+    width: 360px;
+}
+
+.recipe-ingredients .screen_size-1 {
+    background-color: var(--darkgrey);
+    border-radius: 32px;
+    height: 760px;
+    left: 76px;
+    position: absolute;
+    top: 111px;
+    width: 360px;
+}
+
+.recipe-ingredients .recipe-content::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.recipe-ingredients .recipe-content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 104px;
+    min-height: 314px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 458px;
+    width: 299px;
+}
+
+.recipe-ingredients .servings {
+    letter-spacing: 1.00px;
+    min-height: 19px;
+    min-width: 88px;
+}
+
+.recipe-ingredients .no_of_servings {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    height: 48px;
+    margin-left: 7.0px;
+    margin-top: 14px;
+    min-width: 186px;
+}
+
+.recipe-ingredients .minus {
+    align-items: flex-end;
+    background-color: var(--mine-shaft);
+    border-radius: 17px;
+    display: flex;
+    height: 34px;
+    justify-content: flex-end;
+    min-width: 34px;
+    padding: 14.7px 8.2px;
+}
+
+.recipe-ingredients .vector {
+    height: 4px;
+    width: 17px;
+}
+
+.recipe-ingredients .number {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l);
+    font-weight: 600;
+    letter-spacing: 1.00px;
+    margin-left: 45px;
+    min-height: 48px;
+    min-width: 26px;
+}
+
+.recipe-ingredients .plus {
+    align-items: flex-end;
+    background-color: var(--mine-shaft);
+    border-radius: 17px;
+    display: flex;
+    height: 34px;
+    justify-content: flex-end;
+    margin-left: 45px;
+    min-width: 34px;
+    padding: 8.2px 8.2px;
+}
+
+.recipe-ingredients .vector-1 {
+    height: 17px;
+    width: 17px;
+}
+
+.recipe-ingredients .flex-row {
+    align-items: flex-end;
+    display: flex;
+    height: 306px;
+    margin-left: 2px;
+    margin-top: 18px;
+    min-width: 301px;
+}
+
+.recipe-ingredients .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 294px;
+    width: 192px;
+}
+
+.recipe-ingredients .what-you-need {
+    letter-spacing: 1.00px;
+    min-height: 19px;
+}
+
+.recipe-ingredients .flex-row-1 {
+    align-items: flex-end;
+    display: flex;
+    height: 241px;
+    margin-top: 34px;
+    min-width: 192px;
+}
+
+.recipe-ingredients .flex-col-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 241px;
+    width: 88px;
+}
+
+.recipe-ingredients .pumpkin {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 120px;
+    width: 88px;
+}
+
+.recipe-ingredients .pumpkin-1 {
+    height: 86px;
+    margin-right: 2.0px;
+    width: 86px;
+}
+
+.recipe-ingredients .address {
+    color: var(--white);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l2);
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-right: 2.0px;
+    margin-top: 2px;
+    min-height: 32px;
+    min-width: 74px;
+    text-align: center;
+}
+
+.recipe-ingredients .cream {
+    height: 104px;
+    margin-top: 17px;
+    width: 86px;
+}
+
+.recipe-ingredients .flex-col-2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    min-height: 240px;
+    width: 86px;
+}
+
+.recipe-ingredients .onion {
+    height: 120px;
+    width: 86px;
+}
+
+.recipe-ingredients .salt {
+    height: 104px;
+    margin-top: 16px;
+    width: 86px;
+}
+
+.recipe-ingredients .flex-col-3 {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 19px;
+    min-height: 306px;
+    width: 90px;
+}
+
+.recipe-ingredients .info {
+    align-items: flex-start;
+    display: flex;
+    height: 40px;
+    min-width: 40px;
+    padding: 10.8px;
+}
+
+.recipe-ingredients .overlap-group {
+    align-items: flex-end;
+    background-image: url(vector-3.svg);
+    background-size: 100% 100%;
+    display: flex;
+    height: 18px;
+    justify-content: flex-end;
+    min-width: 18px;
+    padding: 3.9px 7.8px;
+}
+
+.recipe-ingredients .vector-2 {
+    height: 9px;
+    width: 2px;
+}
+
+.recipe-ingredients .garlic {
+    height: 120px;
+    margin-right: 4px;
+    margin-top: 26px;
+    width: 86px;
+}
+
+.recipe-ingredients .pepper {
+    height: 104px;
+    margin-right: 4px;
+    margin-top: 16px;
+    width: 86px;
+}
+
+.recipe-ingredients .rectangle-166 {
+    height: 319px;
+    left: 76px;
+    position: absolute;
+    top: 111px;
+    width: 360px;
+}
+
+.recipe-ingredients .data {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 103px;
+    min-height: 44px;
+    position: absolute;
+    top: 314px;
+    width: 151px;
+}
+
+.recipe-ingredients .pumpkin-soup {
+    letter-spacing: 1.00px;
+    margin-left: 0.03px;
+    min-height: 19px;
+    width: 151px;
+}
+
+.recipe-ingredients .info-1 {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 8px;
+    min-width: 151px;
+}
+
+.recipe-ingredients .likes {
+    align-items: center;
+    display: flex;
+    height: 17px;
+    min-width: 52px;
+}
+
+.recipe-ingredients .likes-icon {
+    height: 11px;
+    width: 12px;
+}
+
+.recipe-ingredients .text-likes {
+    letter-spacing: 0;
+    margin-left: 4px;
+    min-height: 17px;
+    min-width: 37px;
+}
+
+.recipe-ingredients .time {
+    align-items: center;
+    display: flex;
+    height: 17px;
+    margin-left: 26px;
+    min-width: 73px;
+}
+
+.recipe-ingredients .time-icon {
+    height: 13px;
+    margin-left: -1px;
+    width: 11px;
+}
+
+.recipe-ingredients .text-time {
+    letter-spacing: 0;
+    margin-left: 3px;
+    min-height: 17px;
+    min-width: 60px;
+}
+
+.recipe-ingredients .play-icon {
+    height: 86px;
+    left: 214px;
+    position: absolute;
+    top: 170px;
+    width: 85px;
+}
+
+.recipe-ingredients .overlap-group-back {
+    align-items: flex-start;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    left: 95px;
+    min-width: 42px;
+    position: absolute;
+    top: 154px;
+}
+
+.recipe-ingredients .back-icon {
+    height: 55px;
+    width: 55px;
+}
+
+.recipe-ingredients .like-option {
+    height: 86px;
+    left: 339px;
+    position: absolute;
+    top: 258px;
+    width: 86px;
 }
 
 
