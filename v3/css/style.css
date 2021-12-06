@@ -21,6 +21,7 @@
     --light-green---fdy: rgba(206, 229, 208, 1);
     --white-2: rgba(255, 255, 255, 0.902);
     --white: rgba(255, 255, 255, 1);
+    --font-size-xs: 9px;
     --font-size-xs: 12px;
     --font-size-s: 14px;
     --font-size-m: 16px;
@@ -33,6 +34,14 @@
     --font-family-inter-medium: "Inter-Medium";
     --font-family-pacifico-regular: "Pacifico-Regular";
     --font-family-pacifico: "Pacifico";
+}
+
+.inter-medium-white-9px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    font-style: normal;
 }
 
 .inter-normal-white-12px {
@@ -63,7 +72,7 @@
     color: var(--white);
     font-family: var(--font-family-inter);
     font-size: var(--font-size-xl);
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -194,7 +203,7 @@
     width: 42px;
 }
 
-body {
+.body {
     margin: 0;
     padding: 0;
     background-color: var(--darkgrey);
@@ -310,6 +319,54 @@ body {
 ---------------*/
 
 
+/* -------------- tab bar ----------- */
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    align-items: flex-start;
+    background-color: var(--green---fdy);
+    background-size: 100% 100%;
+    display: flex;
+    height: 59px;
+    justify-content: flex-end;
+    min-width: 360px;
+    padding: 0 18px;
+}
+
+.overlap-group1 {
+    height: 60px;
+    position: relative;
+    width: 50px;
+}
+
+.home {
+    align-items: flex-start;
+    display: flex;
+    margin-top: -7px;
+    min-width: 52px;
+}
+
+.home-icon {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 22px;
+}
+
+.place {
+    left: 5px;
+    letter-spacing: 1.00px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    white-space: nowrap;
+    width: 40px;
+}
+
+
 /* ------------- 
 
 ##################################
@@ -322,12 +379,19 @@ body {
 .headline2 {
     color: var(--white);
     font-family: var(--font-family-pacifico);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-xl2);
     font-weight: 500;
     letter-spacing: 0;
-    min-height: 53px;
-    text-align: center;
+    min-height: 42px;
+    text-align: left;
     width: 312px;
+}
+
+.position {
+    height: 42px;
+    left: 170px;
+    position: absolute;
+    top: 169px;
 }
 
 .you-are-set .overlap-group2 {
@@ -336,6 +400,24 @@ body {
     position: absolute;
     top: 175px;
     width: 79px;
+}
+
+.you-are-set .text-1 {
+    left: 116px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 280px;
+    width: 280px;
+}
+
+.you-are-set .text-2 {
+    left: 116px;
+    letter-spacing: 0;
+    position: absolute;
+    text-align: center;
+    top: 220px;
+    width: 280px;
 }
 
 .you-are-set .overlap-group3 {
@@ -351,7 +433,7 @@ body {
     left: 88px;
     object-fit: cover;
     position: absolute;
-    top: 350px;
+    top: 380px;
     width: 337px;
 }
 
@@ -527,6 +609,7 @@ body {
     margin-top: 22px;
 }
 
+
 /* ------------- 
 
 ##################################
@@ -611,12 +694,9 @@ body {
     height: 42px;
     width: 280px;
     border-radius: 30px;
-
     position: relative;
-
     background: #89B5AF;
     justify-content: space-between;
-    
 }
 
 .text-3 {
@@ -665,13 +745,11 @@ body {
     height: 42px;
     width: 280px;
     border-radius: 16px;
-
     position: relative;
-
     background: #F6D7A7;
     justify-content: space-between;
-    
 }
+
 
 /* ------------- 
 
