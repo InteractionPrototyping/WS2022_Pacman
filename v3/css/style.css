@@ -1076,7 +1076,7 @@
 .home-icon {
     top: 5px;
     height: 35px;
-    left: 0;
+    left: 3px;
     position: absolute;
     width: 28px;
     margin: 0px 20px 0px 29px;
@@ -1159,6 +1159,7 @@
     left: 290px;
     position: absolute;
     width: 60px;
+    top: -4px;
 }
 
 .profile-text {
@@ -1643,10 +1644,93 @@
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 6px;
+    font-size: 9pt;
 }
 
 
+
 /* ------------- 
+
+##################################
+############# PANTRY #############
+################################## 
+
+---------------*/
+
+
+.category-container-selected-pantry {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px 10px 0px;
+    height: 150px;
+    width: 280px;
+    border-radius: 30px;
+    position: relative;
+    background: #89B5AF;
+    justify-content: space-between;
+}
+
+.categories-pantry {
+    position: absolute;
+    padding-top: 15px;
+    width: 280px;
+    height: 380px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 350px;
+    left: 115px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.categories-pantry::-webkit-scrollbar {
+    display: none;
+}
+
+.ingredient-options-white {
+    display: flex;
+    padding: 5px;
+    height: 33px;
+    color: var(--black);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    font-size: 9pt;
+}
+
+.ingredient-container-pantry {
+    position: absolute;
+    width: 280px;
+    height: 80px;
+    left: 12px;
+    top: 65px;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.open1 {
+    height: 25px;
+    width: 60px;
+    position: absolute;
+    left: 115px;
+    top: 144px;
+}
+
+.container-padding1 {
+    padding-bottom: 35px;
+}
+
+
+
+
+/*---------------
 
 ##################################
 ####### WELCOME SCREEN ###########
