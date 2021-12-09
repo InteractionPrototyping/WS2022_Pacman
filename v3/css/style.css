@@ -1212,15 +1212,23 @@
         height: 59px;
         left: 0;
         position: absolute;
-        top: 660px;
+        top: 661px;
         width: 360px;
     }
     
     .recipe-video .bottom-bar {
         height: 43px;
-        left: 0;
-        position: fixed;
+        left: 0px;
+        position: absolute;
         top: 719px;
+        width: 360px;
+    }
+    
+    .bottom-bar {
+        height: 43px;
+        left: 76px;
+        position: absolute;
+        top: 830px;
         width: 360px;
     }
     
