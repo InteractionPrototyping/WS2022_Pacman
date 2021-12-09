@@ -58,6 +58,14 @@ $(document).ready(function() {
 ################################## 
 
 ---------------*/
-setTimeout(function() {
-    window.location.href = "home.html";
-}, 5000); // this will call the function after 5 sec.
+// setTimeout(function() {
+//     window.location.href = "home.html";
+// }, 5000); // this will call the function after 5 sec.
+
+/* ------------- 
+
+##################################
+############# HOME ###############
+################################## 
+
+---------------*/
