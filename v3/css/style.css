@@ -1960,6 +1960,68 @@
     }
     /*---------------
 
+        ##################################
+        ########### PANTRY 2 #############
+        ################################## 
+
+        ---------------*/
+    
+    .ingredient-container-pantry2 {
+        position: absolute;
+        width: 260px;
+        height: 320px;
+        left: 12px;
+        top: 65px;
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-right: 3px;
+        padding-left: 5px;
+    }
+    
+    .category-container-selected-pantry2 {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px 0px 10px 0px;
+        height: 400px;
+        width: 280px;
+        border-radius: 30px;
+        position: relative;
+        background: #89B5AF;
+        justify-content: space-between;
+    }
+    
+    .text-6 {
+        font-size: var(--font-size-xs);
+    }
+    
+    .more-ingredients {
+        width: 280px;
+        height: 35px;
+    }
+    
+    .close2 {
+        height: 25px;
+        width: 60px;
+        position: absolute;
+        left: 115px;
+        top: 390px;
+    }
+    
+    .ingredient-container-pantry2::-webkit-scrollbar {
+        background: #89B5AF;
+        border-radius: 20px;
+        width: 10px;
+    }
+    
+    .ingredient-container-pantry2::-webkit-scrollbar-thumb {
+        background: #FFFFFF;
+        border-radius: 20px;
+        width: 10px;
+    }
+    /*---------------
+
 ##################################
 ####### WELCOME SCREEN ###########
 ################################## 
