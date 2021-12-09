@@ -1662,7 +1662,7 @@
     display: flex;
     align-items: flex-start;
     padding: 10px 0px 10px 0px;
-    height: 150px;
+    height: 170px;
     width: 280px;
     border-radius: 30px;
     position: relative;
@@ -1674,12 +1674,12 @@
     position: absolute;
     padding-top: 15px;
     width: 280px;
-    height: 380px;
+    height: 420px;
     display: flex;
     align-self: center;
     flex-direction: column;
     align-items: flex-start;
-    top: 350px;
+    top: 240px;
     left: 115px;
     overflow: auto;
     overflow-x: hidden;
@@ -1720,11 +1720,33 @@
     width: 60px;
     position: absolute;
     left: 115px;
-    top: 144px;
+    top: 156px;
 }
 
 .container-padding1 {
     padding-bottom: 35px;
+}
+
+.text-5 {
+    height: 42px;
+    left: 170px;
+    position: absolute;
+    top: 160px;
+    width: 180px;
+    line-height: 160%;
+}
+
+.button-green-pantry {
+    align-items: center;
+    align-self: center;
+    background-color: var(--green---fdy);
+    border-radius: 16px;
+    display: flex;
+    height: 62px;
+    min-width: 280px;
+    position: absolute;
+    top: 692px;
+    left: 116px;
 }
 
 
