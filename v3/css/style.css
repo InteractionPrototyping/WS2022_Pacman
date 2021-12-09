@@ -116,6 +116,12 @@
             border-color: var(--white);
         }
         
+        .border-5px-green2---fdy {
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--green2---fdy);
+        }
+        
         .border-20px-white {
             border-width: 20px;
             border-style: solid;
@@ -1191,6 +1197,80 @@
             top: 28px;
             white-space: nowrap;
             width: 53px;
+        }
+        /* ------------- 
+
+##################################
+###########  HELP  ###############
+###### INGREDIENTS MISSING #######
+################################## 
+
+---------------*/
+        
+        .info-what-you-need {
+            align-items: flex-start;
+            background-color: var(--black-2);
+            display: flex;
+            height: 760px;
+            width: 360px;
+        }
+        
+        .info-what-you-need-container {
+            align-items: flex-end;
+            background-color: var(--darkgrey);
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            min-height: 272px;
+            padding: 27px 20px;
+            position: relative;
+            top: calc(50vh - 136.0px);
+            width: 320px;
+        }
+        
+        .still-some-ingredients-missing {
+            color: var(--white);
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-l22);
+            font-weight: 500;
+            letter-spacing: 0;
+            min-height: 44px;
+            width: 220px;
+        }
+        
+        .info-what-you-need .flex-row-info {
+            align-items: flex-start;
+            display: flex;
+            height: 53px;
+            min-width: 269px;
+        }
+        
+        .info-what-you-need .close {
+            align-items: flex-start;
+            display: flex;
+            height: 42px;
+            margin-left: 7px;
+            min-width: 42px;
+        }
+        
+        .info-what-you-need .overlap-group-close {
+            align-items: flex-start;
+            background-size: 100% 100%;
+            display: flex;
+            min-width: 1px;
+        }
+        
+        .info-what-you-need .cancel {
+            height: 1px;
+            width: 1px;
+        }
+        
+        .info-what-you-need .info-text {
+            letter-spacing: 0;
+            margin-right: 16px;
+            margin-top: 36px;
+            min-height: 121px;
+            width: 253px;
         }
         /* ------------- 
 
