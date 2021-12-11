@@ -2047,7 +2047,88 @@
         border-radius: 20px;
         width: 10px;
     }
-    /*---------------
+
+
+/*---------------
+
+        ##################################
+        ########### COOKBOOK #############
+        ################################## 
+
+---------------*/
+
+.text-7 {
+    height: 42px;
+    left: 170px;
+    position: absolute;
+    top: 160px;
+    width: 150px;
+    line-height: 160%;
+}
+
+.rect-dish {
+    display: flex;
+    width: 360px;
+    height: 42px;
+    background: rgba(196, 196, 196, 0.2);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.categories-dishes {
+    position: absolute;
+    padding-top: 15px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    top: 240px;
+    left: 76px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.container-dishes {
+    padding-bottom: 20px;
+    height: 180px;
+    width: 360px;
+    display: flex;
+}
+
+.text-8 {
+    padding-left: 20px;
+}
+
+.dish-suggestions {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: flex-start;
+    position: absolute;
+    left: 30px;
+    top: 75px;
+}
+
+.dish-field {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+}
+
+.text-dish-container {
+    padding-left: 10px;
+    position: absolute;
+    top: 85px;
+    background-color: var(--green---fdy);
+    width: 110px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+}
+
+/*---------------
 
 ##################################
 ####### WELCOME SCREEN ###########
