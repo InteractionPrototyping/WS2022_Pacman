@@ -499,7 +499,7 @@
 .recipe-cooking .content-cooking {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     min-height: 1193px;
     overflow-y: scroll;
     width: 296px;
