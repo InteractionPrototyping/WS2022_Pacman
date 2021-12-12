@@ -159,7 +159,7 @@
     height: 62px;
     min-width: 280px;
     position: absolute;
-    top: 640px;
+    top: 600px;
 }
 
 .button-green-text {
@@ -209,7 +209,7 @@
     border: 3px solid #434343;
     border-radius: 16px;
     position: absolute;
-    top: 705px;
+    top: 665px;
 }
 
 .button-without-outline-text {
@@ -1884,7 +1884,7 @@
     position: absolute;
     padding-top: 15px;
     width: 280px;
-    height: 355px;
+    height: 325px;
     display: flex;
     align-self: center;
     flex-direction: column;
