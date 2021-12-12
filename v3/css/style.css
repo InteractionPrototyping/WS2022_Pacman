@@ -369,6 +369,7 @@
     height: 760px;
     overflow: hidden;
     width: 360px;
+    overflow-y: scroll;
 }
 
 .recipe-cooking .overlap-group5 {
