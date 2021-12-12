@@ -21,6 +21,7 @@
     --light-green---fdy: rgba(206, 229, 208, 1);
     --white-2: rgba(255, 255, 255, 0.902);
     --white: rgba(255, 255, 255, 1);
+    --yellow: #F6EABE;
     --font-size-xxs: 9px;
     --font-size-xs: 12px;
     --font-size-s: 14px;
@@ -323,6 +324,14 @@
 }
 
 .search {
+    position: absolute;
+    width: 51px;
+    height: 49px;
+    left: 360px;
+    top: 160px;
+}
+
+.settings {
     position: absolute;
     width: 51px;
     height: 49px;
@@ -1326,6 +1335,15 @@
     width: 50px;
 }
 
+.profile-icon-selected {
+    height: 26px;
+    width: 23px;
+    position: absolute;
+    align-items: center;
+    top: 10px;
+    left: 302px;
+}
+
 .profile-text {
     letter-spacing: 1.00px;
     line-height: 50px;
@@ -2141,11 +2159,11 @@
 
 /*---------------
 
-        ##################################
-        ########### PANTRY 2 #############
-        ################################## 
+##################################
+########### PANTRY 2 #############
+################################## 
 
-        ---------------*/
+---------------*/
 
 .ingredient-container-pantry2 {
     position: absolute;
@@ -2205,9 +2223,9 @@
 
 /*---------------
 
-        ##################################
-        ########### COOKBOOK #############
-        ################################## 
+##################################
+########### COOKBOOK #############
+################################## 
 
 ---------------*/
 
@@ -2338,6 +2356,185 @@
     position: relative;
     top: -60px;
     left: 85px;
+}
+
+/*---------------
+
+##################################
+######### USER PROFILE ###########
+################################## 
+
+---------------*/
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 280px;
+    position: absolute;
+    top: 240px;
+    left: 116px;
+}
+
+.user-icon {
+    display: flex;
+    height: 99px;
+    width: 95.5px;
+}
+
+.camera {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 65px;
+    left: 160px;
+}
+
+.username {
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    font-weight: 400;
+}
+
+.open-side {
+    position: absolute;
+    top: 105px;
+    left: 180px;
+}
+
+.presettings {
+    position: absolute;
+    width: 360px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    top: 350px;
+    left: 92px;
+}
+
+.presettings::-webkit-scrollbar {
+    display: none;
+}
+
+.container-settings {
+    padding-bottom: 20px;
+    height: 180px;
+    width: 360px;
+    display: flex;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    align-items: flex-start;
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    width: 350px;
+    height: 130px;
+}
+
+
+.options-padding {
+    padding-right: 20px;
+}
+
+.options-field {
+    height: 100px;
+    width: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-option-container {
+    padding-left: 10px;
+    position: absolute;
+    top: 90px;
+    background-color: var(--green---fdy);
+    width: 120px;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.info-button-circle {
+    position: relative;
+    top: -30px;
+    left: 85px;
+}
+
+.button-yellow {
+    align-items: center;
+    align-self: center;
+    background-color: var(--yellow);
+    border-radius: 16px;
+    display: flex;
+    height: 50px;
+    width: 280px;
+    position: absolute;
+    top: 580px;
+    left: 116px;
+}
+
+.button-light-green {
+    align-items: center;
+    align-self: center;
+    background-color: var(--light-green---fdy);
+    border-radius: 16px;
+    display: flex;
+    height: 50px;
+    width: 280px;
+    position: absolute;
+    top: 640px;
+    left: 116px;
+}
+
+.button-white {
+    align-items: center;
+    align-self: center;
+    background-color: var(--white);
+    border-radius: 16px;
+    display: flex;
+    height: 50px;
+    width: 280px;
+    position: absolute;
+    top: 700px;
+    left: 116px;
+}
+
+.button-profile-text {
+    color: var(--black);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 280px;
+}
+
+.button-icon {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.button-icon1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    width: 40px;
 }
 
 
