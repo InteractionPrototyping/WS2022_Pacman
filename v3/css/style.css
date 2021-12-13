@@ -2559,6 +2559,16 @@
     top: 400px;
 }
 
+.using-dish2 {
+    display: flex;
+    width: 360px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    padding-left: 10px;
+    top: 780px;
+}
+
 .dish-suggestion-container-main {
     display: flex;
     flex-direction: row;
@@ -2579,7 +2589,7 @@
 
 .loading {
     position: absolute;
-    top: 580px;
+    top: 950px;
     width: 280px;
     height: 300px;
     left: 40px;
@@ -2886,6 +2896,74 @@
 .text-14 {
     font-size: var(--font-size-xs);
 }
+
+.ingredient-container-main {
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 5px;
+    top: 40px;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.ingredient-options-selected {
+    background-color: #E0E0E0;
+    color: var(--gray);
+    display: flex;
+    padding: 5px;
+    height: 18px;
+    border: 2px solid #E0E0E0;
+    border-radius: 6px;
+    font-size: 9pt;
+    align-items: center;
+}
+
+.ingredient-options-main {
+    color: #E0E0E0;
+    display: flex;
+    padding: 5px;
+    height: 18px;
+    border: 2px solid #E0E0E0;
+    border-radius: 6px;
+    font-size: 9pt;
+    align-items: center;
+}
+
+.do-you-have-rect {
+    position: absolute;
+    width: 311px;
+    height: 168px;
+    left: 25px;
+    top: 585px;
+
+    background: rgba(79, 79, 79, 0.8);
+    border-radius: 8px;
+}
+
+.text-15 {
+    padding: 10px;
+}
+
+.button-add-to-pantry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    width: 120px;
+    height: 21px;
+    left: 86px;
+    top: 125px;
+    background: var(--green---fdy);
+    border-radius: 16px;
+}
+
 
 
 /*---------------
