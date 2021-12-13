@@ -109,6 +109,24 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('#go-to-home3').on('click', function() {
+        window.location.href = 'main.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-profile3').on('click', function() {
+        window.location.href = 'profile.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-cookbook3').on('click', function() {
+        window.location.href = 'cookbook.html';
+    });
+});
+
 /* ------------- 
 
 ##################################
@@ -117,7 +135,7 @@ $(document).ready(function() {
 
 ---------------*/
 // setTimeout(function() {
-//     window.location.href = "home.html";
+//     window.location.href = "main.html";
 // }, 5000); // this will call the function after 5 sec.
 
 /* ------------- 
@@ -128,6 +146,29 @@ $(document).ready(function() {
 
 ---------------*/
 
+$(document).ready(function() {
+    $('#see-recipe').on('click', function() {
+        window.location.href = 'recipe_ingredients.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-pantry').on('click', function() {
+        window.location.href = 'pantry.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-cookbook').on('click', function() {
+        window.location.href = 'cookbook.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-profile').on('click', function() {
+        window.location.href = 'profile.html';
+    });
+});
 
 /* ------------- 
 
@@ -143,6 +184,25 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('#go-to-pantry1').on('click', function() {
+        window.location.href = 'pantry.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-home1').on('click', function() {
+        window.location.href = 'main.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-profile1').on('click', function() {
+        window.location.href = 'profile.html';
+    });
+});
+
+
 /* ------------- 
 
 ##################################
@@ -154,6 +214,24 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#open-pantry-storage').on('click', function() {
         window.location.href = 'pantry.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-pantry2').on('click', function() {
+        window.location.href = 'pantry.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-home2').on('click', function() {
+        window.location.href = 'main.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#go-to-cookbook2').on('click', function() {
+        window.location.href = 'cookbook.html';
     });
 });
 
