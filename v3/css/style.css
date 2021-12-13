@@ -499,24 +499,23 @@
 }
 
 .recipe-cooking .content-cooking {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    left: 108px;
     min-height: 1193px;
     overflow-y: scroll;
-    width: 296px;
-    left: 76px;
-    top: 111px;
+    position: absolute;
+    top: 451px;
+    width: 297px;
 }
 
 .recipe-cooking .cooking-step-img {
-    display: flex;
-    align-items: center;
-    /* height: 147px;
+    height: 147px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 296px; */
+    width: 296px;
 }
 
 .recipe-cooking .step-1 {
@@ -555,24 +554,23 @@
 
 .recipe-cooking .number {
     color: var(--white);
-    font-family: var(--font-family-inter-medium);
+    font-family: var(--font-family-inter);
     font-size: var(--font-size-xl2);
-    display: flex;
-    align-items: center;
     font-weight: 600;
-    /* height: 19px; */
+    font-style: normal;
+    height: 19px;
     letter-spacing: 1.00px;
-    align-items: center;
-    position: absolute;
+    text-align: center;
     width: 7px;
-    /* left: -39px; */
+    padding: 0 12px;
 }
 
 .recipe-cooking .cooking-steps-text {
-    left: 6px;
+    /* left: 6px; */
     letter-spacing: 0;
-    position: absolute;
-    top: 171px;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
     width: 285px;
 }
 
@@ -812,9 +810,9 @@
 
 .recipe-ingredients .number {
     color: var(--white);
-    font-family: var(--font-family-inter);
-    font-size: var(--font-size-l);
-    font-weight: 600;
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-xl2);
+    font-weight: 500;
     letter-spacing: 1.00px;
     margin-left: 45px;
     min-height: 48px;
