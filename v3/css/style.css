@@ -2529,6 +2529,15 @@
 
 ---------------*/
 
+.text-7-1 {
+    height: 42px;
+    left: 170px;
+    position: absolute;
+    top: 160px;
+    width: 157px;
+    line-height: 160%;
+}
+
 .text-10 {
     color: var(--green---fdy);
     font-weight: 400;
