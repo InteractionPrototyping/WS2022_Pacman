@@ -156,3 +156,66 @@ $(document).ready(function() {
         window.location.href = 'pantry.html';
     });
 });
+
+/* ------------- 
+
+##################################
+###### RECIPE INGREDIENTS ########
+################################## 
+
+---------------*/
+
+// function counter(state = 0, action) {
+//     switch (action.type) {
+//         case 'INCREMENT':
+//             return state + 1;
+//         case 'DECREMENT':
+//             return state - 1;
+//         default:
+//             return state;
+//     }
+// }
+
+// var store = Redux.createStore(counter);
+
+// function render() {
+//     document.querySelector('#counter').innerText = store.getState();
+// }
+
+// store.subscribe(render);
+// render();
+
+// document.querySelector('#increment').addEventListener('click', function() {
+//     store.dispatch({ type: 'INCREMENT' })
+// });
+
+// document.querySelector('#decrement').addEventListener('click', function() {
+//     store.dispatch({ type: 'DECREMENT' })
+// });
+
+
+
+var incrementPlus;
+var incrementMinus;
+
+var Plus = $(".plus");
+var Minus = $(".minus");
+
+var incrementPlus = Plus.click(function() {
+    var $n = $(this)
+        .parent(".plus")
+        .parent(".no-of-servings")
+        .find(".amount-of-servings");
+    $n.val(Number($n.val()) + 1);
+});
+
+var incrementMinus = buttonMinus.click(function() {
+    var $n = $(this)
+        .parent(".button-container")
+        .parent(".container")
+        .find(".qty");
+    var amount = Number($n.val());
+    if (amount > 0) {
+        $n.val(amount - 1);
+    }
+});
