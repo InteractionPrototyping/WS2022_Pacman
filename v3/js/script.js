@@ -195,27 +195,35 @@ $(document).ready(function() {
 
 
 
-var incrementPlus;
-var incrementMinus;
+// var incrementPlus;
+// var incrementMinus;
 
-var Plus = $(".plus");
-var Minus = $(".minus");
+// var Plus = $(".plus");
+// var Minus = $(".minus");
 
-var incrementPlus = Plus.click(function() {
-    var $n = $(this)
-        .parent(".plus")
-        .parent(".no-of-servings")
-        .find(".amount-of-servings");
-    $n.val(Number($n.val()) + 1);
-});
+// var incrementPlus = Plus.click(function() {
+//     var $n = $(this)
+//         .parent(".plus")
+//         .parent(".no-of-servings")
+//         .find(".amount-of-servings");
+//     $n.val(Number($n.val()) + 1);
+// });
 
-var incrementMinus = buttonMinus.click(function() {
-    var $n = $(this)
-        .parent(".button-container")
-        .parent(".container")
-        .find(".qty");
-    var amount = Number($n.val());
-    if (amount > 0) {
-        $n.val(amount - 1);
-    }
-});
+// var incrementMinus = buttonMinus.click(function() {
+//     var $n = $(this)
+//         .parent(".button-container")
+//         .parent(".container")
+//         .find(".qty");
+//     var amount = Number($n.val());
+//     if (amount > 0) {
+//         $n.val(amount - 1);
+//     }
+// });
+
+/* ------------- 
+
+##################################
+######## RECIPE COOKING ##########
+################################## 
+
+---------------*/
