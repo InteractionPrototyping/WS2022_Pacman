@@ -305,3 +305,15 @@ $(document).ready(function() {
 ################################## 
 
 ---------------*/
+
+$(document).ready(function() {
+    $('#tab-bar-lets-cook').on('click', function() {
+        window.location.href = 'recipe_cooking.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#tab-bar-ingredients').on('click', function() {
+        window.location.href = 'recipe_ingredients.html';
+    });
+});
