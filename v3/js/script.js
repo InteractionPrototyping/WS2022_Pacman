@@ -302,6 +302,7 @@ $(document).ready(function() {
 
 ##################################
 ######## RECIPE COOKING ##########
+########## INGREDIENTS ###########
 ################################## 
 
 ---------------*/
@@ -315,5 +316,11 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#tab-bar-ingredients').on('click', function() {
         window.location.href = 'recipe_ingredients.html';
+    });
+});
+
+$(document).ready(function() {
+    $('#recipe-video-play').on('click', function() {
+        window.location.href = 'recipe_video.html';
     });
 });
