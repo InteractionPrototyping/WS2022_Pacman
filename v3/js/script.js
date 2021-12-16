@@ -324,3 +324,15 @@ $(document).ready(function() {
         window.location.href = 'recipe_video.html';
     });
 });
+
+// $(document).ready(function() {
+//     $('#like-recipe-big-heart').on('click', function() {
+//         $(this).css("color", "black");
+//     });
+// });
+
+// $(document).ready(function() {
+//     $('#like-recipe-big-heart').css('color', 'red') {
+
+//     };
+// });

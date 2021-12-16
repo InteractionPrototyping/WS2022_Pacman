@@ -149,6 +149,11 @@
     display: flex;
     height: 62px;
     min-width: 280px;
+    cursor: pointer;
+}
+
+.button-green:hover {
+    background-color: var(--green2---fdy);
 }
 
 .button-green-pos {
@@ -161,6 +166,11 @@
     min-width: 280px;
     position: absolute;
     top: 600px;
+    cursor: pointer;
+}
+
+.button-green-pos:hover {
+    background-color: var(--green2---fdy);
 }
 
 .button-green-text {
@@ -182,6 +192,11 @@
     display: flex;
     height: 56px;
     width: 274px;
+    cursor: pointer;
+}
+
+.button-green-outline:hover {
+    border: 3px solid var(--green2---fdy);
 }
 
 .button-green-outline-text {
@@ -194,6 +209,11 @@
     text-align: center;
     width: 280px;
 }
+
+
+/* .button-green-outline-text:hover {
+    color: var(--green2---fdy);
+} */
 
 .valign-text-middle {
     display: flex;
@@ -497,21 +517,6 @@
     border-radius: 50px;
     cursor: pointer;
 }
-
-
-/* .like-icon {
-    position: absolute;
-    border: 2px solid #5DB0A6;
-} */
-
-
-/* .like-option:focus {
-    width: 33px;
-    height: 33px;
-    background: #5DB0A6;
-    border-radius: 10px;
-    border: 2px solid #5DB0A6;
-} */
 
 .content-cooking {
     align-items: center;
