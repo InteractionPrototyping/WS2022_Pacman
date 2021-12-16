@@ -483,20 +483,42 @@
     width: 65px;
 }
 
-.recipe-cooking .like-option {
-    height: 86px;
-    left: 339px;
+.like-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 63px;
     position: absolute;
-    top: 258px;
-    width: 86px;
+    top: 265px;
+    left: 339px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(90, 90, 90, 0.17);
+    border-radius: 50px;
+    cursor: pointer;
 }
+
+
+/* .like-icon {
+    position: absolute;
+    border: 2px solid #5DB0A6;
+} */
+
+
+/* .like-option:focus {
+    width: 33px;
+    height: 33px;
+    background: #5DB0A6;
+    border-radius: 10px;
+    border: 2px solid #5DB0A6;
+} */
 
 .content-cooking {
     align-items: center;
     /* display: flex;
     flex-direction: column; */
     left: 108px;
-    height: 300px;
+    height: 330px;
     position: absolute;
     top: 451px;
     width: 297px;
