@@ -8,7 +8,11 @@
 
 $(document).ready(function() {
     $('#lets-start').on('click', function() {
-        window.location.href = 'select_diet.html';
+        $(".title").animate({ top: -200 }, 2000);
+        $(".text-1").animate({ top: -100 }, 2000);
+        $(".overlap-group").animate({ top: -500 }, 1500, function() {
+            window.location.href = 'select_diet.html';
+        });
     });
 });
 
@@ -21,7 +25,9 @@ $(document).ready(function() {
 ---------------*/
 $(document).ready(function() {
     $('#save-diet-settings').on('click', function() {
-        window.location.href = 'select_pantry.html';
+        $('.select-diet').fadeOut(function() {
+            window.location.href = 'select_pantry.html';
+        });
     });
 });
 
@@ -30,6 +36,8 @@ $(document).ready(function() {
         window.location.href = 'select_pantry.html';
     });
 });
+
+
 
 /* ------------- 
 
@@ -127,16 +135,6 @@ $(document).ready(function() {
     });
 });
 
-/* ------------- 
-
-##################################
-###### YOU ARE ALL SET ###########
-################################## 
-
----------------*/
-// setTimeout(function() {
-//     window.location.href = "main.html";
-// }, 5000); // this will call the function after 5 sec.
 
 /* ------------- 
 
