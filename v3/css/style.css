@@ -374,32 +374,17 @@
     width: 360px;
 }
 
-.recipe-cooking .overlap-group8 {
+.recipe-cooking::-webkit-scrollbar {
+    display: none;
+}
+
+.recipe-cooking .overlap-group-recipe-cooking {
     height: 1958px;
     margin-left: -76px;
     margin-top: -110.87px;
     position: relative;
     width: 546px;
-    overflow-y: scroll;
 }
-
-.overlap-group8::-webkit-scrollbar {
-    display: none;
-    width: 0;
-}
-
-
-/* .recipe-cooking .overlap-group8 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    left: 108px;
-    min-height: 1193px;
-    overflow-y: scroll;
-    position: absolute;
-    top: 451px;
-    width: 297px;
-} */
 
 .recipe-cooking .img-recipe {
     position: absolute;
@@ -506,29 +491,30 @@
     width: 86px;
 }
 
-
-/* .screen-size-content {
-    background-color: var(--darkgrey);
-    border-radius: 32px;
-    height: 1610px;
-    width: 360px;
-} */
-
-.content-cooking::-webkit-scrollbar {
-    display: none;
-    width: 0;
-}
-
-.recipe-cooking .content-cooking {
+.content-cooking {
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     left: 108px;
-    min-height: 1193px;
-    overflow-y: scroll;
+    height: 300px;
     position: absolute;
     top: 451px;
     width: 297px;
+    overflow-y: scroll;
+}
+
+.content-cooking::-webkit-scrollbar {
+    display: none;
+}
+
+.recipe-cooking {
+    align-items: flex-start;
+    background-color: var(--darkgrey);
+    border-radius: 32px;
+    display: flex;
+    height: 760px;
+    overflow: auto;
+    width: 360px;
 }
 
 .recipe-cooking .cooking-step-img {
