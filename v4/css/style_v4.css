@@ -243,10 +243,10 @@
         background-color: var(--green---fdy);
         border-radius: 16px;
         height: 62px;
-        left: 181px;
+        left: -140px;
         min-width: 100px;
         position: absolute;
-        top: 830px;
+        top: 650px;
         padding: 0 93.5px;
         cursor: pointer;
     }
@@ -274,19 +274,18 @@
     
     .logo {
         height: 42px;
-        left: 169px;
+        left: -150px;
         position: absolute;
-        top: 273px;
+        top: 50px;
         width: 42px;
     }
-    
-    .body {
+    /* .body {
         margin: 0;
         padding: 0;
         background-color: var(--darkgrey);
-    }
+    } */
     
-    .rectangle-rechts {
+    .rectangle-right {
         height: 268px;
         left: 0;
         position: absolute;
@@ -294,7 +293,7 @@
         width: 268px;
     }
     
-    .rectangle-links {
+    .rectangle-left {
         height: 420px;
         left: 110px;
         position: absolute;
@@ -353,12 +352,12 @@
 ---------------*/
     
     #welcome .overlap-group {
-        height: 982px;
-        /* margin-left: -141px;
-        margin-top: -220.0px; */
-        position: relative;
-        width: 691px;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        height: 5000px;
+        position: relative;
+        width: 100%;
     }
     
     #welcome .title {
@@ -366,11 +365,11 @@
         font-family: var(--font-family-pacifico);
         font-size: var(--font-size-xxl);
         font-weight: 400;
-        left: 199px;
+        /* left: 199px; */
         letter-spacing: 0;
         position: absolute;
         text-align: center;
-        top: 650px;
+        top: 450px;
     }
     
     #welcome .text-1 {
@@ -378,11 +377,11 @@
         font-family: var(--font-family-inter);
         font-size: var(--font-size-m);
         font-weight: 300;
-        left: 180px;
+        left: -130px;
         letter-spacing: 0;
         position: absolute;
         text-align: center;
-        top: 740px;
+        top: 550px;
     }
     
     .valign-text-middle {
@@ -401,9 +400,9 @@
     
     #welcome .ellipse-big {
         background-color: var(--green2---fdy);
-        align-items: center;
+        /* align-items: center; */
         position: absolute;
-        /* top: 149px; */
+        top: -100px;
         width: 514px;
         height: 458px;
         border-radius: 256.98px/229.21px;
@@ -414,33 +413,35 @@
         background-color: #CEE5D0;
         border-radius: 99.5px;
         height: 199px;
-        align-items: center;
         position: absolute;
-        /* top: 399px; */
+        /* left: 280px; */
+        top: 145px;
         width: 199px;
     }
     
     #welcome .img-salad {
         position: absolute;
         float: right;
-        /* top: 115px; */
-        left: 190px;
+        top: -130px;
+        left: -120px;
     }
     
     #welcome .img-cucumber {
         position: absolute;
+        float: left;
         width: 964px;
         height: 831px;
-        left: -380px;
-        padding-top: 80px;
+        left: -680px;
+        top: -350px;
+        padding-top: 120px;
     }
     
     #welcome .rectangle-right {
         position: absolute;
         border-radius: 70px;
         height: 290px;
-        left: 280px;
-        /* top: 150px; */
+        top: -80px;
+        left: -20px;
         transform: rotate(-41.55deg);
         width: 310px;
     }
@@ -449,8 +450,8 @@
         border-radius: 70px;
         align-items: center;
         position: absolute;
-        /* top: 380px; */
-        left: 60px;
+        top: 170px;
+        left: -250px;
         transform: rotate(-41.55deg);
         width: 200px;
         height: 200px;
