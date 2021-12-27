@@ -244,11 +244,10 @@
     
     #select-diet .button-pos {
         position: relative;
-        /* top: 830px; */
         width: 100px;
-        /* left: 181px; */
+        left: 120px;
+        top: 580px;
         position: center;
-        margin-bottom: 0px;
     }
     
     .button-position-save-diet {
@@ -372,7 +371,15 @@
         height: 5000px;
         margin-top: -220.0px;
         position: relative;
-        width: 700px;
+        width: 640px;
+    }
+    
+    #welcome .logo {
+        height: 42px;
+        left: 169px;
+        position: absolute;
+        top: 273px;
+        width: 42px;
     }
     
     #welcome .title {
@@ -504,11 +511,11 @@
     
     #select-diet .overlap-group8 {
         align-self: center;
-        height: 579px;
-        margin-left: -75.59px;
+        height: 5000px;
+        /* margin-left: -75.59px; */
         margin-top: -111px;
         position: relative;
-        width: 546px;
+        width: 520px;
     }
     
     #select-diet .title {
@@ -525,7 +532,7 @@
         letter-spacing: 0;
         position: absolute;
         text-align: center;
-        top: 750px;
+        top: 270px;
         width: 280px;
     }
     
@@ -589,6 +596,28 @@
         width: 84px;
     }
     
+    .ellipse-95 {
+        border-radius: 36px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    #select-diet .vegeterian-option {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #select-diet .border-4px-green2---fdy:hover .vegeterian-option:hover {
+        border-color: var(--white);
+    }
+    
+    .border-4px-green2---fdy {
+        border-width: 4px;
+        border-style: solid;
+        border-color: var(--green2---fdy);
+    }
+    
     #select-diet .vegan-option {
         align-items: flex-start;
         display: flex;
@@ -644,16 +673,10 @@
     
     #select-diet .logo {
         height: 42px;
-        left: 104px;
+        left: 109px;
         position: absolute;
         top: 164px;
         width: 42px;
-    }
-    
-    .ellipse-95 {
-        border-radius: 36px;
-        height: 70px;
-        width: 70px;
     }
     
     #select-diet .button-green {
