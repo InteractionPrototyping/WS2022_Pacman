@@ -241,6 +241,21 @@
         width: 100px;
         left: 181px;
     }
+    
+    #select-diet .button-pos {
+        position: relative;
+        /* top: 830px; */
+        width: 100px;
+        /* left: 181px; */
+        position: center;
+        margin-bottom: 0px;
+    }
+    
+    .button-position-save-diet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     /* ------------- 
 
 ##################################
@@ -328,10 +343,11 @@
     }
     
     .screen {
-        align-items: flex-start;
+        align-items: center;
         background-color: var(--darkgrey);
         /* border-radius: 32px; */
         display: flex;
+        /* justify-content: center; */
         /* height: 760px; */
         overflow: hidden;
         width: 100%;
@@ -356,7 +372,7 @@
         height: 5000px;
         margin-top: -220.0px;
         position: relative;
-        width: 640px;
+        width: 700px;
     }
     
     #welcome .title {
@@ -493,12 +509,6 @@
         margin-top: -111px;
         position: relative;
         width: 546px;
-    }
-    
-    .button-position-save-diet {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     #select-diet .title {
