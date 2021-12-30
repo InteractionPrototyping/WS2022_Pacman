@@ -7,7 +7,12 @@ $(document).ready(function() {
     $("#cookbook").hide();
     $("#pantry-bar").hide();
     $("#pantry-bar-cereals").hide();
-    $("#user-profile").show();
+    $("#user-profile").hide();
+    $("#recipe-cooking").hide();
+    $("#recipe-ingredients").hide();
+    $("#recipe-video").hide();
+    $("#you-are-set").hide();
+    $("#updating-recipes").show();
     // /* ------------- 
 
     // ##################################
