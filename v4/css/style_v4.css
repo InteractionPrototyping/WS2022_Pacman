@@ -175,6 +175,42 @@
     background-color: var(--green2---fdy);
 }
 
+#select-pantry .button-green-pos {
+    align-items: center;
+    align-self: center;
+    background-color: var(--green---fdy);
+    border-radius: 16px;
+    display: flex;
+    height: 62px;
+    /* min-width: 280px; */
+    position: absolute;
+    top: 710px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+#select-pantry .button-green-pos:hover {
+    background-color: var(--green2---fdy);
+}
+
+#pantry-selection-cereals .button-green-pos {
+    align-items: center;
+    align-self: center;
+    background-color: var(--green---fdy);
+    border-radius: 16px;
+    display: flex;
+    height: 62px;
+    /* min-width: 280px; */
+    position: absolute;
+    top: 710px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+#pantry-selection-cereal .button-green-pos:hover {
+    background-color: var(--green2---fdy);
+}
+
 .button-green-text {
     color: var(--white);
     font-family: var(--font-family-inter);
@@ -225,7 +261,9 @@
     border: 3px solid #434343;
     border-radius: 16px;
     position: absolute;
-    top: 665px;
+    top: 775px;
+    margin-left: 110px;
+    cursor: pointer;
 }
 
 .button-without-outline-text {
@@ -239,6 +277,10 @@
     width: 272px;
 }
 
+.button-without-outline-text:hover {
+    color: var(--green2---fdy);
+}
+
 .position-button-welcome {
     position: relative;
     top: 830px;
@@ -250,7 +292,7 @@
     position: relative;
     width: 100px;
     left: 120px;
-    top: 580px;
+    top: 520px;
     position: center;
 }
 
@@ -282,13 +324,14 @@
     pointer-events: auto;
 }
 
-.logo {
+
+/* .logo {
     height: 42px;
     left: 169px;
     position: absolute;
     top: 273px;
     width: 42px;
-}
+} */
 
 .body {
     margin: 0;
@@ -395,11 +438,45 @@
 }
 
 .bottom-bar {
-    height: 43px;
-    left: 76px;
-    position: absolute;
-    top: 830px;
+    align-items: flex-start;
+    justify-content: center;
+    /* position: absolute; */
+    display: flex;
+    height: 42px;
+    /* padding: 0 72px; */
     width: 360px;
+    /* top: 718.5px; */
+    /* Gray 5 */
+    background: #E0E0E0;
+}
+
+.bottom-bar .menu-bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16px;
+    margin-top: 13px;
+    width: 15px;
+}
+
+.bottom-bar .x2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16px;
+    margin-left: 85px;
+    margin-top: 13px;
+    width: 16px;
+}
+
+.bottom-bar .back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16px;
+    margin-left: 85px;
+    margin-top: 13px;
+    width: 15px;
 }
 
 
@@ -586,7 +663,7 @@
     /* margin-left: -141px; */
     margin-top: -220.0px;
     position: relative;
-    width: 691px;
+    width: 640px;
 }
 
 #welcome .logo {
@@ -731,11 +808,9 @@
 }
 
 #select-diet .overlap-group8 {
-    /* align-self: center; */
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
-    width: 1262px;
+    width: 1150px;
 }
 
 #select-diet .title {
@@ -891,13 +966,14 @@
     width: 40px;
 }
 
-#select-diet .logo {
+
+/* #select-diet .logo {
     height: 42px;
-    left: 109px;
+    left: 169px;
     position: absolute;
-    top: 164px;
+    top: 273px;
     width: 42px;
-}
+} */
 
 #select-diet .button-green {
     margin-top: 90px;
@@ -928,10 +1004,9 @@
 #select-pantry .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-left: -75.59px; */
-    margin-top: -111px;
-    position: relative;
-    width: 546px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
 #select-pantry .title {
@@ -964,7 +1039,7 @@
     letter-spacing: 0;
     position: absolute;
     text-align: center;
-    top: 250px;
+    top: 270px;
     width: 180px;
     z-index: 0;
 }
@@ -1002,6 +1077,7 @@
     position: relative;
     background: #89B5AF;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .text-3 {
@@ -1064,13 +1140,22 @@
 
 ---------------*/
 
-#pantry-selected .overlap-group9 {
+#pantry-selection-cereals {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#pantry-selection-cereals .overlap-group9 {
     align-self: center;
     height: 5000px;
     /* margin-left: -75.59px; */
-    margin-top: -111px;
-    position: relative;
-    width: 546px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
 .category-container-selected {
@@ -1083,6 +1168,7 @@
     position: relative;
     background: #89B5AF;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .close {
@@ -1391,8 +1477,8 @@
     height: 5000px;
     /* margin-left: -75.59px; */
     margin-top: -111px;
-    position: relative;
-    width: 510px;
+    position: absolute;
+    width: 1150px;
 }
 
 #main .title {
@@ -3254,7 +3340,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    scroll: none;
 }
 
 #you-are-set::-webkit-scrollbar {
@@ -3262,12 +3347,12 @@
 }
 
 #you-are-set .overlap-group8 {
-    align-self: flex-start;
+    /* align-self: flex-start; */
     height: 5000px;
-    margin-left: -75.59px;
-    margin-top: -111px;
-    position: relative;
-    width: 430px;
+    /* margin-left: -75.59px;
+    margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
 .headline2 {
@@ -3331,13 +3416,14 @@
     width: 337px;
 }
 
-#you-are-set .logo {
+
+/* #you-are-set .logo {
     height: 42px;
     left: 104px;
     position: absolute;
     top: 164px;
     width: 42px;
-}
+} */
 
 
 /* ------------- 

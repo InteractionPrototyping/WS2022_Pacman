@@ -34,60 +34,94 @@ $(document).ready(function() {
 
     });
 
-    // /* ------------- 
+    /* ------------- 
 
-    // ##################################
-    // ########## SELECT DIET ###########
-    // ################################## 
+    ##################################
+    ########## SELECT DIET ###########
+    ################################## 
 
-    // ---------------*/
+    ---------------*/
 
-    // $('#save-diet-settings').on('click', function() {
-    //     $("#select-pantry").fadeIn(2000);
-    //     $("#select-diet").fadeOut(2000);
-    // });
-    // $('#no-special-diet').on('click', function() {
-    //     $("#select-pantry").fadeIn(2000);
-    //     $("#select-diet").fadeOut(2000);
-    // });
-
-
-    // /* --- choose your diet / change color of button after click --- */
-    // // $('#select-diet .vegeterian-option').on('click', function() {
-    // //             $(this).css("background-color", "blue"
-    // //             });
+    $('#save-diet-settings').on('click', function() {
+        $("#select-pantry").fadeIn(2000);
+        $("#select-diet").fadeOut(2000);
+    });
+    $('#no-special-diet').on('click', function() {
+        $("#select-pantry").fadeIn(2000);
+        $("#select-diet").fadeOut(2000);
+    });
 
 
-    // /* ------------- 
-
-    // ##################################
-    // ####### SELECT PANTRY ############
-    // ################################## 
-
-    // ---------------*/
-
-    // $('#cereals').on('click', function() {
-    //     $("#pantry-selection-cereals").show();
-    //     $("#select-pantry").hide();
-    // });
+    /* --- choose your diet / change color of button after click --- */
+    // $('#select-diet .vegeterian-option').on('click', function() {
+    //             $(this).css("background-color", "blue"
+    //             });
 
 
-    // $('#save-get-recipe-suggestions').on('click', function() {
-    //     $("#main").fadeIn();
-    //     $("#select-pantry").fadeOut();
-    // });
-    // /* ------------- 
+    /* ------------- 
 
-    // ##################################
-    // ############# MAIN ###############
-    // ################################## 
+    ##################################
+    ####### SELECT PANTRY ############
+    ################################## 
 
-    // ---------------*/
+    ---------------*/
 
-    // $('#see-recipe').on('click', function() {
-    //     $("#recipe-ingredients").show("slide", { direction: "left" }, 1000);
-    //     $('#main').hide();
-    // });
+    $('#cereals').on('click', function() {
+        $("#pantry-selection-cereals").show();
+        $("#select-pantry").hide();
+    });
+
+
+    $('#save-get-recipe-suggestions').on('click', function() {
+        $("#you-are-set").fadeIn();
+        $("#select-pantry").fadeOut();
+    });
+    /* ------------- 
+
+    ############################################
+    ####### PANTRY SELECTED CEREALS ############
+    ############################################ 
+
+    ---------------*/
+
+    $('#save-get-suggestions').on('click', function() {
+        $("#you-are-set").fadeIn();
+        $("#select-pantry").fadeOut();
+        $("#pantry-selection-cereals").fadeOut();
+    });
+
+    $('#close-ingredients').on('click', function() {
+        $("#select-pantry").show();
+        $("#pantry-selection-cereals").hide();
+    });
+
+    /* ------------- 
+
+    ################################
+    ####### YOU ARE SET ############
+    ################################ 
+
+    ---------------*/
+    $('#you-are-set').on('click', function() {
+        setTimeout(function() {
+            $("#main").fadeIn();
+            $("#you-are-set").fadeOut();
+        }, 6000); // this will call the function after 6 sec.
+    });
+
+
+    /* ------------- 
+
+    ##################################
+    ############# MAIN ###############
+    ################################## 
+
+    ---------------*/
+
+    $('#see-recipe').on('click', function() {
+        $("#recipe-ingredients").show("slide", { direction: "left" }, 1000);
+        $('#main').hide();
+    });
 
 
 
