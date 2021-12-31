@@ -583,9 +583,10 @@
 
 #welcome .overlap-group1 {
     height: 5000px;
+    /* margin-left: -141px; */
     margin-top: -220.0px;
     position: relative;
-    width: 640px;
+    width: 691px;
 }
 
 #welcome .logo {
@@ -730,11 +731,11 @@
 }
 
 #select-diet .overlap-group8 {
-    align-self: center;
+    /* align-self: center; */
     height: 5000px;
-    margin-top: -111px;
-    position: relative;
-    width: 520px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1262px;
 }
 
 #select-diet .title {
