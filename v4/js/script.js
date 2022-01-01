@@ -149,7 +149,6 @@ $(document).ready(function() {
                 // $("#welcome").fadeOut();
             }, 6000); // this will call the function after 6 sec.
         });
-
     });
 
     $('#close-ingredients').on('click', function() {
@@ -215,8 +214,8 @@ $(document).ready(function() {
     /*-- back to main page --*/
     $("#back-to-main").on('click', function() {
         // $("#recipe-ingredients").show("slide", { direction: "right" }, 1000);
-        // $("#recipe-ingredients").hide();
-        // $("#main").show();
+        $("#recipe-ingredients").fadeOut();
+        $("#main").fadeIn();
     });
 
 
