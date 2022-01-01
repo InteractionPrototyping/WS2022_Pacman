@@ -499,6 +499,7 @@
     display: flex;
     justify-content: space-around;
     min-width: 52px;
+    cursor: pointer;
 }
 
 .home-overlap-group {
@@ -533,6 +534,7 @@
     display: flex;
     justify-content: space-around;
     min-width: 52px;
+    cursor: pointer;
 }
 
 .cookbook-overlap-group {
@@ -567,6 +569,7 @@
     display: flex;
     justify-content: space-around;
     min-width: 52px;
+    cursor: pointer;
 }
 
 .pantry-overlap-group {
@@ -603,6 +606,7 @@
     align-content: center;
     margin-top: -7px;
     min-width: 52px;
+    cursor: pointer;
 }
 
 .profile-overlap-group {
@@ -1262,9 +1266,9 @@
 #pantry-bar .overlap-group9 {
     align-self: center;
     height: 5000px;
-    margin-top: -111px;
-    position: relative;
-    width: 510px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
 #pantry-bar .logo {
@@ -1477,7 +1481,7 @@
     align-self: center;
     height: 5000px;
     /* margin-left: -75.59px; */
-    margin-top: -111px;
+    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -1499,13 +1503,14 @@
     color: var(--green3);
 }
 
-#main .logo {
+
+/* #main .logo {
     height: 42px;
     left: 104px;
     position: absolute;
     top: 164px;
     width: 42px;
-}
+} */
 
 .text-7-1 {
     height: 42px;
@@ -1614,6 +1619,7 @@
     min-width: 100px;
     position: absolute;
     /* top: 0; */
+    cursor: pointer;
 }
 
 .breakfast-text-selected {
@@ -1660,6 +1666,7 @@
     position: absolute;
     /*top: 2px;*/
     width: 100px;
+    cursor: pointer;
 }
 
 .lunch-bg {
@@ -1707,6 +1714,7 @@
     position: absolute;
     /*top: 2px;*/
     width: 100px;
+    cursor: pointer;
 }
 
 .dinner-bg {
@@ -1971,18 +1979,19 @@
     align-self: center;
     height: 5000px;
     /* margin-left: -75.59px; */
-    margin-top: -111px;
-    position: relative;
-    width: 510px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
-#user-profile .logo {
+
+/* #user-profile .logo {
     height: 42px;
     left: 109px;
     position: absolute;
     top: 164px;
     width: 42px;
-}
+} */
 
 .user-profile {
     display: flex;
@@ -2176,18 +2185,19 @@
     align-self: center;
     height: 5000px;
     /* margin-left: -75.59px; */
-    margin-top: -111px;
-    position: relative;
-    width: 510px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
-#cookbook .logo {
+
+/* #cookbook .logo {
     height: 42px;
     left: 109px;
     position: absolute;
     top: 164px;
     width: 42px;
-}
+} */
 
 .text-7 {
     height: 42px;
@@ -2278,6 +2288,7 @@
 
 .dish-suggestions {
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .dish-field {

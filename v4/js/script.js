@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#select-pantry").hide();
     $("#pantry-selection-cereals").hide();
     $("#main").hide();
-    $("#cookbook").hide();
+    $("#cookbook").show();
     $("#pantry-bar").hide();
     $("#pantry-bar-cereals").hide();
     $("#user-profile").hide();
@@ -14,6 +14,30 @@ $(document).ready(function() {
     $("#recipe-video").hide();
     $("#you-are-set").hide();
     $("#updating-recipes").hide();
+
+    /* ------------- 
+
+    ##################################
+    ######### GREEN TAB BAR ##########
+    ################################## 
+
+    ---------------*/
+    $(".home").on("click", function() {
+        $("#main").show("slow");
+    });
+
+    $(".cookbook").on("click", function() {
+        $("#cookbook").show("slow");
+    });
+
+    $(".pantry").on("click", function() {
+        $("#pantry-bar").show("slow");
+    });
+
+    $(".profile").on("click", function() {
+        $("#user-profile").show("slow");
+    });
+
     /* ------------- 
 
     ##################################
@@ -79,6 +103,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $("#main").fadeIn();
                 $("#you-are-set").fadeOut();
+                // $("#welcome").fadeOut();
             }, 6000); // this will call the function after 6 sec.
         });
     });
@@ -97,6 +122,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $("#main").fadeIn();
                 $("#you-are-set").fadeOut();
+                // $("#welcome").fadeOut();
             }, 6000); // this will call the function after 6 sec.
         });
 
