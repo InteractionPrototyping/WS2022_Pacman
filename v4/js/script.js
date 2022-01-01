@@ -23,19 +23,31 @@ $(document).ready(function() {
 
     ---------------*/
     $(".home").on("click", function() {
-        $("#main").show("slow");
+        $("#main").fadeIn("slow");
+        $("#cookbook").fadeOut("slow");
+        $("#pantry-bar").fadeOut("slow");
+        $("#user-profile").fadeOut("slow");
     });
 
     $(".cookbook").on("click", function() {
-        $("#cookbook").show("slow");
+        $("#main").fadeOut("slow");
+        $("#cookbook").fadeIn("slow");
+        $("#pantry-bar").fadeOut("slow");
+        $("#user-profile").fadeOut("slow");
     });
 
     $(".pantry").on("click", function() {
-        $("#pantry-bar").show("slow");
+        $("#main").fadeOut("slow");
+        $("#cookbook").fadeOut("slow");
+        $("#pantry-bar").fadeIn("slow");
+        $("#user-profile").fadeOut("slow");
     });
 
     $(".profile").on("click", function() {
-        $("#user-profile").show("slow");
+        $("#main").fadeOut("slow");
+        $("#cookbook").fadeOut("slow");
+        $("#pantry-bar").fadeOut("slow");
+        $("#user-profile").fadeIn("slow");
     });
 
     /* ------------- 
@@ -107,6 +119,18 @@ $(document).ready(function() {
             }, 6000); // this will call the function after 6 sec.
         });
     });
+
+    $('#select-later').on('click', function() {
+        $("#select-pantry").fadeOut();
+        $("#you-are-set").fadeIn(function() {
+            setTimeout(function() {
+                $("#main").fadeIn();
+                $("#you-are-set").fadeOut();
+                // $("#welcome").fadeOut();
+            }, 6000); // this will call the function after 6 sec.
+        });
+    });
+
     /* ------------- 
 
     ############################################
@@ -131,6 +155,24 @@ $(document).ready(function() {
     $('#close-ingredients').on('click', function() {
         $("#select-pantry").show();
         $("#pantry-selection-cereals").hide();
+    });
+
+    /* ------------- 
+
+    ############################################
+    ######### PANTRY GREEN TAB BAR #############
+    ############################################ 
+
+    ---------------*/
+
+    $('#save-update-recipes2').on('click', function() {
+        $("#pantry-bar").fadeOut();
+        $("#updating-recipes").fadeIn(function() {
+            setTimeout(function() {
+                $("#main").fadeIn();
+                $("#updating-recipes").fadeOut();
+            }, 6000); // this will call the function after 6 sec.
+        });
     });
 
     /* ------------- 
