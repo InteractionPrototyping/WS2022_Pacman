@@ -10,6 +10,7 @@ $(document).ready(function() {
     $("#user-profile").hide();
     $("#recipe-cooking").hide();
     $("#recipe-ingredients").hide();
+    $("#info-what-you-need").hide();
     $("#recipe-video").hide();
     $("#you-are-set").hide();
     $("#updating-recipes").hide();
@@ -73,8 +74,13 @@ $(document).ready(function() {
 
 
     $('#save-get-recipe-suggestions').on('click', function() {
-        $("#you-are-set").fadeIn();
         $("#select-pantry").fadeOut();
+        $("#you-are-set").fadeIn(function() {
+            setTimeout(function() {
+                $("#main").fadeIn();
+                $("#you-are-set").fadeOut();
+            }, 6000); // this will call the function after 6 sec.
+        });
     });
     /* ------------- 
 
@@ -85,9 +91,15 @@ $(document).ready(function() {
     ---------------*/
 
     $('#save-get-suggestions').on('click', function() {
-        $("#you-are-set").fadeIn();
         $("#select-pantry").fadeOut();
         $("#pantry-selection-cereals").fadeOut();
+        $("#you-are-set").fadeIn(function() {
+            setTimeout(function() {
+                $("#main").fadeIn();
+                $("#you-are-set").fadeOut();
+            }, 6000); // this will call the function after 6 sec.
+        });
+
     });
 
     $('#close-ingredients').on('click', function() {
@@ -102,12 +114,12 @@ $(document).ready(function() {
     ################################ 
 
     ---------------*/
-    $('#you-are-set').on('click', function() {
-        setTimeout(function() {
-            $("#main").fadeIn();
-            $("#you-are-set").fadeOut();
-        }, 6000); // this will call the function after 6 sec.
-    });
+    // $('#you-are-set').on('click', function() {
+    //     setTimeout(function() {
+    //         $("#main").fadeIn();
+    //         $("#you-are-set").fadeOut();
+    //     }, 6000); // this will call the function after 6 sec.
+    // });
 
 
     /* ------------- 
@@ -122,6 +134,34 @@ $(document).ready(function() {
         $("#recipe-ingredients").show("slide", { direction: "left" }, 1000);
         $('#main').hide();
     });
+
+
+    /* ------------- 
+
+    ##################################
+    ###### RECIPE INGREDIENTS ########
+    ################################## 
+
+    ---------------*/
+
+    /*-- back to main page --*/
+    $("#back-to-main").on('click', function() {
+        // $("#recipe-ingredients").show("slide", { direction: "right" }, 1000);
+        // $("#recipe-ingredients").hide();
+        // $("#main").show();
+    });
+
+
+    /*-- Info about missing ingredient --*/
+    $("#info-ingredients").on("click", function() {
+        $("#info-what-you-need").show("slow");
+    });
+
+    $("#close-info-ingredient").on("click", function() {
+        $("#info-what-you-need").hide("slow");
+    });
+
+
 
 
 

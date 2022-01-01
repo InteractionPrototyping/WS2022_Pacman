@@ -964,6 +964,7 @@
     position: absolute;
     top: 216px;
     width: 40px;
+    cursor: pointer;
 }
 
 
@@ -2439,6 +2440,7 @@
     min-width: 42px;
     position: absolute;
     top: 154px;
+    cursor: pointer;
 }
 
 #recipe-cooking .back-icon {
@@ -2573,16 +2575,11 @@
 }
 
 #recipe-ingredients .overlap-group5 {
-    /* height: 932px;
-    margin-left: -76px;
-    margin-top: -110.87px;
-    position: relative;
-    width: 546px; */
     align-self: center;
     height: 5000px;
-    margin-top: -111px;
-    position: relative;
-    width: 510px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
 #recipe-ingredients .servings {
@@ -2843,6 +2840,7 @@
     height: 40px;
     min-width: 40px;
     padding: 10.8px;
+    cursor: pointer;
 }
 
 #recipe-ingredients .overlap-group {
@@ -2965,6 +2963,7 @@
     min-width: 42px;
     position: absolute;
     top: 154px;
+    cursor: pointer;
 }
 
 #recipe-ingredients .back-icon {
@@ -3094,6 +3093,87 @@
     height: 37px;
     position: relative;
     width: 147px;
+}
+
+
+/* ------------- 
+
+##################################
+###########  HELP  ###############
+###### INGREDIENTS MISSING #######
+################################## 
+
+---------------*/
+
+#info-what-you-need {
+    align-items: flex-start;
+    background-color: var(--black-2);
+    display: flex;
+    /* height: 760px;
+    width: 360px; */
+}
+
+#info-what-you-need .info-what-you-need-container {
+    align-items: flex-end;
+    background-color: var(--darkgrey);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    left: 760px;
+    padding: 30px 15px;
+    position: absolute;
+    top: calc(50vh - 136.0px);
+    width: 300px;
+    z-index: 1;
+}
+
+#info-what-you-need .still-some-ingredients-missing {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l22);
+    font-weight: 500;
+    letter-spacing: 0;
+    min-height: 44px;
+    width: 220px;
+}
+
+#info-what-you-need .flex-row-info {
+    align-items: flex-start;
+    display: flex;
+    height: 53px;
+    min-width: 269px;
+}
+
+#info-what-you-need .close {
+    cursor: pointer;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    height: 50px;
+    /* margin-left: 7px; */
+    min-width: 50px;
+}
+
+#info-what-you-need .overlap-group-close {
+    align-items: flex-start;
+    background-size: 100% 100%;
+    display: flex;
+    min-width: 50px;
+}
+
+#info-what-you-need .cancel {
+    height: 60px;
+    width: 60px;
+}
+
+#info-what-you-need .info-text {
+    letter-spacing: 0;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 36px;
+    min-height: 121px;
+    width: 253px;
 }
 
 
@@ -3246,82 +3326,6 @@
     position: absolute;
     top: 0;
     width: 360px;
-}
-
-
-/* ------------- 
-
-##################################
-###########  HELP  ###############
-###### INGREDIENTS MISSING #######
-################################## 
-
----------------*/
-
-.info-what-you-need {
-    align-items: flex-start;
-    background-color: var(--black-2);
-    display: flex;
-    height: 760px;
-    width: 360px;
-}
-
-.info-what-you-need-container {
-    align-items: flex-end;
-    background-color: var(--darkgrey);
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    min-height: 272px;
-    padding: 27px 20px;
-    position: relative;
-    top: calc(50vh - 136.0px);
-    width: 320px;
-}
-
-.still-some-ingredients-missing {
-    color: var(--white);
-    font-family: var(--font-family-inter);
-    font-size: var(--font-size-l22);
-    font-weight: 500;
-    letter-spacing: 0;
-    min-height: 44px;
-    width: 220px;
-}
-
-.info-what-you-need .flex-row-info {
-    align-items: flex-start;
-    display: flex;
-    height: 53px;
-    min-width: 269px;
-}
-
-.info-what-you-need .close {
-    align-items: flex-start;
-    display: flex;
-    height: 42px;
-    margin-left: 7px;
-    min-width: 42px;
-}
-
-.info-what-you-need .overlap-group-close {
-    align-items: flex-start;
-    background-size: 100% 100%;
-    display: flex;
-    min-width: 1px;
-}
-
-.info-what-you-need .cancel {
-    height: 1px;
-    width: 1px;
-}
-
-.info-what-you-need .info-text {
-    letter-spacing: 0;
-    margin-right: 16px;
-    margin-top: 36px;
-    min-height: 121px;
-    width: 253px;
 }
 
 
