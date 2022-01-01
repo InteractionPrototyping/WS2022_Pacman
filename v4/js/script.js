@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#select-pantry").hide();
     $("#pantry-selection-cereals").hide();
     $("#main").hide();
-    $("#cookbook").show();
+    $("#cookbook").hide();
     $("#pantry-bar").hide();
     $("#pantry-bar-cereals").hide();
     $("#user-profile").hide();
