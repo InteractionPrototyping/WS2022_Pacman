@@ -918,14 +918,21 @@
     cursor: pointer;
 }
 
-#select-diet .border-4px-green2---fdy:hover {
-    background-color: #686868b2;
-}
-
-.border-4px-green2---fdy {
+.border-4px-green2---fdy-unselected {
     border-width: 4px;
     border-style: solid;
     border-color: var(--green2---fdy);
+}
+
+#select-diet .border-4px-green2---fdy-unselected:hover {
+    background-color: #686868b2;
+}
+
+.border-4px-green2---fdy-selected {
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--white);
+    background-color: var(--green---fdy);
 }
 
 #select-diet .vegan-option {
@@ -2357,13 +2364,14 @@
     overflow: hidden;
 }
 
-#recipe-cooking .logo {
+
+/* #recipe-cooking .logo {
     height: 42px;
     left: 109px;
     position: absolute;
     top: 164px;
     width: 42px;
-}
+} */
 
 #recipe-cooking::-webkit-scrollbar {
     display: none;
@@ -2377,9 +2385,9 @@
     width: 546px; */
     align-self: center;
     height: 5000px;
-    margin-top: -111px;
-    position: relative;
-    width: 510px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
 }
 
 #recipe-cooking .img-recipe {
@@ -2461,6 +2469,7 @@
     position: absolute;
     top: 170px;
     width: 85px;
+    cursor: pointer;
 }
 
 #recipe-cooking .overlap-group-back {
@@ -2639,6 +2648,7 @@
     justify-content: flex-end;
     min-width: 34px;
     padding: 14.7px 8.2px;
+    cursor: pointer;
 }
 
 #recipe-ingredients .plus {
@@ -2651,6 +2661,7 @@
     margin-left: 45px;
     min-width: 34px;
     padding: 8.2px 8.2px;
+    cursor: pointer;
 }
 
 #recipe-ingredients .amount-of-servings {
@@ -2770,7 +2781,7 @@
 
 #recipe-ingredients .recipe-content::-webkit-scrollbar {
     display: none;
-    width: 0;
+    /* width: 0; */
 }
 
 #recipe-ingredients .recipe-content {
@@ -2778,11 +2789,12 @@
     display: flex;
     flex-direction: column;
     left: 104px;
-    min-height: 314px;
-    overflow-y: scroll;
+    min-height: 500px;
+    /* overflow-y: scroll; */
     position: absolute;
     top: 458px;
     width: 299px;
+    overflow: auto;
 }
 
 #recipe-ingredients .servings {
@@ -2984,6 +2996,7 @@
     position: absolute;
     top: 170px;
     width: 85px;
+    cursor: pointer;
 }
 
 #recipe-ingredients .overlap-group-back {
@@ -3046,6 +3059,7 @@
     min-width: 153px;
     position: absolute;
     /* top: 0; */
+    cursor: pointer;
 }
 
 .ingredients-text-selected {
@@ -3083,7 +3097,8 @@
     left: 161px;
     position: absolute;
     top: 2px;
-    width: 147px;
+    width: 152px;
+    cursor: pointer;
 }
 
 .lets-cook-bg {
@@ -3217,33 +3232,6 @@
 
 ---------------*/
 
-#recipe-video .tab-bar {
-    background-color: var(--green---fdy);
-    position: fixed;
-    background-size: 100% 100%;
-    height: 59px;
-    left: 0;
-    position: absolute;
-    top: 661px;
-    width: 360px;
-}
-
-#recipe-video .bottom-bar {
-    height: 43px;
-    left: 0px;
-    position: absolute;
-    top: 719px;
-    width: 360px;
-}
-
-.bottom-bar {
-    height: 43px;
-    left: 76px;
-    position: absolute;
-    top: 830px;
-    width: 360px;
-}
-
 #recipe-video {
     align-items: center;
     justify-content: center;
@@ -3253,9 +3241,47 @@
     overflow: hidden;
 }
 
+#recipe-video::-webkit-scrollbar {
+    display: none;
+}
+
 #recipe-video .overlap-group4 {
-    display: flex;
-    align-items: flex-start;
+    /* display: flex;
+    align-items: flex-start; */
+    align-self: center;
+    height: 5000px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1150px;
+}
+
+
+/* #recipe-video .tab-bar {
+    background-color: var(--green---fdy);
+    position: fixed;
+    background-size: 100% 100%;
+    height: 59px;
+    left: 0;
+    position: absolute;
+    top: 661px;
+    width: 360px;
+} */
+
+
+/* #recipe-video .bottom-bar {
+    height: 43px;
+    left: 0px;
+    position: absolute;
+    top: 719px;
+    width: 360px;
+} */
+
+.bottom-bar {
+    height: 43px;
+    left: 76px;
+    position: absolute;
+    top: 830px;
+    width: 360px;
 }
 
 #recipe-video .video-preview {
@@ -3272,6 +3298,7 @@
     position: absolute;
     top: 207px;
     width: 177px;
+    cursor: pointer;
 }
 
 #recipe-video .data {
@@ -3350,6 +3377,7 @@
     position: absolute;
     top: 31px;
     width: 66px;
+    cursor: pointer;
 }
 
 #recipe-video .rectangle-1 {

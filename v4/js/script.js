@@ -27,6 +27,9 @@ $(document).ready(function() {
         $("#cookbook").fadeOut("slow");
         $("#pantry-bar").fadeOut("slow");
         $("#user-profile").fadeOut("slow");
+        $("#recipe-ingredients").fadeOut();
+        $("#recipe-cooking").fadeOut();
+        $("#recipe-video").fadeOut();
     });
 
     $(".cookbook").on("click", function() {
@@ -34,6 +37,9 @@ $(document).ready(function() {
         $("#cookbook").fadeIn("slow");
         $("#pantry-bar").fadeOut("slow");
         $("#user-profile").fadeOut("slow");
+        $("#recipe-ingredients").fadeOut();
+        $("#recipe-cooking").fadeOut();
+        $("#recipe-video").fadeOut();
     });
 
     $(".pantry").on("click", function() {
@@ -41,6 +47,9 @@ $(document).ready(function() {
         $("#cookbook").fadeOut("slow");
         $("#pantry-bar").fadeIn("slow");
         $("#user-profile").fadeOut("slow");
+        $("#recipe-ingredients").fadeOut();
+        $("#recipe-cooking").fadeOut();
+        $("#recipe-video").fadeOut();
     });
 
     $(".profile").on("click", function() {
@@ -48,6 +57,9 @@ $(document).ready(function() {
         $("#cookbook").fadeOut("slow");
         $("#pantry-bar").fadeOut("slow");
         $("#user-profile").fadeIn("slow");
+        $("#recipe-ingredients").fadeOut();
+        $("#recipe-cooking").fadeOut();
+        $("#recipe-video").fadeOut();
     });
 
     /* ------------- 
@@ -90,10 +102,16 @@ $(document).ready(function() {
     });
 
     /* --- choose your diet / change color of button after click --- */
-    $('.border-4px-green2---fdy').on('click', function() {
-        $(this).css("background-color", "#5DB0A6", "border-color", "white");
+    // $('.border-4px-green2---fdy').on('click', function() {
+    //     $(this).css("background-color", "#5DB0A6");
+    //     $(this).css("border-color", "white");
+    // });
+
+    $('.vegeterian-option').on('click', function() {
+        $('.vegeterian-option').removeClass(".border-4px-green2---fdy-unselected");
+        $(this).addClass(".border-4px-green2---fdy-selected");
     });
-    // background - color: #5DB0A6 border-color: var(--green2---fdy);
+
 
     /* ------------- 
 
@@ -174,20 +192,6 @@ $(document).ready(function() {
         });
     });
 
-    /* ------------- 
-
-    ################################
-    ####### YOU ARE SET ############
-    ################################ 
-
-    ---------------*/
-    // $('#you-are-set').on('click', function() {
-    //     setTimeout(function() {
-    //         $("#main").fadeIn();
-    //         $("#you-are-set").fadeOut();
-    //     }, 6000); // this will call the function after 6 sec.
-    // });
-
 
     /* ------------- 
 
@@ -198,8 +202,9 @@ $(document).ready(function() {
     ---------------*/
 
     $('#see-recipe').on('click', function() {
-        $("#recipe-ingredients").show("slide", { direction: "left" }, 1000);
-        $('#main').hide();
+        // $("#recipe-ingredients").show("slide", { direction: "left" }, 1000);
+        $("#recipe-ingredients").fadeIn();
+        $('#main').fadeOut();
     });
 
 
@@ -228,6 +233,32 @@ $(document).ready(function() {
         $("#info-what-you-need").hide("slow");
     });
 
+    /*-- to lets cook page --*/
+    $(".lets-cook").on('click', function() {
+        $("#recipe-cooking").fadeIn();
+        $("#recipe-ingredients").fadeOut();
+        $("#recipe-video").fadeOut();
+    });
+
+    /*-- to recipe ingredients page --*/
+    $(".ingredients").on('click', function() {
+        $("#recipe-cooking").fadeOut();
+        $("#recipe-ingredients").fadeIn();
+        $("#recipe-video").fadeOut();
+    });
+
+    /*-- like recipe (& save it in cookbook) --*/
+    $(".like-option").on('click', function() {
+        $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_selected.svg");
+        $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_selected.svg");
+    });
+
+    /*-- play video --*/
+    $(".play-icon").on('click', function() {
+        $("#recipe-video").fadeIn();
+        $("#recipe-cooking").fadeOut();
+        $("#recipe-ingredients").fadeOut();
+    });
 
 
 
