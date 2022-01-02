@@ -885,6 +885,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 31px;
+    cursor: pointer;
 }
 
 #select-diet .overlap-group-diet-option {
@@ -914,10 +915,11 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
-#select-diet .border-4px-green2---fdy:hover .vegeterian-option:hover {
-    border-color: var(--white);
+#select-diet .border-4px-green2---fdy:hover {
+    background-color: #686868b2;
 }
 
 .border-4px-green2---fdy {
@@ -930,6 +932,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 #select-diet .icon-diet {
@@ -951,6 +954,7 @@
     margin-top: 31px;
     min-height: 96px;
     width: 82px;
+    cursor: pointer;
 }
 
 #select-diet .diet-text {
@@ -969,9 +973,10 @@
     justify-content: center;
     min-width: 18px;
     position: absolute;
+    cursor: pointer;
 }
 
-#select-diet .info {
+#select-diet .info-diet-options {
     height: 40px;
     left: 362px;
     position: absolute;

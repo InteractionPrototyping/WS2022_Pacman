@@ -83,17 +83,17 @@ $(document).ready(function() {
         $("#select-pantry").fadeIn(2000);
         $("#select-diet").fadeOut(2000);
     });
+
     $('#no-special-diet').on('click', function() {
         $("#select-pantry").fadeIn(2000);
         $("#select-diet").fadeOut(2000);
     });
 
-
     /* --- choose your diet / change color of button after click --- */
-    // $('#select-diet .vegeterian-option').on('click', function() {
-    //             $(this).css("background-color", "blue"
-    //             });
-
+    $('.border-4px-green2---fdy').on('click', function() {
+        $(this).css("background-color", "#5DB0A6", "border-color", "white");
+    });
+    // background - color: #5DB0A6 border-color: var(--green2---fdy);
 
     /* ------------- 
 
