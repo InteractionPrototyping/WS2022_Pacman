@@ -942,14 +942,26 @@
     cursor: pointer;
 }
 
-#select-diet .icon-diet {
+.icon-diet {
     color: var(--green---fdy);
     height: 38px;
     width: 38px;
 }
 
-#select-diet .icon-diet2 {
+.icon-diet-selected {
+    color: var(--white);
+    height: 38px;
+    width: 38px;
+}
+
+.icon-diet2 {
     color: var(--green---fdy);
+    height: 42px;
+    width: 42px;
+}
+
+.icon-diet2-selected {
+    color: var(--white);
     height: 42px;
     width: 42px;
 }

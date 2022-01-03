@@ -107,10 +107,11 @@ $(document).ready(function() {
     //     $(this).css("border-color", "white");
     // });
 
-    $('.vegeterian-option').on('click', function() {
-        $('.vegeterian-option').removeClass(".border-4px-green2---fdy-unselected");
-        $(this).addClass(".border-4px-green2---fdy-selected");
-    });
+    //$('.vegeterian-option').on('click', function() {
+    //    $('.vegeterian-option').removeClass(".border-4px-green2---fdy-unselected");
+    //    $(this).addClass(".border-4px-green2---fdy-selected");
+    //});
+
 
 
     /* ------------- 
@@ -273,3 +274,13 @@ $(document).ready(function() {
 
 
 });
+
+function selectdiettype() {
+    //var selecteddiet = document.getElementById("vegeterian-option");
+    //selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+    //selecteddiet.classList.add("border-4px-green2---fdy-selected");
+
+    var selecteddieticon = document.getElementById("vegeterian-option1");
+    selecteddieticon.classList.remove("icon-diet2");
+    selecteddieticon.classList.add("icon-diet2-selected");
+}
