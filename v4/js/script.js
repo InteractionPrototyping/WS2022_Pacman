@@ -92,13 +92,13 @@ $(document).ready(function() {
     ---------------*/
 
     $('#save-diet-settings').on('click', function() {
-        $("#select-pantry").fadeIn(2000);
-        $("#select-diet").fadeOut(2000);
+        $("#select-pantry").fadeIn(1000);
+        $("#select-diet").fadeOut(1000);
     });
 
     $('#no-special-diet').on('click', function() {
-        $("#select-pantry").fadeIn(2000);
-        $("#select-diet").fadeOut(2000);
+        $("#select-pantry").fadeIn(1000);
+        $("#select-diet").fadeOut(1000);
     });
 
     /* --- choose your diet / change color of button after click --- */

@@ -2509,7 +2509,7 @@
     /* display: flex;
     flex-direction: column; */
     left: 108px;
-    height: 330px;
+    height: 300px;
     position: absolute;
     top: 451px;
     width: 297px;
@@ -2779,23 +2779,26 @@
     width: 360px;
 }
 
-#recipe-ingredients .recipe-content::-webkit-scrollbar {
-    display: none;
-    /* width: 0; */
-}
-
-#recipe-ingredients .recipe-content {
+.recipe-content {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     left: 104px;
-    min-height: 500px;
-    /* overflow-y: scroll; */
+    height: 270px;
     position: absolute;
     top: 458px;
     width: 299px;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
 }
+
+.recipe-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 
 #recipe-ingredients .servings {
     letter-spacing: 1.00px;
