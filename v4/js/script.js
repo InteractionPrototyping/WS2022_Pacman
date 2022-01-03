@@ -275,12 +275,27 @@ $(document).ready(function() {
 
 });
 
-function selectdiettype() {
-    //var selecteddiet = document.getElementById("vegeterian-option");
-    //selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-    //selecteddiet.classList.add("border-4px-green2---fdy-selected");
+//////////// functions to change diet type ////////////////////////
+
+function selectdietveggie() {
+    var selecteddiet = document.getElementById("vegeterian-option");
+    selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+    selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
     var selecteddieticon = document.getElementById("vegeterian-option1");
-    selecteddieticon.classList.remove("icon-diet2");
-    selecteddieticon.classList.add("icon-diet2-selected");
+    selecteddieticon.src="src/svg/vegeterian-selected.svg";
+
+    var selecteddietinprofile = document.getElementById("selected-diet-option");
+    selecteddietinprofile.src="src/svg/selected_diet_option.svg";
 }
+
+/*
+function selectdietvegan() {
+    var selecteddiet = document.getElementById("vegan-option");
+    selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+    selecteddiet.classList.add("border-4px-green2---fdy-selected");
+
+    var selecteddieticon = document.getElementById("vegan-option1");
+    selecteddieticon.src="src/svg/vegan-selected.svg";
+}
+*/
