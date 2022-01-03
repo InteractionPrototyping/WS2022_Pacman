@@ -278,24 +278,61 @@ $(document).ready(function() {
 //////////// functions to change diet type ////////////////////////
 
 function selectdietveggie() {
-    var selecteddiet = document.getElementById("vegeterian-option");
-    selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-    selecteddiet.classList.add("border-4px-green2---fdy-selected");
+    if(!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected")) {
+        if(!document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")) {
+            var selecteddiet = document.getElementById("vegeterian-option");
+            selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+            selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
-    var selecteddieticon = document.getElementById("vegeterian-option1");
-    selecteddieticon.src="src/svg/vegeterian-selected.svg";
+            var selecteddieticon = document.getElementById("vegeterian-option1");
+            selecteddieticon.src="src/svg/vegeterian-selected.svg";
 
-    var selecteddietinprofile = document.getElementById("selected-diet-option");
-    selecteddietinprofile.src="src/svg/selected_diet_option.svg";
+            var selecteddietinprofile = document.getElementById("selected-diet-option");
+            selecteddietinprofile.src="src/svg/selected_diet_option.svg";
+        }
+    } else {
+        
+        var selecteddiet = document.getElementById("vegeterian-option");
+        selecteddiet.classList.remove("border-4px-green2---fdy-selected");
+        selecteddiet.classList.add("border-4px-green2---fdy-unselected");
+
+        var selecteddieticon = document.getElementById("vegeterian-option1");
+        selecteddieticon.src="src/svg/vegeterian.svg";
+
+        var selecteddietinprofile = document.getElementById("selected-diet-option");
+        selecteddietinprofile.src="src/svg/no-diet-option.svg";
+        
+    }
 }
 
-/*
+
 function selectdietvegan() {
-    var selecteddiet = document.getElementById("vegan-option");
-    selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-    selecteddiet.classList.add("border-4px-green2---fdy-selected");
+    if(!document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")) {
+        if(!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected")) {
+            var selecteddiet = document.getElementById("vegan-option");
+            selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+            selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
-    var selecteddieticon = document.getElementById("vegan-option1");
-    selecteddieticon.src="src/svg/vegan-selected.svg";
+            var selecteddieticon = document.getElementById("vegan-option1");
+            selecteddieticon.src="src/svg/vegan-selected.svg";
+
+            var selecteddietinprofile = document.getElementById("selected-diet-option");
+            selecteddietinprofile.src="src/svg/selected_diet_option_vegan.svg";
+        }
+    } else {
+        
+        var selecteddiet = document.getElementById("vegan-option");
+        selecteddiet.classList.remove("border-4px-green2---fdy-selected");
+        selecteddiet.classList.add("border-4px-green2---fdy-unselected");
+
+        var selecteddieticon = document.getElementById("vegan-option1");
+        selecteddieticon.src="src/svg/vegan.svg";
+
+        var selecteddietinprofile = document.getElementById("selected-diet-option");
+        selecteddietinprofile.src="src/svg/no-diet-option.svg";
+        
+    }
 }
-*/
+
+
+
