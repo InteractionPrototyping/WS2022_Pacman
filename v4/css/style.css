@@ -1550,6 +1550,20 @@
     line-height: 160%;
 }
 
+.text-7-11 {
+    height: 42px;
+    left: 170px;
+    position: absolute;
+    top: 160px;
+    width: 200px;
+    line-height: 160%;
+    display: block;
+}
+
+.text-inline {
+    display: inline-block;
+}
+
 .text-10 {
     color: var(--green---fdy);
     font-weight: 400;

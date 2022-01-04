@@ -4,6 +4,8 @@ $(document).ready(function() {
     $("#select-pantry").hide();
     $("#pantry-selection-cereals").hide();
     $("#main").hide();
+    $("#lunch-section").hide();
+    $("#breakfast-section").hide();
     $("#cookbook").hide();
     $("#pantry-bar").hide();
     $("#pantry-bar-cereals").hide();
@@ -206,6 +208,24 @@ $(document).ready(function() {
         // $("#recipe-ingredients").show("slide", { direction: "left" }, 1000);
         $("#recipe-ingredients").fadeIn();
         $('#main').fadeOut();
+    });
+
+    $(".lunch").on('click', function() {
+        $("#lunch-section").fadeIn();
+        $("#dinner-section").fadeOut();
+        $("#breakfast-section").fadeOut();
+    });
+
+    $(".breakfast").on('click', function() {
+        $("#breakfast-section").fadeIn();
+        $("#dinner-section").fadeOut();
+        $("#lunch-section").fadeOut();
+    });
+
+    $(".dinner").on('click', function() {
+        $("#dinner-section").fadeIn();
+        $("#lunch-section").fadeOut();
+        $("#breakfast-section").fadeOut();
     });
 
 
