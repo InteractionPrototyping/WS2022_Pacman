@@ -1929,6 +1929,11 @@
     top: 113px;
     background: var(--green---fdy);
     border-radius: 16px;
+    cursor: pointer;
+}
+
+.button-view-recipe:hover {
+    background-color: var(--green2---fdy);
 }
 
 .text-14 {
@@ -1999,6 +2004,11 @@
     top: 125px;
     background: var(--green---fdy);
     border-radius: 16px;
+    cursor: pointer;
+}
+
+.button-add-to-pantry:hover {
+    background-color: var(--green2---fdy);
 }
 
 
@@ -2058,6 +2068,7 @@
     width: 40px;
     top: 65px;
     left: 160px;
+    cursor: pointer;
 }
 
 .username {
@@ -2121,6 +2132,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .text-option-container {
@@ -2153,6 +2165,7 @@
     position: absolute;
     top: 580px;
     left: 116px;
+    cursor: pointer;
 }
 
 .button-light-green {
@@ -2166,6 +2179,7 @@
     position: absolute;
     top: 640px;
     left: 116px;
+    cursor: pointer;
 }
 
 .button-white {
@@ -2179,6 +2193,7 @@
     position: absolute;
     top: 700px;
     left: 116px;
+    cursor: pointer;
 }
 
 .button-profile-text {
@@ -3172,7 +3187,7 @@
     display: flex;
     /* height: 760px;
     width: 360px; */
-    z-index: 100;
+    z-index: 100; 
 }
 
 #info-what-you-need .info-what-you-need-container {
