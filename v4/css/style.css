@@ -449,12 +449,13 @@
 .bottom-bar {
     align-items: flex-start;
     justify-content: center;
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     height: 42px;
     /* padding: 0 72px; */
     width: 360px;
-    /* top: 718.5px; */
+    top: 831px;
+    left: 76px;
     /* Gray 5 */
     background: #E0E0E0;
 }
@@ -2790,15 +2791,11 @@
     width: 299px;
     overflow-y: scroll;
     overflow-x: hidden;
-    
 }
 
 .recipe-content::-webkit-scrollbar {
     display: none;
 }
-
-
-
 
 #recipe-ingredients .servings {
     letter-spacing: 1.00px;
@@ -2886,7 +2883,7 @@
     display: flex;
     height: 40px;
     min-width: 40px;
-    padding: 10.8px;
+    /* padding: 10.8px; */
     cursor: pointer;
 }
 
@@ -3161,16 +3158,17 @@
     display: flex;
     /* height: 760px;
     width: 360px; */
+    z-index: 100;
 }
 
 #info-what-you-need .info-what-you-need-container {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     background-color: var(--darkgrey);
     border-radius: 50px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     min-height: 200px;
-    left: 760px;
+    left: 10px;
     padding: 30px 15px;
     position: absolute;
     top: calc(50vh - 136.0px);
@@ -3249,13 +3247,61 @@
 }
 
 #recipe-video .overlap-group4 {
-    /* display: flex;
-    align-items: flex-start; */
     align-self: center;
-    height: 5000px;
+    height: 4780px;
     /* margin-top: -111px; */
     position: absolute;
-    width: 1150px;
+    width: 1000px;
+}
+
+#recipe-video .bottom-bar {
+    align-items: flex-start;
+    justify-content: center;
+    /* position: absolute; */
+    display: flex;
+    height: 42px;
+    /* padding: 0 72px; */
+    width: 360px;
+    /* top: 718.5px; */
+    /* Gray 5 */
+    background: #E0E0E0;
+}
+
+#video-play {
+    position: absolute;
+    top: 0px;
+    align-items: center;
+    left: 0px;
+    width: 360px;
+    height: 662px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.bottom-bar-video {
+    /* align-items: flex-start;
+    justify-content: center; */
+    /* position: absolute; */
+    /* display: flex; */
+    height: 42px;
+    /* padding: 0 72px; */
+    width: 360px;
+    position: absolute;
+    top: 721px;
+    /* Gray 5 */
+    background: #E0E0E0;
+}
+
+#recipe-video .tab-bar {
+    /* align-items: flex-end;
+    background-color: var(--green---fdy);
+    display: flex; */
+    height: 59px;
+    justify-content: space-around;
+    left: 0px;
+    width: 360px;
+    position: absolute;
+    top: 662px;
 }
 
 
@@ -3279,13 +3325,14 @@
     width: 360px;
 } */
 
-.bottom-bar {
+
+/* .bottom-bar {
     height: 43px;
     left: 76px;
     position: absolute;
     top: 830px;
     width: 360px;
-}
+} */
 
 #recipe-video .video-preview {
     height: 661px;
@@ -3293,6 +3340,7 @@
     position: absolute;
     top: 0;
     width: 360px;
+    z-index: -3;
 }
 
 #recipe-video .play-icon {
@@ -3310,6 +3358,7 @@
     position: absolute;
     top: 38px;
     width: 151px;
+    z-index: 3;
 }
 
 #recipe-video .pumpkin-soup {
@@ -3326,6 +3375,7 @@
     position: absolute;
     top: 27px;
     width: 151px;
+    z-index: 3;
 }
 
 #recipe-video .likes {
@@ -3334,6 +3384,7 @@
     position: absolute;
     top: 0;
     width: 52px;
+    z-index: 3;
 }
 
 #recipe-video .likes-icon {
@@ -3342,6 +3393,7 @@
     position: absolute;
     top: 3px;
     width: 12px;
+    z-index: 3;
 }
 
 #recipe-video .text-likes {
@@ -3349,6 +3401,7 @@
     letter-spacing: 0;
     position: absolute;
     top: 0;
+    z-index: 3;
 }
 
 #recipe-video .time {
@@ -3357,6 +3410,7 @@
     position: absolute;
     top: 0;
     width: 73px;
+    z-index: 3;
 }
 
 #recipe-video .time-icon {
@@ -3365,6 +3419,7 @@
     position: absolute;
     top: 2px;
     width: 11px;
+    z-index: 3;
 }
 
 #recipe-video .text-time {
@@ -3372,6 +3427,7 @@
     letter-spacing: 0;
     position: absolute;
     top: 0;
+    z-index: 3;
 }
 
 #recipe-video .back {
@@ -3381,14 +3437,22 @@
     top: 31px;
     width: 66px;
     cursor: pointer;
+    z-index: 3;
 }
 
 #recipe-video .rectangle-1 {
-    height: 103px;
+    /* height: 103px;
     left: 0;
     position: absolute;
     top: 0;
+    width: 360px; */
+    position: absolute;
     width: 360px;
+    height: 103px;
+    left: 0px;
+    top: 0px;
+    background: rgba(67, 67, 67, 0.5);
+    z-index: 2;
 }
 
 

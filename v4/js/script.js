@@ -254,12 +254,40 @@ $(document).ready(function() {
         $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_selected.svg");
     });
 
-    /*-- play video --*/
+    /* ------------- 
+
+    ##################################
+    ######### RECIPE VIDEO ###########
+    ################################## 
+
+    ---------------*/
+
+    /* -- play video */
     $(".play-icon").on('click', function() {
         $("#recipe-video").fadeIn();
+        $('#video-play').get(0).play()
+
+        // $('.myHTMLvideo').click(function() {
+        //     this.paused ? this.play() : this.pause();
+
         $("#recipe-cooking").fadeOut();
         $("#recipe-ingredients").fadeOut();
     });
+
+    /*-- back to main page --*/
+    $("#back-to-recipe").on('click', function() {
+        $("#recipe-video").fadeOut();
+        $("#recipe-ingredients").fadeIn();
+        $("#recipe-cooking").fadeOut();
+    });
+
+
+
+
+
+
+
+
 
 
 
@@ -278,129 +306,126 @@ $(document).ready(function() {
 //////////// functions to change diet type ////////////////////////
 
 function selectdietveggie() {
-    if(!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected")) {
-        if(!document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
-           
-                var selecteddiet = document.getElementById("vegeterian-option");
-                selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-                selecteddiet.classList.add("border-4px-green2---fdy-selected");
+    if (!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected")) {
+        if (!document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
 
-                var selecteddieticon = document.getElementById("vegeterian-option1");
-                selecteddieticon.src="src/svg/vegeterian-selected.svg";
+            var selecteddiet = document.getElementById("vegeterian-option");
+            selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+            selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
-                var selecteddietinprofile = document.getElementById("selected-diet-option");
-                selecteddietinprofile.src="src/svg/selected_diet_option.svg";
+            var selecteddieticon = document.getElementById("vegeterian-option1");
+            selecteddieticon.src = "src/svg/vegeterian-selected.svg";
+
+            var selecteddietinprofile = document.getElementById("selected-diet-option");
+            selecteddietinprofile.src = "src/svg/selected_diet_option.svg";
         }
     } else {
-        
+
         var selecteddiet = document.getElementById("vegeterian-option");
         selecteddiet.classList.remove("border-4px-green2---fdy-selected");
         selecteddiet.classList.add("border-4px-green2---fdy-unselected");
 
         var selecteddieticon = document.getElementById("vegeterian-option1");
-        selecteddieticon.src="src/svg/vegeterian.svg";
+        selecteddieticon.src = "src/svg/vegeterian.svg";
 
         var selecteddietinprofile = document.getElementById("selected-diet-option");
-        selecteddietinprofile.src="src/svg/no-diet-option.svg";
-        
+        selecteddietinprofile.src = "src/svg/no-diet-option.svg";
+
     }
 }
 
 
 function selectdietvegan() {
-    if(!document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")) {
-        if(!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
-            
-                var selecteddiet = document.getElementById("vegan-option");
-                selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-                selecteddiet.classList.add("border-4px-green2---fdy-selected");
+    if (!document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")) {
+        if (!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
 
-                var selecteddieticon = document.getElementById("vegan-option1");
-                selecteddieticon.src="src/svg/vegan-selected.svg";
+            var selecteddiet = document.getElementById("vegan-option");
+            selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+            selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
-                var selecteddietinprofile = document.getElementById("selected-diet-option");
-                selecteddietinprofile.src="src/svg/selected_diet_option_vegan.svg";
+            var selecteddieticon = document.getElementById("vegan-option1");
+            selecteddieticon.src = "src/svg/vegan-selected.svg";
+
+            var selecteddietinprofile = document.getElementById("selected-diet-option");
+            selecteddietinprofile.src = "src/svg/selected_diet_option_vegan.svg";
         }
     } else {
-        
+
         var selecteddiet = document.getElementById("vegan-option");
         selecteddiet.classList.remove("border-4px-green2---fdy-selected");
         selecteddiet.classList.add("border-4px-green2---fdy-unselected");
 
         var selecteddieticon = document.getElementById("vegan-option1");
-        selecteddieticon.src="src/svg/vegan.svg";
+        selecteddieticon.src = "src/svg/vegan.svg";
 
         var selecteddietinprofile = document.getElementById("selected-diet-option");
-        selecteddietinprofile.src="src/svg/no-diet-option.svg";
-        
+        selecteddietinprofile.src = "src/svg/no-diet-option.svg";
+
     }
 }
 
 function selectdietpesceterian() {
-    if(!document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
-        if(!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected") 
-            && !document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected")) {
-                
-                var selecteddiet = document.getElementById("pesceterian-option");
-                selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-                selecteddiet.classList.add("border-4px-green2---fdy-selected");
+    if (!document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
+        if (!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected")) {
 
-                var selecteddieticon = document.getElementById("pesceterian-option1");
-                selecteddieticon.src="src/svg/pescetarian-selected.svg";
+            var selecteddiet = document.getElementById("pesceterian-option");
+            selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+            selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
-                var selecteddietinprofile = document.getElementById("selected-diet-option");
-                selecteddietinprofile.src="src/svg/selected_diet_option_pesce.svg";
+            var selecteddieticon = document.getElementById("pesceterian-option1");
+            selecteddieticon.src = "src/svg/pescetarian-selected.svg";
+
+            var selecteddietinprofile = document.getElementById("selected-diet-option");
+            selecteddietinprofile.src = "src/svg/selected_diet_option_pesce.svg";
         }
     } else {
-        
+
         var selecteddiet = document.getElementById("pesceterian-option");
         selecteddiet.classList.remove("border-4px-green2---fdy-selected");
         selecteddiet.classList.add("border-4px-green2---fdy-unselected");
 
         var selecteddieticon = document.getElementById("pesceterian-option1");
-        selecteddieticon.src="src/svg/pesceterian.svg";
+        selecteddieticon.src = "src/svg/pesceterian.svg";
 
         var selecteddietinprofile = document.getElementById("selected-diet-option");
-        selecteddietinprofile.src="src/svg/no-diet-option.svg";
-        
+        selecteddietinprofile.src = "src/svg/no-diet-option.svg";
+
     }
 }
 
 function selectdietglutenfree() {
-    if(!document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected")) {
-        if(!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected")
-            && !document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
-            
-                var selecteddiet = document.getElementById("gluten-free-option");
-                selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
-                selecteddiet.classList.add("border-4px-green2---fdy-selected");
+    if (!document.getElementById("gluten-free-option").classList.contains("border-4px-green2---fdy-selected")) {
+        if (!document.getElementById("vegeterian-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("vegan-option").classList.contains("border-4px-green2---fdy-selected") &&
+            !document.getElementById("pesceterian-option").classList.contains("border-4px-green2---fdy-selected")) {
 
-                var selecteddieticon = document.getElementById("gluten-free-option1");
-                selecteddieticon.src="src/svg/glutenfree-selected.svg";
+            var selecteddiet = document.getElementById("gluten-free-option");
+            selecteddiet.classList.remove("border-4px-green2---fdy-unselected");
+            selecteddiet.classList.add("border-4px-green2---fdy-selected");
 
-                var selecteddietinprofile = document.getElementById("selected-diet-option");
-                selecteddietinprofile.src="src/svg/selected_diet_option_gluten.svg";
+            var selecteddieticon = document.getElementById("gluten-free-option1");
+            selecteddieticon.src = "src/svg/glutenfree-selected.svg";
+
+            var selecteddietinprofile = document.getElementById("selected-diet-option");
+            selecteddietinprofile.src = "src/svg/selected_diet_option_gluten.svg";
         }
     } else {
-        
+
         var selecteddiet = document.getElementById("gluten-free-option");
         selecteddiet.classList.remove("border-4px-green2---fdy-selected");
         selecteddiet.classList.add("border-4px-green2---fdy-unselected");
 
         var selecteddieticon = document.getElementById("gluten-free-option1");
-        selecteddieticon.src="src/svg/glutenfree.svg";
+        selecteddieticon.src = "src/svg/glutenfree.svg";
 
         var selecteddietinprofile = document.getElementById("selected-diet-option");
-        selecteddietinprofile.src="src/svg/no-diet-option.svg";
-        
+        selecteddietinprofile.src = "src/svg/no-diet-option.svg";
+
     }
 }
-
-
-

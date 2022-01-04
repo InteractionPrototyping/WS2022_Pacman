@@ -1637,12 +1637,16 @@
             <section id="recipe-video">
                 <div class="overlap-group4">
                     <!-- background style -->
-                    <img clas="video-preview" alt="video preview" src="src/img/pumpkin_soup_recipe/video_preview.png" />
-                    <img class="play-icon" onclick="" src="src/svg/play_icon.svg" />
+                    <!-- <img clas="video-preview" alt="video preview" src="src/img/pumpkin_soup_recipe/video_preview.png" /> -->
+                    <video id="video-play" width="320" height="240" controls>
+                        <source src="src/video/pumpkin-soup.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                    <!-- <img class="play-icon" src="src/svg/play_icon.svg" /> -->
                     <!-- recipe data -->
-                    <img class="rectangle-1" src="src/img/Rectangle 1.png" />
+                    <div class="rectangle-1"> </div>
                     <div class="overlap-group-back">
-                        <img class="back back-icon" src="src/svg/back_arrow.svg" />
+                        <img class="back back-icon" id="back-to-recipe" src="src/svg/back_arrow.svg" />
                     </div>
                     <div class="data">
                         <div class="pumpkin-soup inter-fontweight500-white-16px">PUMPKIN SOUP</div>
@@ -1658,7 +1662,6 @@
 
                         </div>
                     </div>
-
 
                     <!-- navigation bar -->
                     <div class="tab-bar">
@@ -1682,11 +1685,7 @@
                         </div>
                     </div>
                     <!-- android bottom bar -->
-                    <div class="bottom-bar">
-                        <img class="menu-bottom-bar" src="src/svg/III_android_bottom_bar.svg">
-                        <img class="x2" src="src/svg/circle_android_bottom_bar.svg">
-                        <img class="back" src="src/svg/back_android_bottom_bar.svg">
-                    </div>
+                    <img class="bottom-bar-video" src="src/svg/bottom_bar.svg" />
 
                 </div>
 
