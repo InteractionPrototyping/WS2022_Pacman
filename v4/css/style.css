@@ -2803,6 +2803,7 @@
 #recipe-ingredients .ingredient-icon {
     height: 86px;
     width: 86px;
+    cursor: pointer;
 }
 
 #recipe-ingredients .ingredient-text {

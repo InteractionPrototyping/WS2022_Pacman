@@ -461,3 +461,10 @@ function selectdietglutenfree() {
 
     }
 }
+
+////////////// functions to deselect ingredients ///////////////////
+
+function deselectIngredientA() {
+    var ingrToBeDeselected = document.getElementById("ingredient-icon-a");
+    ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/pumpkin_deselected.png ";
+}
