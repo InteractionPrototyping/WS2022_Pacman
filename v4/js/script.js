@@ -254,6 +254,23 @@ $(document).ready(function() {
         $("#info-what-you-need").hide("slow");
     });
 
+    /*--update recipe after deselecting ingredient --*/
+    
+    setTimeout(function() {
+        $('.ingredient-a').on('click', function() {
+            setTimeout(function() {
+                $("#recipe-ingredients").fadeOut();
+                $("#updating-recipes").fadeIn(function() {
+                    setTimeout(function() {
+                        $("#main").fadeIn();
+                        $("#updating-recipes").fadeOut();
+                    }, 6000); // this will call the function after 6 sec.
+                });
+            }, 2000);
+        });
+    });
+    
+
     /*-- to lets cook page --*/
     $(".lets-cook").on('click', function() {
         $("#recipe-cooking").fadeIn();
@@ -464,7 +481,35 @@ function selectdietglutenfree() {
 
 ////////////// functions to deselect ingredients ///////////////////
 
-function deselectIngredientA() {
+function deselectIngredient1() {
     var ingrToBeDeselected = document.getElementById("ingredient-icon-a");
-    ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/pumpkin_deselected.png ";
+    if(!ingrToBeDeselected.classList.contains("deselected")) {
+        ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/pumpkin_deselected.png ";
+        ingrToBeDeselected.classList.add("deselected");
+    } else {
+        ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/pumpkin.png ";
+        ingrToBeDeselected.classList.remove("deselected");
+    }
+}
+
+function deselectIngredient2() {
+    var ingrToBeDeselected = document.getElementById("ingredient-icon-a2");
+    if(!ingrToBeDeselected.classList.contains("deselected")) {
+        ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/onion_deselected.png ";
+        ingrToBeDeselected.classList.add("deselected");
+    } else {
+        ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/onion.png ";
+        ingrToBeDeselected.classList.remove("deselected");
+    }
+}
+
+function deselectIngredient3() {
+    var ingrToBeDeselected = document.getElementById("ingredient-icon-a3");
+    if(!ingrToBeDeselected.classList.contains("deselected")) {
+        ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/garlic_deselected.png ";
+        ingrToBeDeselected.classList.add("deselected");
+    } else {
+        ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/garlic.png ";
+        ingrToBeDeselected.classList.remove("deselected");
+    }
 }
