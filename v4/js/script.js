@@ -286,10 +286,27 @@ $(document).ready(function() {
     });
 
     /*-- like recipe (& save it in cookbook) --*/
-    $(".like-option").on('click', function() {
-        $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_selected.svg");
-        $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_selected.svg");
+    $(".like").on('click', function() {
+        if($("#like-big-ingredients").attr('src') != "src/svg/heart_circle_big_selected.svg") {
+            $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_selected.svg");
+        } else {
+            $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_unselected.svg");
+        }
+
+        if($("#like-big-cooking").attr('src') != "src/svg/heart_circle_big_selected.svg") {
+            $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_selected.svg");
+        } else {
+            $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_unselected.svg");
+        }
+
+        if($(".like-small").attr('src') != "src/svg/heart_circle_small_selected.svg") {
+            $(".like-small").attr('src', "src/svg/heart_circle_small_selected.svg");
+        } else {
+            $(".like-small").attr('src', "src/svg/heart_circle_small_unselected.svg");
+        }
     });
+
+
 
     /* ------------- 
 
