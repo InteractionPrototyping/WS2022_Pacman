@@ -301,6 +301,18 @@ $(document).ready(function() {
         $("#recipe-cooking").fadeOut();
     });
 
+    /*-----------------
+
+    ##################################
+    ######### USER PROFILE ###########
+    ################################## 
+            
+    ----------------> */
+
+    /*-- go to Instagram --*/
+    $("#instagram-link").on('click', function() {
+        window.location.href = 'https://www.instagram.com/foodiyo_app/';
+    });
 
 
 
@@ -449,4 +461,3 @@ function selectdietglutenfree() {
 
     }
 }
-

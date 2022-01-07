@@ -460,6 +460,23 @@
     background: #E0E0E0;
 }
 
+#pantry-selection-cereals .bottom-bar {
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    height: 42px;
+    /* padding: 0 72px; */
+    width: 360px;
+    top: 721px;
+    /* top: 721px; */
+    left: 0px;
+    /* top: 831px; */
+    /* left: 76px; */
+    /* Gray 5 */
+    background: #E0E0E0;
+}
+
 .bottom-bar .menu-bottom-bar {
     display: flex;
     align-items: center;
@@ -3187,7 +3204,7 @@
     display: flex;
     /* height: 760px;
     width: 360px; */
-    z-index: 100; 
+    z-index: 100;
 }
 
 #info-what-you-need .info-what-you-need-container {
