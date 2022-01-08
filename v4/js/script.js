@@ -254,7 +254,7 @@ $(document).ready(function() {
         $("#info-what-you-need").hide("slow");
     });
 
-    /*--update recipe after deselecting ingredient --*/
+    /*--update recipes after deselecting ingredient --*/
     
     setTimeout(function() {
         $('.ingredient-a').on('click', function() {
@@ -289,20 +289,26 @@ $(document).ready(function() {
     $(".like").on('click', function() {
         if($("#like-big-ingredients").attr('src') != "src/svg/heart_circle_big_selected.svg") {
             $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_selected.svg");
+            $("#like-big-ingredients").addClass("liked");
         } else {
             $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_unselected.svg");
+            $("#like-big-ingredients").removeClass("liked");
         }
 
         if($("#like-big-cooking").attr('src') != "src/svg/heart_circle_big_selected.svg") {
             $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_selected.svg");
+            $("#like-big-ingredients").addClass("liked");
         } else {
             $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_unselected.svg");
+            $("#like-big-ingredients").removeClass("liked");
         }
 
         if($(".like-small").attr('src') != "src/svg/heart_circle_small_selected.svg") {
             $(".like-small").attr('src', "src/svg/heart_circle_small_selected.svg");
+            $("#like-big-ingredients").addClass("liked");
         } else {
             $(".like-small").attr('src', "src/svg/heart_circle_small_unselected.svg");
+            $("#like-big-ingredients").removeClass("liked");
         }
     });
 
@@ -528,5 +534,27 @@ function deselectIngredient3() {
     } else {
         ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/garlic.png ";
         ingrToBeDeselected.classList.remove("deselected");
+    }
+}
+
+
+///////////// function to save recipe in cookbook if favorite //////////////////
+
+function saveInCookbook() {
+    var favoriteRecipe = document.getElementById("like-big-ingredients");
+    if(!favoriteRecipe.classList.contains("liked")) {
+        document.getElementById("save-recipes-here").innerHTML = "";
+        document.getElementById("save-recipes-here").innerHTML += 
+        '<div class="dish-suggestions">' +
+        '<div class="dish-field">' +
+            '<img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />' +
+            '<div class="text-dish-container">' +
+                '<span class="inter-medium-white-9px">Pumpkin soup</span>' +
+            '</div>' +
+        '</div>' +
+        '<img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />' +
+        '</div>';
+    } else {
+        document.getElementById("save-recipes-here").innerHTML = "";
     }
 }

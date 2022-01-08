@@ -468,7 +468,7 @@
                                                     <span class="inter-medium-white-9px">Pumpkin soup</span>
                                                 </div>
                                             </div>
-                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" />
+                                            <img class="favorite-button-circle like like-small" alt="favorite button" src="src/svg/heart_circle_small_unselected.svg" onclick="saveInCookbook()"/>
                                         </div>
                                         <div class="dish-suggestions">
                                             <div class="dish-field">
@@ -1122,7 +1122,7 @@
                             <div class="rect-dish2">
                                 <img class="favorite-button" alt="favorite" src="src/svg/heart_medium_filled.svg" />
                                 <span class="inter-fontweight500-white-16px text-8">dinner recipes</span>
-                                <div class="dish-suggestion-container">
+                                <div class="dish-suggestion-container" id="save-recipes-here">
                                     <div class="dish-suggestions">
                                         <div class="dish-field">
                                             <img class="dish-pic" alt="picture of dish" src="src/img/salad_bread.png" />
@@ -1746,7 +1746,7 @@
                     <div class="overlap-group-back">
                         <img class="back-icon" src="src/svg/back_arrow.svg" />
                     </div>
-                    <div class="like-option like">
+                    <div class="like-option like" onclick="saveInCookbook()">
                         <img class="like-icon" id="like-big-cooking" src="src/svg/heart_circle_big_unselected.svg" />
                     </div>
 
@@ -1884,7 +1884,7 @@
                     <div class="overlap-group-back ">
                         <img class="back-icon" id="back-to-main" src="src/svg/back_arrow.svg" />
                     </div>
-                    <div class="like-option like">
+                    <div class="like-option like" onclick="saveInCookbook()">
                         <img class="like-icon" id="like-big-ingredients" src="src/svg/heart_circle_big_unselected.svg" />
                     </div>
 
