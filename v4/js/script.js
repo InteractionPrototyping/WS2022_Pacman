@@ -177,6 +177,47 @@ $(document).ready(function() {
         $("#pantry-selection-cereals").hide();
     });
 
+    //functions to select ingredients in pantry for first 3 ingredients
+
+    $('.ingr-option').on('click', function() {
+        if(!$('.ingr-option').hasClass("ingredient-options-white")) {
+
+            $('.ingr-option').removeClass("ingredient-options");
+            $('.ingr-pantry').removeClass("invisible");
+            $('.ingr-option').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option').removeClass("ingredient-options-white");
+            $('.ingr-option').addClass("ingredient-options");
+            $('.ingr-pantry').addClass("invisible");
+        }
+    });
+
+    $('.ingr-option1').on('click', function() {
+        if(!$('.ingr-option1').hasClass("ingredient-options-white")) {
+
+            $('.ingr-option1').removeClass("ingredient-options");
+            $('.ingr-pantry1').removeClass("invisible");
+            $('.ingr-option1').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option1').removeClass("ingredient-options-white");
+            $('.ingr-option1').addClass("ingredient-options");
+            $('.ingr-pantry1').addClass("invisible");
+        }
+    });
+
+    $('.ingr-option2').on('click', function() {
+        if(!$('.ingr-option2').hasClass("ingredient-options-white")) {
+
+            $('.ingr-option2').removeClass("ingredient-options");
+            $('.ingr-pantry2').removeClass("invisible");
+            $('.ingr-option2').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option2').removeClass("ingredient-options-white");
+            $('.ingr-option2').addClass("ingredient-options");
+            $('.ingr-pantry2').addClass("invisible");
+        }
+    });
+
     /* ------------- 
 
     ############################################

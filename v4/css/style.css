@@ -460,22 +460,6 @@
     background: #E0E0E0;
 }
 
-#pantry-selection-cereals .bottom-bar {
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    display: flex;
-    height: 42px;
-    /* padding: 0 72px; */
-    width: 360px;
-    top: 721px;
-    /* top: 721px; */
-    left: 0px;
-    /* top: 831px; */
-    /* left: 76px; */
-    /* Gray 5 */
-    background: #E0E0E0;
-}
 
 .bottom-bar .menu-bottom-bar {
     display: flex;
@@ -1361,6 +1345,11 @@
     border-radius: 6px;
     background-color: #FFFFFF;
     font-size: 9pt;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
 }
 
 .ingredient-container-pantry {
