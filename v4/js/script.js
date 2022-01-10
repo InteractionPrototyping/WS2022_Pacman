@@ -277,6 +277,10 @@ $(document).ready(function() {
                     setTimeout(function() {
                         $("#main").fadeIn();
                         $("#updating-recipes").fadeOut();
+                        $("#add-pantry").addClass("button-add-to-pantry");
+                        $("#add-pantry").removeClass("invisible");
+                        $("#pantry-added").addClass("invisible");
+                        $("#pantry-added").removeClass("button-added-to-pantry");
                     }, 6000); // this will call the function after 6 sec.
                 });
             }, 2000);
