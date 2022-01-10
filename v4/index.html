@@ -534,31 +534,32 @@
                                 <div class="text-15"><span class="inter-fontweight500-white-16px">Do you have?</span></div>
                                 <div class="ingredient-container-main">
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-selected">olive oil</span>
+                                        <span class="ingredient-options ingr-option4">olive oil</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">brown rice</span>
+                                        <span class="ingredient-options ingr-option3">cream</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">eggs</span>
+                                        <span class="ingredient-options ingr-option5">eggs</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">pasta</span>
+                                        <span class="ingredient-options">pasta</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">rice</span>
+                                        <span class="ingredient-options">rice</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">breakfast cereal</span>
+                                        <span class="ingredient-options">breakfast cereal</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">risotto rice</span>
+                                        <span class="ingredient-options">risotto rice</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-main">heavy cream</span>
+                                        <span class="ingredient-options">heavy cream</span>
                                     </div>
                                 </div>
-                                <div class="button-add-to-pantry"><span class="text-14 inter-medium-white-14px">add to my pantry</span></div>
+                                <div class="button-add-to-pantry" id="add-pantry"><span class="text-14 inter-medium-white-14px">add to my pantry</span></div>
+                                <div class="invisible" id="pantry-added"><img alt="checkbox" src="src/svg/Checkbox.svg"><span class="text-14 inter-medium-white-14px">added to your pantry</span></div>
                             </div>
 
                             <div class="container-dishes">
@@ -1256,22 +1257,23 @@
                                 <img class="open1" id="open-ingredient-options" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
                             </div>
                         </div>
-                        <!--
-                        <div class="container-padding1">
+                        
+                        <div class="container-padding1 invisible" id="diaries">
                             <div class="category-container-selected-pantry">
                                 <span class="text-3-if-selected inter-medium-white-16px">diaries</span>
                                 <img class="food-icon-if-selected" alt="diaries img" src="src/img/dairies.png" />
 
                                 <div class="ingredient-container-pantry">
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-white">rolled oats</span>
+                                        <span class="invisible ingr-option3 ingr-pantry3">cream</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-white">rice</span>
+                                        <span class="invisible ingr-option4 ingr-pantry4">olive oil</span>
                                     </div>
                                     <div class="ingredient-padding">
-                                        <span class="ingredient-options-white">quinoa</span>
+                                        <span class="invisible ingr-option5 ingr-pantry5">eggs</span>
                                     </div>
+                                    <!--
                                     <div class="ingredient-padding">
                                         <span class="ingredient-options-white">risotto</span>
                                     </div>
@@ -1299,12 +1301,13 @@
                                     <div class="ingredient-padding">
                                         <span class="ingredient-options-white">grünkern</span>
                                     </div>
+                                -->
                                 </div>
 
                                 <img class="open1" alt="click to see more" src="src/svg/open_icon.svg" onlick="" />
                             </div>
                         </div>
-
+                        <!--
                         <div class="container-padding1">
                             <div class="category-container-selected-pantry">
                                 <span class="text-3-if-selected inter-medium-white-16px">fish and seafood</span>

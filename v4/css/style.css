@@ -1267,6 +1267,7 @@
     box-sizing: border-box;
     border-radius: 6px;
     font-size: 9pt;
+    cursor: pointer;
 }
 
 
@@ -1981,6 +1982,7 @@
     border-radius: 6px;
     font-size: 9pt;
     align-items: center;
+    cursor: pointer;
 }
 
 .do-you-have-rect {
@@ -2011,6 +2013,19 @@
     background: var(--green---fdy);
     border-radius: 16px;
     cursor: pointer;
+}
+
+.button-added-to-pantry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    width: 180px;
+    height: 21px;
+    left: 53px;
+    top: 125px;
 }
 
 .button-add-to-pantry:hover {

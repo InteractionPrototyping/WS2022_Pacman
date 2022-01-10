@@ -218,6 +218,71 @@ $(document).ready(function() {
         }
     });
 
+    /////// do you have (dinner section) ///////
+    $('#add-pantry').on('click', function() {
+        $("#add-pantry").removeClass("button-add-to-pantry");
+        $("#add-pantry").addClass("invisible");
+        $("#pantry-added").removeClass("invisible");
+        $("#pantry-added").addClass("button-added-to-pantry");
+
+    });
+
+    $('.ingr-option3').on('click', function() {
+        if(!$('.ingr-option3').hasClass("ingredient-options-white")) {
+            $('#diaries').removeClass("invisible");
+            $('.ingr-option3').removeClass("ingredient-options");
+            $('.ingr-pantry3').removeClass("invisible");
+            $('.ingr-option3').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option3').removeClass("ingredient-options-white");
+            $('.ingr-option3').addClass("ingredient-options");
+            $('.ingr-pantry3').addClass("invisible");
+
+        }
+    });
+
+    $('.ingr-option4').on('click', function() {
+        if(!$('.ingr-option4').hasClass("ingredient-options-white")) {
+            $('#diaries').removeClass("invisible");
+            $('.ingr-option4').removeClass("ingredient-options");
+            $('.ingr-pantry4').removeClass("invisible");
+            $('.ingr-option4').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option4').removeClass("ingredient-options-white");
+            $('.ingr-option4').addClass("ingredient-options");
+            $('.ingr-pantry4').addClass("invisible");
+        }
+    });
+
+    $('.ingr-option5').on('click', function() {
+        if(!$('.ingr-option5').hasClass("ingredient-options-white")) {
+            $('#diaries').removeClass("invisible");
+            $('.ingr-option5').removeClass("ingredient-options");
+            $('.ingr-pantry5').removeClass("invisible");
+            $('.ingr-option5').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option5').removeClass("ingredient-options-white");
+            $('.ingr-option5').addClass("ingredient-options");
+            $('.ingr-pantry5').addClass("invisible");
+        }
+    });
+
+    /*--update recipes after adding ingredient to pantry --*/
+    
+    setTimeout(function() {
+        $('#add-pantry').on('click', function() {
+            setTimeout(function() {
+                $("#main").fadeOut();
+                $("#updating-recipes").fadeIn(function() {
+                    setTimeout(function() {
+                        $("#main").fadeIn();
+                        $("#updating-recipes").fadeOut();
+                    }, 6000); // this will call the function after 6 sec.
+                });
+            }, 2000);
+        });
+    });
+
     /* ------------- 
 
     ############################################
