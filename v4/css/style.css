@@ -460,7 +460,6 @@
     background: #E0E0E0;
 }
 
-
 .bottom-bar .menu-bottom-bar {
     display: flex;
     align-items: center;
@@ -3273,6 +3272,167 @@
     margin-left: 0px;
     margin-top: 36px;
     min-height: 121px;
+    width: 253px;
+}
+
+
+/* ------------- 
+
+##################################
+###########  HELP  ###############
+######### DO YOU HAVE? ###########
+################################## 
+
+---------------*/
+
+#remove-ingredient {
+    align-items: flex-start;
+    background-color: var(--black-2);
+    display: flex;
+    /* height: 760px;
+    width: 360px; */
+    z-index: 100;
+}
+
+#remove-ingredient .remove-ingredient-info {
+    background-color: var(--darkgrey);
+    border-radius: 50px;
+    min-height: 200px;
+    left: 10px;
+    padding: 30px 15px;
+    position: absolute;
+    /* top: calc(50vh - 136.0px); */
+    height: 530px;
+    width: 320px;
+    z-index: 1;
+}
+
+
+/* #remove-ingredient {
+    align-items: center;
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    padding: 27px 20px;
+    width: 320px;
+    z-index: 100;
+} */
+
+#remove-ingredient .flex-row {
+    align-items: flex-start;
+    align-self: flex-end;
+    display: flex;
+    height: 53px;
+    min-width: 269px;
+}
+
+#remove-ingredient .remove-ingredient-heading {
+    align-self: flex-end;
+    letter-spacing: 0;
+    min-height: 44px;
+    width: 220px;
+}
+
+#remove-ingredient .overlap-group-close {
+    align-items: flex-start;
+    background-size: 100% 100%;
+    display: flex;
+    min-width: 50px;
+}
+
+#remove-ingredient .close {
+    /* cursor: pointer;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    height: 50px;
+    min-width: 50px; */
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    margin-left: 7px;
+    min-width: 42px;
+}
+
+#remove-ingredient .overlap-group-close {
+    align-items: flex-start;
+    background-size: 100% 100%;
+    display: flex;
+    min-width: 50px;
+}
+
+#remove-ingredient .alternatives {
+    align-items: flex-start;
+    display: flex;
+    height: 114px;
+    margin-left: 1.0px;
+    margin-top: 26px;
+    min-width: 263px;
+}
+
+#remove-ingredient .alternative1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 114px;
+    width: 83px;
+}
+
+#remove-ingredient .alternative2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-top: 0;
+    min-height: 114px;
+    width: 83px;
+}
+
+#remove-ingredient .alternative3 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-top: 0;
+    min-height: 114px;
+    width: 83px;
+}
+
+#remove-ingredient .pumpkin-1 {
+    height: 82px;
+    margin-left: -0.32px;
+    width: 82px;
+}
+
+#remove-ingredient .pumpkin-2 {
+    height: 82px;
+    margin-left: -0.82px;
+    width: 83px;
+}
+
+#remove-ingredient .pumpkin-3 {
+    height: 82px;
+    margin-right: 2.0px;
+    width: 82px;
+}
+
+#remove-ingredient .alternative-text {
+    letter-spacing: 0;
+    margin-left: 4.73px;
+    margin-top: 2px;
+    min-height: 30px;
+    text-align: center;
+    width: 72px;
+}
+
+#remove-ingredient .text-do-you-have2 {
+    letter-spacing: 0;
+    margin-left: 1.0px;
+    margin-top: 43px;
+    min-height: 54px;
     width: 253px;
 }
 

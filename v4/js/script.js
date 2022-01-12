@@ -13,6 +13,7 @@ $(document).ready(function() {
     $("#recipe-cooking").hide();
     $("#recipe-ingredients").hide();
     $("#info-what-you-need").hide();
+    $("#remove-ingredient").hide();
     $("#recipe-video").hide();
     $("#you-are-set").hide();
     $("#updating-recipes").hide();
@@ -180,7 +181,7 @@ $(document).ready(function() {
     //functions to select ingredients in pantry for first 3 ingredients
 
     $('.ingr-option').on('click', function() {
-        if(!$('.ingr-option').hasClass("ingredient-options-white")) {
+        if (!$('.ingr-option').hasClass("ingredient-options-white")) {
 
             $('.ingr-option').removeClass("ingredient-options");
             $('.ingr-pantry').removeClass("invisible");
@@ -193,7 +194,7 @@ $(document).ready(function() {
     });
 
     $('.ingr-option1').on('click', function() {
-        if(!$('.ingr-option1').hasClass("ingredient-options-white")) {
+        if (!$('.ingr-option1').hasClass("ingredient-options-white")) {
 
             $('.ingr-option1').removeClass("ingredient-options");
             $('.ingr-pantry1').removeClass("invisible");
@@ -206,7 +207,7 @@ $(document).ready(function() {
     });
 
     $('.ingr-option2').on('click', function() {
-        if(!$('.ingr-option2').hasClass("ingredient-options-white")) {
+        if (!$('.ingr-option2').hasClass("ingredient-options-white")) {
 
             $('.ingr-option2').removeClass("ingredient-options");
             $('.ingr-pantry2').removeClass("invisible");
@@ -228,7 +229,7 @@ $(document).ready(function() {
     });
 
     $('.ingr-option3').on('click', function() {
-        if(!$('.ingr-option3').hasClass("ingredient-options-white")) {
+        if (!$('.ingr-option3').hasClass("ingredient-options-white")) {
             $('#diaries').removeClass("invisible");
             $('.ingr-option3').removeClass("ingredient-options");
             $('.ingr-pantry3').removeClass("invisible");
@@ -242,7 +243,7 @@ $(document).ready(function() {
     });
 
     $('.ingr-option4').on('click', function() {
-        if(!$('.ingr-option4').hasClass("ingredient-options-white")) {
+        if (!$('.ingr-option4').hasClass("ingredient-options-white")) {
             $('#diaries').removeClass("invisible");
             $('.ingr-option4').removeClass("ingredient-options");
             $('.ingr-pantry4').removeClass("invisible");
@@ -255,7 +256,7 @@ $(document).ready(function() {
     });
 
     $('.ingr-option5').on('click', function() {
-        if(!$('.ingr-option5').hasClass("ingredient-options-white")) {
+        if (!$('.ingr-option5').hasClass("ingredient-options-white")) {
             $('#diaries').removeClass("invisible");
             $('.ingr-option5').removeClass("ingredient-options");
             $('.ingr-pantry5').removeClass("invisible");
@@ -268,7 +269,7 @@ $(document).ready(function() {
     });
 
     /*--update recipes after adding ingredient to pantry --*/
-    
+
     setTimeout(function() {
         $('#add-pantry').on('click', function() {
             setTimeout(function() {
@@ -364,8 +365,12 @@ $(document).ready(function() {
         $("#info-what-you-need").hide("slow");
     });
 
+    $("#close-remove-ingredient").on("click", function() {
+        $("#info-what-you-need").hide("slow");
+    });
+
     /*--update recipes after deselecting ingredient --*/
-    
+
     setTimeout(function() {
         $('.ingredient-a').on('click', function() {
             setTimeout(function() {
@@ -379,7 +384,7 @@ $(document).ready(function() {
             }, 2000);
         });
     });
-    
+
 
     /*-- to lets cook page --*/
     $(".lets-cook").on('click', function() {
@@ -397,7 +402,7 @@ $(document).ready(function() {
 
     /*-- like recipe (& save it in cookbook) --*/
     $(".like").on('click', function() {
-        if($("#like-big-ingredients").attr('src') != "src/svg/heart_circle_big_selected.svg") {
+        if ($("#like-big-ingredients").attr('src') != "src/svg/heart_circle_big_selected.svg") {
             $("#like-big-ingredients").attr('src', "src/svg/heart_circle_big_selected.svg");
             $("#like-big-ingredients").addClass("liked");
         } else {
@@ -405,7 +410,7 @@ $(document).ready(function() {
             $("#like-big-ingredients").removeClass("liked");
         }
 
-        if($("#like-big-cooking").attr('src') != "src/svg/heart_circle_big_selected.svg") {
+        if ($("#like-big-cooking").attr('src') != "src/svg/heart_circle_big_selected.svg") {
             $("#like-big-cooking").attr('src', "src/svg/heart_circle_big_selected.svg");
             $("#like-big-ingredients").addClass("liked");
         } else {
@@ -413,7 +418,7 @@ $(document).ready(function() {
             $("#like-big-ingredients").removeClass("liked");
         }
 
-        if($(".like-small").attr('src') != "src/svg/heart_circle_small_selected.svg") {
+        if ($(".like-small").attr('src') != "src/svg/heart_circle_small_selected.svg") {
             $(".like-small").attr('src', "src/svg/heart_circle_small_selected.svg");
             $("#like-big-ingredients").addClass("liked");
         } else {
@@ -616,7 +621,7 @@ function selectdietglutenfree() {
 
 function deselectIngredient1() {
     var ingrToBeDeselected = document.getElementById("ingredient-icon-a");
-    if(!ingrToBeDeselected.classList.contains("deselected")) {
+    if (!ingrToBeDeselected.classList.contains("deselected")) {
         ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/pumpkin_deselected.png ";
         ingrToBeDeselected.classList.add("deselected");
     } else {
@@ -627,7 +632,7 @@ function deselectIngredient1() {
 
 function deselectIngredient2() {
     var ingrToBeDeselected = document.getElementById("ingredient-icon-a2");
-    if(!ingrToBeDeselected.classList.contains("deselected")) {
+    if (!ingrToBeDeselected.classList.contains("deselected")) {
         ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/onion_deselected.png ";
         ingrToBeDeselected.classList.add("deselected");
     } else {
@@ -638,7 +643,7 @@ function deselectIngredient2() {
 
 function deselectIngredient3() {
     var ingrToBeDeselected = document.getElementById("ingredient-icon-a3");
-    if(!ingrToBeDeselected.classList.contains("deselected")) {
+    if (!ingrToBeDeselected.classList.contains("deselected")) {
         ingrToBeDeselected.src = "src/img/pumpkin_soup_recipe/garlic_deselected.png ";
         ingrToBeDeselected.classList.add("deselected");
     } else {
@@ -652,18 +657,18 @@ function deselectIngredient3() {
 
 function saveInCookbook() {
     var favoriteRecipe = document.getElementById("like-big-ingredients");
-    if(!favoriteRecipe.classList.contains("liked")) {
+    if (!favoriteRecipe.classList.contains("liked")) {
         document.getElementById("save-recipes-here").innerHTML = "";
-        document.getElementById("save-recipes-here").innerHTML += 
-        '<div class="dish-suggestions">' +
-        '<div class="dish-field">' +
+        document.getElementById("save-recipes-here").innerHTML +=
+            '<div class="dish-suggestions">' +
+            '<div class="dish-field">' +
             '<img class="dish-pic" alt="picture of dish" src="src/img/pumpkin_soup.png" />' +
             '<div class="text-dish-container">' +
-                '<span class="inter-medium-white-9px">Pumpkin soup</span>' +
+            '<span class="inter-medium-white-9px">Pumpkin soup</span>' +
             '</div>' +
-        '</div>' +
-        '<img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />' +
-        '</div>';
+            '</div>' +
+            '<img class="favorite-button-circle" alt="favorite button" src="src/svg/heart_circle_small_selected.svg" />' +
+            '</div>';
     } else {
         document.getElementById("save-recipes-here").innerHTML = "";
     }
