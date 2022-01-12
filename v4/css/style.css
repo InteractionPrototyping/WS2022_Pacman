@@ -288,6 +288,31 @@
     left: 181px;
 }
 
+.button-green-remove-ingredient {
+    align-items: center;
+    align-self: center;
+    background-color: var(--green---fdy);
+    border-radius: 16px;
+    display: flex;
+    height: 62px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.button-green-remove-ingredient:hover {
+    background-color: var(--green2---fdy);
+}
+
+.position-button-remove-ingredient {
+    display: flex;
+    position: center;
+    justify-content: center;
+    /* position: relative;
+    top: 830px;
+    width: 100px;
+    left: 181px; */
+}
+
 #select-diet .button-pos {
     position: relative;
     width: 100px;
@@ -2688,6 +2713,7 @@
     margin-left: 7.0px;
     margin-top: 14px;
     min-width: 186px;
+    margin-bottom: 30px;
 }
 
 #recipe-ingredients .minus {
@@ -2738,6 +2764,7 @@
     margin-left: 2px;
     margin-top: 18px;
     min-width: 301px;
+    margin-top: 20px;
 }
 
 #recipe-ingredients .flex-col {
@@ -2751,6 +2778,7 @@
 #recipe-ingredients .what-you-need {
     letter-spacing: 1.00px;
     min-height: 19px;
+    margin-bottom: 10px;
 }
 
 #recipe-ingredients .flex-row-1 {
@@ -2759,6 +2787,7 @@
     height: 241px;
     margin-top: 34px;
     min-width: 192px;
+    margin-top: 50px;
 }
 
 #recipe-ingredients .flex-col-1 {
@@ -2817,11 +2846,12 @@
     font-weight: 400;
     letter-spacing: 0;
     margin-right: 2.0px;
-    margin-top: 2px;
+    margin-top: 8px;
     /* min-height: 32px;
     width: 74px; */
     text-align: center;
     width: 110px;
+    line-height: 20px;
 }
 
 #recipe-ingredients .img-recipe {
@@ -2837,7 +2867,7 @@
     display: flex;
     flex-direction: column;
     left: 104px;
-    height: 270px;
+    height: 300px;
     position: absolute;
     top: 458px;
     width: 299px;
@@ -3071,7 +3101,7 @@
 #recipe-ingredients .info {
     left: 250px;
     position: absolute;
-    top: 93px;
+    top: 100px;
 }
 
 #recipe-ingredients .info-icon {
@@ -3287,12 +3317,13 @@
 ---------------*/
 
 #remove-ingredient {
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     background-color: var(--black-2);
     display: flex;
     /* height: 760px;
     width: 360px; */
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 #remove-ingredient .remove-ingredient-info {
@@ -3300,12 +3331,12 @@
     border-radius: 50px;
     min-height: 200px;
     left: 10px;
-    padding: 30px 15px;
+    padding: 30px 10px 40px 30px;
     position: absolute;
-    /* top: calc(50vh - 136.0px); */
-    height: 530px;
-    width: 320px;
-    z-index: 1;
+    top: calc(30vh - 136.0px);
+    height: 450px;
+    width: 290px;
+    /* z-index: 1; */
 }
 
 
@@ -3343,19 +3374,19 @@
 }
 
 #remove-ingredient .close {
-    /* cursor: pointer;
+    cursor: pointer;
     position: absolute;
     left: 250px;
-    top: 20px;
+    top: 30px;
     height: 50px;
-    min-width: 50px; */
-    align-items: flex-start;
+    min-width: 50px;
+    /* align-items: flex-start;
     cursor: pointer;
     display: flex;
     height: 42px;
     justify-content: center;
     margin-left: 7px;
-    min-width: 42px;
+    min-width: 42px; */
 }
 
 #remove-ingredient .overlap-group-close {
@@ -3380,6 +3411,7 @@
     flex-direction: column;
     min-height: 114px;
     width: 83px;
+    cursor: pointer;
 }
 
 #remove-ingredient .alternative2 {
@@ -3390,6 +3422,7 @@
     margin-top: 0;
     min-height: 114px;
     width: 83px;
+    cursor: pointer;
 }
 
 #remove-ingredient .alternative3 {
@@ -3400,24 +3433,28 @@
     margin-top: 0;
     min-height: 114px;
     width: 83px;
+    cursor: pointer;
 }
 
 #remove-ingredient .pumpkin-1 {
     height: 82px;
     margin-left: -0.32px;
     width: 82px;
+    margin-bottom: 10px;
 }
 
 #remove-ingredient .pumpkin-2 {
     height: 82px;
     margin-left: -0.82px;
     width: 83px;
+    margin-bottom: 10px;
 }
 
 #remove-ingredient .pumpkin-3 {
     height: 82px;
     margin-right: 2.0px;
     width: 82px;
+    margin-bottom: 10px;
 }
 
 #remove-ingredient .alternative-text {
@@ -3427,6 +3464,14 @@
     min-height: 30px;
     text-align: center;
     width: 72px;
+}
+
+#remove-ingredient .text-do-you-have {
+    letter-spacing: 0;
+    margin-right: 5.0px;
+    margin-top: 33px;
+    min-height: 54px;
+    width: 253px;
 }
 
 #remove-ingredient .text-do-you-have2 {

@@ -104,19 +104,6 @@ $(document).ready(function() {
         $("#select-diet").fadeOut(1000);
     });
 
-    /* --- choose your diet / change color of button after click --- */
-    // $('.border-4px-green2---fdy').on('click', function() {
-    //     $(this).css("background-color", "#5DB0A6");
-    //     $(this).css("border-color", "white");
-    // });
-
-    //$('.vegeterian-option').on('click', function() {
-    //    $('.vegeterian-option').removeClass(".border-4px-green2---fdy-unselected");
-    //    $(this).addClass(".border-4px-green2---fdy-selected");
-    //});
-
-
-
     /* ------------- 
 
     ##################################
@@ -365,24 +352,32 @@ $(document).ready(function() {
         $("#info-what-you-need").hide("slow");
     });
 
-    $("#close-remove-ingredient").on("click", function() {
-        $("#info-what-you-need").hide("slow");
+    /*-- deselect ingredient --*/
+    $('.ingredient-a').on('click', function() {
+        setTimeout(function() {
+            $("#remove-ingredient").fadeIn();
+        }, 500);
     });
+
+    /*-- close overlay remove-ingredient --*/
+    $("#close-remove-ingredient").on("click", function() {
+        $("#remove-ingredient").hide("slow");
+    });
+
 
     /*--update recipes after deselecting ingredient --*/
 
-    setTimeout(function() {
-        $('.ingredient-a').on('click', function() {
-            setTimeout(function() {
-                $("#recipe-ingredients").fadeOut();
-                $("#updating-recipes").fadeIn(function() {
-                    setTimeout(function() {
-                        $("#main").fadeIn();
-                        $("#updating-recipes").fadeOut();
-                    }, 6000); // this will call the function after 6 sec.
-                });
-            }, 2000);
-        });
+    $("#button-remove-ingredient").on('click', function() {
+        setTimeout(function() {
+            $("#recipe-ingredients").fadeOut();
+            $("#remove-ingredient").fadeOut();
+            $("#updating-recipes").fadeIn(function() {
+                setTimeout(function() {
+                    $("#main").fadeIn();
+                    $("#updating-recipes").fadeOut();
+                }, 6000); // this will call the function after 6 sec.
+            });
+        }, 1000);
     });
 
 
@@ -683,23 +678,23 @@ initialNumb4 = 1;
 
 function increaseServings() {
     i = document.getElementById("counter").innerHTML;
-    if(i<6) {
+    if (i < 6) {
         i++
         document.getElementById("counter").innerHTML = i;
 
-        numb1 = initialNumb1 + 1/(i-1);
+        numb1 = initialNumb1 + 1 / (i - 1);
         document.getElementById("numb1").innerHTML = numb1.toFixed(1) + ' ' + 'Hokkaido <br />Pumpkin';
         initialNumb1 = numb1;
 
-        numb2 = initialNumb2 + 1/(i-1);
+        numb2 = initialNumb2 + 1 / (i - 1);
         document.getElementById("numb2").innerHTML = numb2.toFixed(1) + ' ' + 'Cream';
         initialNumb2 = numb2;
 
-        numb3 = initialNumb3 + 1/(i-1);
+        numb3 = initialNumb3 + 1 / (i - 1);
         document.getElementById("numb3").innerHTML = numb3.toFixed(1) + ' ' + 'sweet<br />Onion';
         initialNumb3 = numb3;
 
-        numb4 = initialNumb4 + 1/(i-1);
+        numb4 = initialNumb4 + 1 / (i - 1);
         document.getElementById("numb4").innerHTML = numb4.toFixed(1) + ' ' + 'glove of Garlic';
         initialNumb4 = numb4
 
@@ -708,23 +703,23 @@ function increaseServings() {
 
 function decreaseServings() {
     i = document.getElementById("counter").innerHTML;
-    if(i>4) {
+    if (i > 4) {
         i--
         document.getElementById("counter").innerHTML = i;
 
-        numb1 = initialNumb1 - 1/i;
+        numb1 = initialNumb1 - 1 / i;
         document.getElementById("numb1").innerHTML = numb1.toFixed(1) + ' ' + 'Hokkaido <br />Pumpkin';
         initialNumb1 = numb1;
 
-        numb2 = initialNumb2 - 1/i;
+        numb2 = initialNumb2 - 1 / i;
         document.getElementById("numb2").innerHTML = numb2.toFixed(1) + ' ' + 'Cream';
         initialNumb2 = numb2;
 
-        numb3 = initialNumb3 - 1/i;
+        numb3 = initialNumb3 - 1 / i;
         document.getElementById("numb3").innerHTML = numb3.toFixed(1) + ' ' + 'sweet<br />Onion';
         initialNumb3 = numb3;
 
-        numb4 = initialNumb4 - 1/i;
+        numb4 = initialNumb4 - 1 / i;
         document.getElementById("numb4").innerHTML = numb4.toFixed(1) + ' ' + 'glove of Garlic';
         initialNumb4 = numb4
     }

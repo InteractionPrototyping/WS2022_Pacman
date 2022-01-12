@@ -1975,7 +1975,9 @@
                                     <div class="flex-col-3 ">
                                         <div class="ingredient-a " onclick="deselectIngredient3() ">
                                             <img class="ingredient-icon " id="ingredient-icon-a3" alt="garlic " src="src/img/pumpkin_soup_recipe/garlic.png " />
-                                            <div class="ingredient-text " id="numb4">1 glove of Garlic</div>
+                                            <div class="ingredient-text " id="numb4">1 glove of
+                                                <p>Garlic</p>
+                                            </div>
                                         </div>
 
                                         <div class="ingredient-b " onclick=" ">
@@ -2053,7 +2055,7 @@
 ---------------->
             <!-- for deselecting ingredients that are missing! -->
             <section id="remove-ingredient">
-                <div id="remove-ingredient-info border-5px-green2---fdy">
+                <div class="remove-ingredient-info border-5px-green2---fdy">
                     <div class="flex-row">
                         <div class="remove-ingredient-heading inter-medium-white-18px">
                             You do not have a<br />Hokkaido Pumpkin...?
@@ -2066,7 +2068,7 @@
                             </div>
                         </a>
                     </div>
-                    <p class="text-do-you-have inter-normal-white-14px">
+                    <p class="text-do-you-have inter-medium-white-14px">
                         No, worries. Use another type of pumpkin instead or remove it from the pantry &amp; get new recipes suggested.
                     </p>
                     <div class="alternatives">
@@ -2083,15 +2085,12 @@
                             <div class="alternative-text inter-normal-white-12px">1 Cucurbita<br />maxima</div>
                         </div>
                     </div>
-                    <p class="text-do-you-have2 inter-normal-white-14px">
+                    <p class="text-do-you-have2 inter-medium-white-14px">
                         I really do not have a pumpkin at home. Let’s remove it from the pantry!
                     </p>
-                    <div class="frame-5058">
-                        <div class="next valign-text-middle inter-medium-white-16px">
-                            Remove Ingredient
-                        </div>
+                    <div class="button-green-remove-ingredient position-button-remove-ingredient" id="button-remove-ingredient">
+                        <div class="button-green-text valign-text-middle">Remove Ingredient</div>
                     </div>
-
                 </div>
             </section>
             <!-----------------
