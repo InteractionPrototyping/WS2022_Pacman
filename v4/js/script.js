@@ -113,8 +113,8 @@ $(document).ready(function() {
     ---------------*/
 
     $('#cereals').on('click', function() {
-        $("#pantry-selection-cereals").show();
-        $("#select-pantry").hide();
+        $("#pantry-selection-cereals").fadeIn("slow");
+        $("#select-pantry").fadeOut("slow");
     });
 
 
@@ -161,8 +161,8 @@ $(document).ready(function() {
     });
 
     $('#close-ingredients').on('click', function() {
-        $("#select-pantry").show();
-        $("#pantry-selection-cereals").hide();
+        $("#select-pantry").fadeIn("slow");
+        $("#pantry-selection-cereals").fadeOut("slow");
     });
 
     //functions to select ingredients in pantry for first 3 ingredients
