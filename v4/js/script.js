@@ -673,3 +673,59 @@ function saveInCookbook() {
         document.getElementById("save-recipes-here").innerHTML = "";
     }
 }
+
+
+///////// functions to adjust servings //////////////
+initialNumb1 = 1;
+initialNumb2 = 0.5;
+initialNumb3 = 0.5;
+initialNumb4 = 1;
+
+function increaseServings() {
+    i = document.getElementById("counter").innerHTML;
+    if(i<6) {
+        i++
+        document.getElementById("counter").innerHTML = i;
+
+        numb1 = initialNumb1 + 1/(i-1);
+        document.getElementById("numb1").innerHTML = numb1.toFixed(1) + ' ' + 'Hokkaido <br />Pumpkin';
+        initialNumb1 = numb1;
+
+        numb2 = initialNumb2 + 1/(i-1);
+        document.getElementById("numb2").innerHTML = numb2.toFixed(1) + ' ' + 'Cream';
+        initialNumb2 = numb2;
+
+        numb3 = initialNumb3 + 1/(i-1);
+        document.getElementById("numb3").innerHTML = numb3.toFixed(1) + ' ' + 'sweet<br />Onion';
+        initialNumb3 = numb3;
+
+        numb4 = initialNumb4 + 1/(i-1);
+        document.getElementById("numb4").innerHTML = numb4.toFixed(1) + ' ' + 'glove of Garlic';
+        initialNumb4 = numb4
+
+    }
+}
+
+function decreaseServings() {
+    i = document.getElementById("counter").innerHTML;
+    if(i>4) {
+        i--
+        document.getElementById("counter").innerHTML = i;
+
+        numb1 = initialNumb1 - 1/i;
+        document.getElementById("numb1").innerHTML = numb1.toFixed(1) + ' ' + 'Hokkaido <br />Pumpkin';
+        initialNumb1 = numb1;
+
+        numb2 = initialNumb2 - 1/i;
+        document.getElementById("numb2").innerHTML = numb2.toFixed(1) + ' ' + 'Cream';
+        initialNumb2 = numb2;
+
+        numb3 = initialNumb3 - 1/i;
+        document.getElementById("numb3").innerHTML = numb3.toFixed(1) + ' ' + 'sweet<br />Onion';
+        initialNumb3 = numb3;
+
+        numb4 = initialNumb4 - 1/i;
+        document.getElementById("numb4").innerHTML = numb4.toFixed(1) + ' ' + 'glove of Garlic';
+        initialNumb4 = numb4
+    }
+}

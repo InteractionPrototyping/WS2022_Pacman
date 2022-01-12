@@ -2819,8 +2819,9 @@
     margin-right: 2.0px;
     margin-top: 2px;
     /* min-height: 32px;
-    min-width: 74px; */
+    width: 74px; */
     text-align: center;
+    width: 110px;
 }
 
 #recipe-ingredients .img-recipe {

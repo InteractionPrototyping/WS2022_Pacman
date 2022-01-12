@@ -1934,11 +1934,11 @@
                         <div class="servings inter-medium-white-18px">SERVINGS</div>
 
                         <div class="no-of-servings">
-                            <div class="minus " id="decrement ">
+                            <div class="minus " id="decrement " onclick="decreaseServings()">
                                 <img class="amount-icon " alt="reduce number of servings " src="src/svg/minus.svg " />
                             </div>
                             <div id="counter" class="amount-of-servings">5</div>
-                            <div class="plus " id="increment ">
+                            <div class="plus " id="increment " onclick="increaseServings()">
                                 <img class="amount-icon " alt="increase number of servings " src="src/svg/plus.svg " />
                             </div>
                         </div>
@@ -1955,17 +1955,17 @@
                                     <div class="flex-col-1 ">
                                         <div class="ingredient-a" onclick="deselectIngredient1() ">
                                             <img class="ingredient-icon " id="ingredient-icon-a" alt="pumpkin " src="src/img/pumpkin_soup_recipe/pumpkin.png " />
-                                            <div class="ingredient-text ">1 Hokkaido <br />Pumpkin</div>
+                                            <div class="ingredient-text " id="numb1">1 Hokkaido <br />Pumpkin</div>
                                         </div>
                                         <div class="ingredient-b " onclick=" ">
                                             <img class="ingredient-icon " alt="cream " src="src/img/pumpkin_soup_recipe/cream.png " />
-                                            <div class="ingredient-text ">1/2 Onion</div>
+                                            <div class="ingredient-text " id="numb2">1/2 Cream</div>
                                         </div>
                                     </div>
                                     <div class="flex-col-2 ">
                                         <div class="ingredient-a " onclick="deselectIngredient2() ">
                                             <img class="ingredient-icon " id="ingredient-icon-a2" alt="onion " src="src/img/pumpkin_soup_recipe/onion.png " />
-                                            <div class="ingredient-text ">1/2 sweet<br />Onion</div>
+                                            <div class="ingredient-text " id="numb3">1/2 sweet<br />Onion</div>
                                         </div>
                                         <div class="ingredient-b " onclick=" ">
                                             <img class="ingredient-icon " alt="salt " src="src/img/pumpkin_soup_recipe/salt.png " />
@@ -1975,7 +1975,7 @@
                                     <div class="flex-col-3 ">
                                         <div class="ingredient-a " onclick="deselectIngredient3() ">
                                             <img class="ingredient-icon " id="ingredient-icon-a3" alt="garlic " src="src/img/pumpkin_soup_recipe/garlic.png " />
-                                            <div class="ingredient-text ">1 glove of Garlic</div>
+                                            <div class="ingredient-text " id="numb4">1 glove of Garlic</div>
                                         </div>
 
                                         <div class="ingredient-b " onclick=" ">
