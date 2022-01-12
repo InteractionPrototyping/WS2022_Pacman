@@ -295,7 +295,7 @@
     border-radius: 16px;
     display: flex;
     height: 62px;
-    min-width: 100px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -304,13 +304,24 @@
 }
 
 .position-button-remove-ingredient {
-    display: flex;
+    /* display: flex;
     position: center;
-    justify-content: center;
-    /* position: relative;
-    top: 830px;
-    width: 100px;
-    left: 181px; */
+    justify-content: center; */
+    position: relative;
+    top: 10px;
+    /* width: 100px; */
+    left: 30px;
+}
+
+.button-green-text-remove-ingredient {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 200px;
 }
 
 #select-diet .button-pos {
@@ -3235,12 +3246,23 @@
 ---------------*/
 
 #info-what-you-need {
-    align-items: flex-start;
-    background-color: var(--black-2);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-2);
     /* height: 760px;
     width: 360px; */
+    overflow: hidden;
     z-index: 100;
+}
+
+#info-what-you-need .overlap-group-info-what-you-need {
+    align-self: center;
+    height: 5000px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1000px;
+    /* background-color: gray; */
 }
 
 #info-what-you-need .info-what-you-need-container {
@@ -3251,10 +3273,10 @@
     /* flex-direction: column; */
     min-height: 200px;
     left: 10px;
-    padding: 30px 15px;
+    padding: 30px 10px 40px 30px;
     position: absolute;
     top: calc(50vh - 136.0px);
-    width: 300px;
+    width: 280px;
     z-index: 1;
 }
 
@@ -3316,6 +3338,17 @@
 
 ---------------*/
 
+#info-what-you-need {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-2);
+    /* height: 760px;
+    width: 360px; */
+    overflow: hidden;
+    z-index: 100;
+}
+
 #remove-ingredient {
     align-items: center;
     justify-content: center;
@@ -3323,7 +3356,16 @@
     display: flex;
     /* height: 760px;
     width: 360px; */
-    /* z-index: 100; */
+    z-index: 100;
+}
+
+#remove-ingredient .overlap-group-remove-ingredient {
+    align-self: center;
+    height: 5000px;
+    margin-top: 250px;
+    position: absolute;
+    width: 1000px;
+    /* background-color: gray; */
 }
 
 #remove-ingredient .remove-ingredient-info {

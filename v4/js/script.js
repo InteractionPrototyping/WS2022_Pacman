@@ -345,11 +345,11 @@ $(document).ready(function() {
 
     /*-- Info about missing ingredient --*/
     $("#info-ingredients").on("click", function() {
-        $("#info-what-you-need").show("slow");
+        $("#info-what-you-need").fadeIn();
     });
 
     $("#close-info-ingredient").on("click", function() {
-        $("#info-what-you-need").hide("slow");
+        $("#info-what-you-need").fadeOut();
     });
 
     /*-- deselect ingredient --*/
@@ -361,7 +361,7 @@ $(document).ready(function() {
 
     /*-- close overlay remove-ingredient --*/
     $("#close-remove-ingredient").on("click", function() {
-        $("#remove-ingredient").hide("slow");
+        $("#remove-ingredient").fadeOut();
     });
 
 
