@@ -206,6 +206,19 @@ $(document).ready(function() {
         }
     });
 
+    $('.ingr-option6').on('click', function() {
+        if (!$('.ingr-option6').hasClass("ingredient-options-white")) {
+
+            $('.ingr-option6').removeClass("ingredient-options");
+            $('.ingr-pantry6').removeClass("invisible");
+            $('.ingr-option6').addClass("ingredient-options-white");
+        } else {
+            $('.ingr-option6').removeClass("ingredient-options-white");
+            $('.ingr-option6').addClass("ingredient-options");
+            $('.ingr-pantry6').addClass("invisible");
+        }
+    });
+
     /////// do you have (dinner section) ///////
     $('#add-pantry').on('click', function() {
         $("#add-pantry").removeClass("button-add-to-pantry");
@@ -271,7 +284,7 @@ $(document).ready(function() {
                         $("#pantry-added").removeClass("button-added-to-pantry");
                     }, 6000); // this will call the function after 6 sec.
                 });
-            }, 2000);
+            }, 1000);
         });
     });
 

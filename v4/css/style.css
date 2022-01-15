@@ -1672,6 +1672,16 @@
     left: 40px;
 }
 
+.dish-pic1{
+    height: 90px;
+    width: 145px;
+}
+
+.dish-pic2 {
+    height: 105px;
+    width: 130px;
+}
+
 
 /* ---- tab bar meal type ---- */
 
