@@ -14,6 +14,7 @@ $(document).ready(function() {
     $("#recipe-ingredients").hide();
     $("#info-what-you-need").hide();
     $("#remove-ingredient").hide();
+    $("#add-ingr-with-plus").hide();
     $("#recipe-video").hide();
     $("#you-are-set").hide();
     $("#updating-recipes").hide();
@@ -304,6 +305,10 @@ $(document).ready(function() {
                 $("#updating-recipes").fadeOut();
             }, 6000); // this will call the function after 6 sec.
         });
+    });
+
+    $('#add-ingr-with-plus-button').on('click', function() {
+        $("#add-ingr-with-plus").fadeIn();
     });
 
 

@@ -222,6 +222,28 @@
     width: 280px;
 }
 
+.button-white-text {
+    color: var(--darkgrey);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 280px;
+}
+
+.button-white-text1 {
+    color: var(--darkgrey);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 280px;
+}
+
 .button-green-outline {
     align-items: center;
     align-self: center;
@@ -1430,14 +1452,32 @@
     border-radius: 16px;
     display: flex;
     height: 62px;
-    min-width: 234px;
+    width: 220px;
     position: absolute;
     top: 692px;
-    left: 116px;
+    left: 108px;
     cursor: pointer;
 }
 
 .button-green-pantry:hover {
+    background-color: #CEE5D0;
+}
+
+.plus-button-ingr {
+    align-items: center;
+    align-self: center;
+    background-color: #E7F6EF;
+    border-radius: 16px;
+    display: flex;
+    height: 62px;
+    width: 62px;
+    position: absolute;
+    top: 692px;
+    left: 344px;
+    cursor: pointer;
+}
+
+.plus-button-ingr:hover {
     background-color: #CEE5D0;
 }
 
@@ -3534,6 +3574,119 @@
     width: 253px;
 }
 
+/* ------------- 
+
+##################################
+########## ADD INGR PLUS #########
+################################## 
+
+---------------*/
+#add-ingr-with-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-2);
+    /* height: 760px;
+    width: 360px; */
+    overflow: hidden;
+    z-index: 100;
+}
+
+#add-ingr-with-plus .overlap-group-add-ingr {
+    align-self: center;
+    height: 5000px;
+    /* margin-top: -111px; */
+    position: absolute;
+    width: 1000px;
+    /* background-color: gray; */
+}
+
+#add-ingr-with-plus .info-add-ingr-container {
+    /* align-items: flex-end; */
+    /*background-color: #7E7E7E;*/
+    border-radius: 20px 20px 0px 0px;
+    display: flex; 
+    /* flex-direction: column; */
+    height: 450px;
+    left: 1px;
+    padding: 30px 10px 40px 30px;
+    position: absolute;
+    top: calc(50vh - 10.0px);
+    width: 320px;
+    z-index: 1;
+    justify-content: center;
+}
+
+#add-ingr-with-plus .background-opacity {
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #7E7E7E;
+   
+}
+
+#add-ingr-with-plus .input-field {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 62px;
+    top: 150px;
+    left: 45px;
+
+    background-color: #E7F6EF;
+    border-radius: 16px;
+}
+
+#add-ingr-with-plus .input-pantry {
+    position: absolute;
+    display: flex;
+    min-width: 210px;
+    height: 20px;
+    outline: none;
+    border: 0;
+    background-color: #E7F6EF;
+}
+
+
+#add-ingr-with-plus .text-container-ap {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    width: 270px;
+    left:45px;
+}
+
+#add-ingr-with-plus .text-container-ap1 {
+    position: absolute;
+    top: 250px;
+    display: flex;
+    width: 270px;
+    left: 45px;
+}
+
+#add-ingr-with-plus .text-pantry {
+    font-weight: 400;
+}
+
+#add-ingr-with-plus .button-green-add-pantry {
+    position: absolute;
+    top: 450px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    background-color: var(--green---fdy);
+    border-radius: 16px;
+    height: 42px;
+    width: 130px;
+    cursor: pointer;
+    left: 115px;
+}
 
 /* ------------- 
 
