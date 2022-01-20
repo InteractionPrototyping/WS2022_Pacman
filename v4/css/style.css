@@ -236,8 +236,8 @@
 .button-white-text1 {
     color: var(--darkgrey);
     font-family: var(--font-family-inter);
-    font-size: var(--font-size-xl);
-    font-weight: 500;
+    font-size: var(--font-size-xxl);
+    font-weight: 400;
     height: 22px;
     letter-spacing: 0;
     text-align: center;
@@ -1469,12 +1469,13 @@
     background-color: #E7F6EF;
     border-radius: 16px;
     display: flex;
-    height: 62px;
+    height: 57px;
     width: 62px;
     position: absolute;
     top: 692px;
     left: 344px;
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
 .plus-button-ingr:hover {
@@ -3611,14 +3612,14 @@
     left: 1px;
     padding: 30px 10px 40px 30px;
     position: absolute;
-    top: calc(50vh - 10.0px);
+    top: calc(50vh - 18.0px);
     width: 320px;
     z-index: 1;
     justify-content: center;
 }
 
 #add-ingr-with-plus .background-opacity {
-    opacity: 0.9;
+    opacity: 0.88;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3629,6 +3630,21 @@
    
 }
 
+#add-ingr-with-plus .close-pantry {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 285px;
+    cursor: pointer;
+}
+
+#add-ingr-with-plus .frame-pantry {
+    position: absolute;
+    display: flex;
+    top: 7px;
+    left: 105px;
+}
+
 #add-ingr-with-plus .input-field {
     position: absolute;
     display: flex;
@@ -3636,7 +3652,7 @@
     align-items: center;
     width: 270px;
     height: 62px;
-    top: 150px;
+    top: 140px;
     left: 45px;
 
     background-color: #E7F6EF;
@@ -3681,7 +3697,12 @@
     left: 45px;
     top: 300px;
     overflow-x: auto;
-    width: 50000px;
+    width: 270px;
+    cursor: pointer;
+}
+
+#add-ingr-with-plus .category-option-container::-webkit-scrollbar {
+    display: none;
 }
 
 #add-ingr-with-plus .padding {
@@ -3700,6 +3721,10 @@
     width: 130px;
     cursor: pointer;
     left: 115px;
+}
+
+#add-ingr-with-plus .text20 {
+    font-size: var(--font-size-s);
 }
 
 /* ------------- 

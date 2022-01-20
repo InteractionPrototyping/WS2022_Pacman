@@ -307,8 +307,12 @@ $(document).ready(function() {
         });
     });
 
-    $('#add-ingr-with-plus-button').on('click', function() {
-        $("#add-ingr-with-plus").fadeIn();
+    $('#add-ingr-with-plus-button').click(function(){
+        $("#add-ingr-with-plus").slideToggle({direction: "up"}, 600);
+    });
+
+    $('#close-overlap').click(function(){
+        $("#add-ingr-with-plus").slideToggle({direction: "down"}, 600);
     });
 
 
