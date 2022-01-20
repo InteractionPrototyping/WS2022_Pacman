@@ -3664,7 +3664,7 @@
 
 #add-ingr-with-plus .text-container-ap1 {
     position: absolute;
-    top: 250px;
+    top: 230px;
     display: flex;
     width: 270px;
     left: 45px;
@@ -3672,6 +3672,20 @@
 
 #add-ingr-with-plus .text-pantry {
     font-weight: 400;
+}
+
+#add-ingr-with-plus .category-option-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 45px;
+    top: 300px;
+    overflow-x: auto;
+    width: 50000px;
+}
+
+#add-ingr-with-plus .padding {
+    padding-right: 10px;
 }
 
 #add-ingr-with-plus .button-green-add-pantry {
