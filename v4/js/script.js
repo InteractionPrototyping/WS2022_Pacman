@@ -355,6 +355,12 @@ $(document).ready(function() {
         $("#main").fadeIn();
     });
 
+    $("#back-to-main-from-cooking").on('click', function() {
+        // $("#recipe-ingredients").show("slide", { direction: "right" }, 1000);
+        $("#recipe-cooking").fadeOut();
+        $("#main").fadeIn();
+    });
+
 
     /*-- Info about missing ingredient --*/
     $("#info-ingredients").on("click", function() {
