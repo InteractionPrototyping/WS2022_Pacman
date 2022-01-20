@@ -1426,11 +1426,11 @@
 .button-green-pantry {
     align-items: center;
     align-self: center;
-    background-color: var(--green---fdy);
+    background-color: #E7F6EF;
     border-radius: 16px;
     display: flex;
     height: 62px;
-    min-width: 280px;
+    min-width: 234px;
     position: absolute;
     top: 692px;
     left: 116px;
@@ -1438,7 +1438,7 @@
 }
 
 .button-green-pantry:hover {
-    background-color: var(--green2---fdy);
+    background-color: #CEE5D0;
 }
 
 
