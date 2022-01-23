@@ -231,7 +231,14 @@ $(document).ready(function() {
 
     $('.ingr-option3').on('click', function() {
         if (!$('.ingr-option3').hasClass("ingredient-options-white")) {
-            $('#diaries').removeClass("invisible");
+            $('#diaries').removeClass("category-container");
+            $('#diaries').addClass("category-container-selected-pantry");
+            $('#text-closed').removeClass("text-3");
+            $('#text-closed').addClass("text-3-if-selected");
+            $('#food-icon-closed').removeClass("food-icon");
+            $('#food-icon-closed').addClass("food-icon-if-selected");
+            $('#open-diaries').removeClass("open1");
+            $('#open-diaries').addClass("open");
             $('.ingr-option3').removeClass("ingredient-options");
             $('.ingr-pantry3').removeClass("invisible");
             $('.ingr-option3').addClass("ingredient-options-white");
@@ -239,13 +246,27 @@ $(document).ready(function() {
             $('.ingr-option3').removeClass("ingredient-options-white");
             $('.ingr-option3').addClass("ingredient-options");
             $('.ingr-pantry3').addClass("invisible");
-
+            $('#diaries').addClass("category-container");
+            $('#diaries').removeClass("category-container-selected-pantry");
+            $('#open-diaries').addClass("open1");
+            $('#open-diaries').removeClass("open");
+            $('#text-closed').addClass("text-3");
+            $('#text-closed').removeClass("text-3-if-selected");
+            $('#food-icon-closed').addClass("food-icon");
+            $('#food-icon-closed').removeClass("food-icon-if-selected");
         }
     });
 
     $('.ingr-option4').on('click', function() {
         if (!$('.ingr-option4').hasClass("ingredient-options-white")) {
-            $('#diaries').removeClass("invisible");
+            $('#diaries').removeClass("category-container");
+            $('#diaries').addClass("category-container-selected-pantry");
+            $('#text-closed').removeClass("text-3");
+            $('#text-closed').addClass("text-3-if-selected");
+            $('#food-icon-closed').removeClass("food-icon");
+            $('#food-icon-closed').addClass("food-icon-if-selected");
+            $('#open-diaries').removeClass("open1");
+            $('#open-diaries').addClass("open");
             $('.ingr-option4').removeClass("ingredient-options");
             $('.ingr-pantry4').removeClass("invisible");
             $('.ingr-option4').addClass("ingredient-options-white");
@@ -253,12 +274,28 @@ $(document).ready(function() {
             $('.ingr-option4').removeClass("ingredient-options-white");
             $('.ingr-option4').addClass("ingredient-options");
             $('.ingr-pantry4').addClass("invisible");
+            $('#diaries').addClass("category-container");
+            $('#diaries').removeClass("category-container-selected-pantry");
+            $('#open-diaries').addClass("open1");
+            $('#open-diaries').removeClass("open");
+            $('#text-closed').addClass("text-3");
+            $('#text-closed').removeClass("text-3-if-selected");
+            $('#food-icon-closed').addClass("food-icon");
+            $('#food-icon-closed').removeClass("food-icon-if-selected");
         }
     });
 
     $('.ingr-option5').on('click', function() {
         if (!$('.ingr-option5').hasClass("ingredient-options-white")) {
-            $('#diaries').removeClass("invisible");
+            $('#diaries').removeClass("category-container");
+            $('#diaries').addClass("category-container-selected-pantry");
+            $('#text-closed').removeClass("text-3");
+            $('#text-closed').addClass("text-3-if-selected");
+            $('#food-icon-closed').removeClass("food-icon");
+            $('#food-icon-closed').addClass("food-icon-if-selected");
+            $('#open-diaries').removeClass("open");
+            $('#open-diaries').addClass("open1");
+
             $('.ingr-option5').removeClass("ingredient-options");
             $('.ingr-pantry5').removeClass("invisible");
             $('.ingr-option5').addClass("ingredient-options-white");
@@ -266,6 +303,15 @@ $(document).ready(function() {
             $('.ingr-option5').removeClass("ingredient-options-white");
             $('.ingr-option5').addClass("ingredient-options");
             $('.ingr-pantry5').addClass("invisible");
+
+            $('#diaries').addClass("category-container");
+            $('#diaries').removeClass("category-container-selected-pantry");
+            $('#open-diaries').addClass("open");
+            $('#open-diaries').removeClass("open1");
+            $('#text-closed').addClass("text-3");
+            $('#text-closed').removeClass("text-3-if-selected");
+            $('#food-icon-closed').addClass("food-icon");
+            $('#food-icon-closed').removeClass("food-icon-if-selected");
         }
     });
 
