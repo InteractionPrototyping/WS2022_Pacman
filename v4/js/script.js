@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("#welcome").show();
     $("#select-diet").hide();
+    $("#info-diet-options").hide();
     $("#select-pantry").hide();
     $("#pantry-selection-cereals").hide();
     $("#main").hide();
@@ -103,6 +104,15 @@ $(document).ready(function() {
     $('#no-special-diet').on('click', function() {
         $("#select-pantry").fadeIn(1000);
         $("#select-diet").fadeOut(1000);
+    });
+
+    /*-- Info about diet options --*/
+    $(".info-diet-options").on("click", function() {
+        $("#info-diet-options").fadeIn();
+    });
+
+    $('#close-info-diet-options').click(function() {
+        $("#info-diet-options").fadeOut();
     });
 
     /* ------------- 
