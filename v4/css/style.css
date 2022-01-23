@@ -1544,9 +1544,10 @@
     display: none;
 }
 
+
 .ingredient-container-pantry {
     position: absolute;
-    width: 280px;
+    width: 260px;
     height: 80px;
     left: 12px;
     top: 65px;
@@ -1615,96 +1616,6 @@
 .plus-button-ingr:hover {
     background-color: #CEE5D0;
 }
-
-
-/*---------------
-
-######################################################
-########### PANTRY green tab bar cereals #############
-###################################################### 
-
----------------*/
-
-#pantry-bar-cereals {
-    align-items: center;
-    justify-content: center;
-    background-color: var(--darkgrey);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#pantry-bar-cereals .overlap-group9 {
-    align-self: center;
-    height: 5000px;
-    margin-top: -111px;
-    position: relative;
-    width: 510px;
-}
-
-#pantry-bar-cereals .logo {
-    height: 42px;
-    left: 104px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-}
-
-.ingredient-container-pantry2 {
-    position: absolute;
-    width: 260px;
-    height: 320px;
-    left: 12px;
-    top: 65px;
-    overflow-y: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-right: 3px;
-    padding-left: 5px;
-}
-
-.category-container-selected-pantry2 {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px 0px 10px 0px;
-    height: 400px;
-    width: 280px;
-    border-radius: 30px;
-    position: relative;
-    background: #89B5AF;
-    justify-content: space-between;
-}
-
-.text-6 {
-    font-size: var(--font-size-xs);
-}
-
-.more-ingredients {
-    width: 280px;
-    height: 35px;
-}
-
-.close2 {
-    height: 25px;
-    width: 60px;
-    position: absolute;
-    left: 115px;
-    top: 390px;
-}
-
-.ingredient-container-pantry2::-webkit-scrollbar {
-    background: #89B5AF;
-    border-radius: 20px;
-    width: 10px;
-}
-
-.ingredient-container-pantry2::-webkit-scrollbar-thumb {
-    background: #FFFFFF;
-    border-radius: 20px;
-    width: 10px;
-}
-
 
 /*---------------
 
@@ -3717,7 +3628,6 @@
 ################################## 
 
 ---------------*/
-
 #add-ingr-with-plus {
     display: flex;
     align-items: center;
@@ -3742,7 +3652,7 @@
     /* align-items: flex-end; */
     /*background-color: #7E7E7E;*/
     border-radius: 20px 20px 0px 0px;
-    display: flex;
+    display: flex; 
     /* flex-direction: column; */
     height: 450px;
     left: 1px;
@@ -3763,6 +3673,7 @@
     top: 0;
     border-radius: 20px 20px 0px 0px;
     background-color: #7E7E7E;
+   
 }
 
 #add-ingr-with-plus .close-pantry {
@@ -3789,6 +3700,7 @@
     height: 62px;
     top: 140px;
     left: 45px;
+
     background-color: #E7F6EF;
     border-radius: 16px;
 }
@@ -3803,12 +3715,13 @@
     background-color: #E7F6EF;
 }
 
+
 #add-ingr-with-plus .text-container-ap {
     position: absolute;
     top: 80px;
     display: flex;
     width: 270px;
-    left: 45px;
+    left:45px;
 }
 
 #add-ingr-with-plus .text-container-ap1 {
@@ -3856,10 +3769,24 @@
     left: 115px;
 }
 
+
+#add-ingr-with-plus .button-selected-add-pantry {
+    position: absolute;
+    top: 450px;
+    display: flex;
+    left: 115px;
+}
+
 #add-ingr-with-plus .text20 {
     font-size: var(--font-size-s);
 }
 
+#add-ingr-with-plus .text21 {
+    font-size: var(--font-size-s);
+    position: absolute;
+    left: -45px;
+    top: 10px;
+}
 
 /* ------------- 
 

@@ -247,8 +247,8 @@ $(document).ready(function() {
             $('#text-closed').addClass("text-3-if-selected");
             $('#food-icon-closed').removeClass("food-icon");
             $('#food-icon-closed').addClass("food-icon-if-selected");
-            $('#open-diaries').removeClass("open1");
-            $('#open-diaries').addClass("open");
+            $('#open-diaries').removeClass("open");
+            $('#open-diaries').addClass("open1");
             $('.ingr-option3').removeClass("ingredient-options");
             $('.ingr-pantry3').removeClass("invisible");
             $('.ingr-option3').addClass("ingredient-options-white");
@@ -256,14 +256,6 @@ $(document).ready(function() {
             $('.ingr-option3').removeClass("ingredient-options-white");
             $('.ingr-option3').addClass("ingredient-options");
             $('.ingr-pantry3').addClass("invisible");
-            $('#diaries').addClass("category-container");
-            $('#diaries').removeClass("category-container-selected-pantry");
-            $('#open-diaries').addClass("open1");
-            $('#open-diaries').removeClass("open");
-            $('#text-closed').addClass("text-3");
-            $('#text-closed').removeClass("text-3-if-selected");
-            $('#food-icon-closed').addClass("food-icon");
-            $('#food-icon-closed').removeClass("food-icon-if-selected");
         }
     });
 
@@ -275,8 +267,8 @@ $(document).ready(function() {
             $('#text-closed').addClass("text-3-if-selected");
             $('#food-icon-closed').removeClass("food-icon");
             $('#food-icon-closed').addClass("food-icon-if-selected");
-            $('#open-diaries').removeClass("open1");
-            $('#open-diaries').addClass("open");
+            $('#open-diaries').removeClass("open");
+            $('#open-diaries').addClass("open1");
             $('.ingr-option4').removeClass("ingredient-options");
             $('.ingr-pantry4').removeClass("invisible");
             $('.ingr-option4').addClass("ingredient-options-white");
@@ -284,14 +276,6 @@ $(document).ready(function() {
             $('.ingr-option4').removeClass("ingredient-options-white");
             $('.ingr-option4').addClass("ingredient-options");
             $('.ingr-pantry4').addClass("invisible");
-            $('#diaries').addClass("category-container");
-            $('#diaries').removeClass("category-container-selected-pantry");
-            $('#open-diaries').addClass("open1");
-            $('#open-diaries').removeClass("open");
-            $('#text-closed').addClass("text-3");
-            $('#text-closed').removeClass("text-3-if-selected");
-            $('#food-icon-closed').addClass("food-icon");
-            $('#food-icon-closed').removeClass("food-icon-if-selected");
         }
     });
 
@@ -305,7 +289,6 @@ $(document).ready(function() {
             $('#food-icon-closed').addClass("food-icon-if-selected");
             $('#open-diaries').removeClass("open");
             $('#open-diaries').addClass("open1");
-
             $('.ingr-option5').removeClass("ingredient-options");
             $('.ingr-pantry5').removeClass("invisible");
             $('.ingr-option5').addClass("ingredient-options-white");
@@ -313,17 +296,18 @@ $(document).ready(function() {
             $('.ingr-option5').removeClass("ingredient-options-white");
             $('.ingr-option5').addClass("ingredient-options");
             $('.ingr-pantry5').addClass("invisible");
-
-            $('#diaries').addClass("category-container");
-            $('#diaries').removeClass("category-container-selected-pantry");
-            $('#open-diaries').addClass("open");
-            $('#open-diaries').removeClass("open1");
-            $('#text-closed').addClass("text-3");
-            $('#text-closed').removeClass("text-3-if-selected");
-            $('#food-icon-closed').addClass("food-icon");
-            $('#food-icon-closed').removeClass("food-icon-if-selected");
         }
     });
+
+    // remove ingredient which was added by input {
+        $('.ingr-option20').on('click', function() {
+            if ($('.ingr-option20').hasClass("ingredient-options-white")) {
+                $('.ingr-option20').removeClass("ingredient-options-white");
+                $('.ingr-option20').addClass("ingredient-options");
+                $('.ingr-pantry20').addClass("invisible"); 
+            }
+        });
+
 
     /*--update recipes after adding ingredient to pantry --*/
 
@@ -381,6 +365,30 @@ $(document).ready(function() {
 
     $('#close-overlap').click(function() {
         $("#add-ingr-with-plus").slideToggle({ direction: "down" }, 600);
+    });
+
+    // add ingr with plus button --> button change
+
+    $('#button-green-add-pantry').on('click', function() {
+        $("#button-green-add-pantry").addClass("invisible");
+        $("#button-green-add-pantry").removeClass("button-green-add-pantry");
+        $("#text20").addClass("invisible");
+        $("#button-selected-add-pantry").removeClass("invisible");
+        $("#check1").removeClass("invisible");
+        $("#text21").removeClass("invisible");
+
+    });
+
+    // select category1 (vegetables)
+
+    $('#category1').on('click', function() {
+        if(!$("#category1").hasClass("chosen")) {
+            $("#category1").attr('src', "src/svg/category_ingredients_vege.svg");
+            $("#category1").addClass("chosen");
+        } else {
+            $("#category1").attr('src', "src/svg/category_ingredients_vege_gray.svg");
+            $("#category1").removeClass("chosen");
+        }
     });
 
 
@@ -818,5 +826,16 @@ function decreaseServings() {
         numb4 = initialNumb4 - 1 / i;
         document.getElementById("numb4").innerHTML = numb4.toFixed(1) + ' ' + 'glove of Garlic';
         initialNumb4 = numb4
+    }
+}
+
+
+////////////////// functions to add new ingredient via input in pantry //////////////////
+
+function addIngredient() {
+    var input = document.getElementById("input-ingr").value;
+    if(!!input) {
+        document.getElementById("optionNew").classList.remove("invisible");
+        document.getElementById("optionNew").innerHTML = input;
     }
 }
