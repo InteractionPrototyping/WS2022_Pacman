@@ -335,6 +335,18 @@ $(document).ready(function() {
         });
     });
 
+    $('#select-ingr-later').on('click', function() {
+        $("#select-pantry").fadeOut();
+        $("#pantry-selection-cereals").fadeOut();
+        $("#you-are-set").fadeIn(function() {
+            setTimeout(function() {
+                $("#main").fadeIn();
+                $("#you-are-set").fadeOut();
+                // $("#welcome").fadeOut();
+            }, 6000); // this will call the function after 6 sec.
+        });
+    });
+
     /* ------------- 
 
     ############################################
@@ -353,12 +365,12 @@ $(document).ready(function() {
         });
     });
 
-    $('#add-ingr-with-plus-button').click(function(){
-        $("#add-ingr-with-plus").slideToggle({direction: "up"}, 600);
+    $('#add-ingr-with-plus-button').click(function() {
+        $("#add-ingr-with-plus").slideToggle({ direction: "up" }, 600);
     });
 
-    $('#close-overlap').click(function(){
-        $("#add-ingr-with-plus").slideToggle({direction: "down"}, 600);
+    $('#close-overlap').click(function() {
+        $("#add-ingr-with-plus").slideToggle({ direction: "down" }, 600);
     });
 
 
