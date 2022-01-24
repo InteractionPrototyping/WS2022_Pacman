@@ -359,19 +359,6 @@ $(document).ready(function() {
         });
     });
 
-    /* --- animation after clicking on lets's start --- */
-    $('#lets-start').on('click', function() {
-        $(".title").animate({ top: -80 }, 2000);
-        $("#welcome .text-1").animate({ top: -30 }, 2100);
-        $(".overlap-group").animate({ top: -500 }, 1500);
-        $("#select-diet").fadeIn(2000, function() {
-            // $("#welcome").hide();
-            // $('#select-diet').show();
-        });
-        $('#lets-start').fadeOut(1500);
-
-    });
-
     $('#add-ingr-with-plus-button').click(function() {
         //$("#add-ingr-with-plus").slideToggle({ direction: "up" }, 600);
         //$("#add-ingr-with-plus").slideDown();
@@ -397,10 +384,11 @@ $(document).ready(function() {
         $("#button-green-add-pantry").addClass("invisible");
         $("#button-green-add-pantry").removeClass("button-green-add-pantry");
         $("#text20").addClass("invisible");
-        $("#button-selected-add-pantry").removeClass("invisible");
         $("#check1").removeClass("invisible");
         $("#text21").removeClass("invisible");
-
+        $("#button-selected-add-pantry").removeClass("invisible", setTimeout(function() {
+            $("#add-ingr-with-plus").fadeOut();
+        }, 2000));
     });
 
     // select category1 (vegetables)
