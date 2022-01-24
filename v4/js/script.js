@@ -360,11 +360,13 @@ $(document).ready(function() {
     });
 
     $('#add-ingr-with-plus-button').click(function() {
-        $("#add-ingr-with-plus").slideToggle({ direction: "up" }, 600);
+        //$("#add-ingr-with-plus").slideToggle({ direction: "up" }, 600);
+        //$("#add-ingr-with-plus").slideDown();
+        $("#add-ingr-with-plus").show('slide', {direction: 'down'}, 400);
     });
 
     $('#close-overlap').click(function() {
-        $("#add-ingr-with-plus").slideToggle({ direction: "down" }, 600);
+        $("#add-ingr-with-plus").hide('slide', {direction: 'up'}, 400);
     });
 
     // add ingr with plus button --> button change
