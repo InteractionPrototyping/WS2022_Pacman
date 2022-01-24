@@ -300,13 +300,13 @@ $(document).ready(function() {
     });
 
     // remove ingredient which was added by input {
-        $('.ingr-option20').on('click', function() {
-            if ($('.ingr-option20').hasClass("ingredient-options-white")) {
-                $('.ingr-option20').removeClass("ingredient-options-white");
-                $('.ingr-option20').addClass("ingredient-options");
-                $('.ingr-pantry20').addClass("invisible"); 
-            }
-        });
+    $('.ingr-option20').on('click', function() {
+        if ($('.ingr-option20').hasClass("ingredient-options-white")) {
+            $('.ingr-option20').removeClass("ingredient-options-white");
+            $('.ingr-option20').addClass("ingredient-options");
+            $('.ingr-pantry20').addClass("invisible");
+        }
+    });
 
 
     /*--update recipes after adding ingredient to pantry --*/
@@ -359,14 +359,36 @@ $(document).ready(function() {
         });
     });
 
+    /* --- animation after clicking on lets's start --- */
+    $('#lets-start').on('click', function() {
+        $(".title").animate({ top: -80 }, 2000);
+        $("#welcome .text-1").animate({ top: -30 }, 2100);
+        $(".overlap-group").animate({ top: -500 }, 1500);
+        $("#select-diet").fadeIn(2000, function() {
+            // $("#welcome").hide();
+            // $('#select-diet').show();
+        });
+        $('#lets-start').fadeOut(1500);
+
+    });
+
     $('#add-ingr-with-plus-button').click(function() {
         //$("#add-ingr-with-plus").slideToggle({ direction: "up" }, 600);
         //$("#add-ingr-with-plus").slideDown();
-        $("#add-ingr-with-plus").show('slide', {direction: 'down'}, 400);
+        // $("#add-ingr-with-plus").show('slide', {direction: 'down'}, 400);
+        // $("#add-ingr-with-plus").slideUp(2000, 'linear');
+        // $("#add-ingr-with-plus").fadeIn(2000);
+        // $("#add-ingr-with-plus").fadeIn(2000, function() {
+        //     $("#add-ingr-with-plus").animate({ top: 50 }, 2000);
+        // });
+        // $("#add-ingr-with-plus").animate({ bottom: 0 }, 2000);
+        $("#add-ingr-with-plus").fadeIn(2100);
     });
 
     $('#close-overlap').click(function() {
-        $("#add-ingr-with-plus").hide('slide', {direction: 'up'}, 400);
+        // $("#add-ingr-with-plus").hide('slide', {direction: 'up'}, 400);
+        // $("#add-ingr-with-plus").slideDown('slow', 'linear');
+        $("#add-ingr-with-plus").fadeOut(1000);
     });
 
     // add ingr with plus button --> button change
@@ -384,7 +406,7 @@ $(document).ready(function() {
     // select category1 (vegetables)
 
     $('#category1').on('click', function() {
-        if(!$("#category1").hasClass("chosen")) {
+        if (!$("#category1").hasClass("chosen")) {
             $("#category1").attr('src', "src/svg/category_ingredients_vege.svg");
             $("#category1").addClass("chosen");
         } else {
@@ -836,7 +858,7 @@ function decreaseServings() {
 
 function addIngredient() {
     var input = document.getElementById("input-ingr").value;
-    if(!!input) {
+    if (!!input) {
         document.getElementById("optionNew").classList.remove("invisible");
         document.getElementById("optionNew").innerHTML = input;
     }
