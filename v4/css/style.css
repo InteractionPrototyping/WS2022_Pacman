@@ -1140,14 +1140,6 @@
     width: 60px;
 }
 
-#info-diet-options .component-1 {
-    height: 87px;
-    left: 27px;
-    position: absolute;
-    top: 101px;
-    width: 266px;
-}
-
 #info-diet-options .option {
     height: 86px;
     /* left: -3px; */
@@ -1178,34 +1170,34 @@
 
 #info-diet-options .vegeterian {
     height: 38px;
-    left: 12px;
     position: absolute;
-    top: 11px;
     width: 38px;
+    top: 15px;
+    left: 16px;
 }
 
 #info-diet-options .vegan {
     height: 35px;
-    left: 11px;
     position: absolute;
-    top: 11px;
     width: 35px;
+    top: 20px;
+    left: 20px;
 }
 
 #info-diet-options .pesceterian {
     height: 39px;
-    left: 9px;
     position: absolute;
-    top: 8px;
     width: 38px;
+    top: 15px;
+    left: 16px;
 }
 
 #info-diet-options .gluten-free {
     height: 46px;
-    left: 6px;
     position: absolute;
-    top: 5px;
     width: 45px;
+    top: 12px;
+    left: 14px;
 }
 
 #info-diet-options .text-diet-option {
@@ -1213,6 +1205,14 @@
     letter-spacing: 2px;
     position: absolute;
     width: 171px;
+}
+
+#info-diet-options .component-1 {
+    height: 87px;
+    left: 27px;
+    position: absolute;
+    top: 101px;
+    width: 266px;
 }
 
 #info-diet-options .component-2 {
