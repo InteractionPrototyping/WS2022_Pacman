@@ -48,6 +48,14 @@
     font-style: normal;
 }
 
+.inter-medium-white-10px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .inter-normal-white-12px {
     color: var(--white);
     font-family: var(--font-family-inter);
@@ -442,6 +450,7 @@
     text-align: center;
     top: 750px;
     width: 280px;
+    letter-spacing: 1px;
 }
 
 .progress {
