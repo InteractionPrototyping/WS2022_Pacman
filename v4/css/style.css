@@ -2756,6 +2756,7 @@
     margin-right: 1.0px;
     min-height: 203px;
     width: 296px;
+    margin-bottom: 30px;
 }
 
 #recipe-cooking .group-cooking-step {
@@ -2802,6 +2803,7 @@
     align-items: center;
     margin-top: 10px;
     width: 285px;
+    letter-spacing: 1px;
 }
 
 .enjoy {
