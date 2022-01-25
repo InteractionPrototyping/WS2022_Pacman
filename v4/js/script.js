@@ -369,13 +369,13 @@ $(document).ready(function() {
         //     $("#add-ingr-with-plus").animate({ top: 50 }, 2000);
         // });
         // $("#add-ingr-with-plus").animate({ bottom: 0 }, 2000);
-        $("#add-ingr-with-plus").fadeIn(2100);
+        $("#add-ingr-with-plus").fadeIn(800);
     });
 
     $('#close-overlap').click(function() {
         // $("#add-ingr-with-plus").hide('slide', {direction: 'up'}, 400);
         // $("#add-ingr-with-plus").slideDown('slow', 'linear');
-        $("#add-ingr-with-plus").fadeOut(1000);
+        $("#add-ingr-with-plus").fadeOut(800);
     });
 
     // add ingr with plus button --> button change
