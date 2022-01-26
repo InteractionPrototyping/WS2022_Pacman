@@ -247,6 +247,7 @@ $(document).ready(function() {
             $('#text-closed').addClass("text-3-if-selected");
             $('#food-icon-closed').removeClass("food-icon");
             $('#food-icon-closed').addClass("food-icon-if-selected");
+            $('#open-diaries').attr('src', "src/svg/close_icon.svg");
             $('#open-diaries').removeClass("open");
             $('#open-diaries').addClass("open1");
             $('.ingr-option3').removeClass("ingredient-options");
@@ -267,6 +268,7 @@ $(document).ready(function() {
             $('#text-closed').addClass("text-3-if-selected");
             $('#food-icon-closed').removeClass("food-icon");
             $('#food-icon-closed').addClass("food-icon-if-selected");
+            $('#open-diaries').attr('src', "src/svg/close_icon.svg");
             $('#open-diaries').removeClass("open");
             $('#open-diaries').addClass("open1");
             $('.ingr-option4').removeClass("ingredient-options");
@@ -287,6 +289,7 @@ $(document).ready(function() {
             $('#text-closed').addClass("text-3-if-selected");
             $('#food-icon-closed').removeClass("food-icon");
             $('#food-icon-closed').addClass("food-icon-if-selected");
+            $('#open-diaries').attr('src', "src/svg/close_icon.svg");
             $('#open-diaries').removeClass("open");
             $('#open-diaries').addClass("open1");
             $('.ingr-option5').removeClass("ingredient-options");
