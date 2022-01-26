@@ -363,21 +363,10 @@ $(document).ready(function() {
     });
 
     $('#add-ingr-with-plus-button').click(function() {
-        //$("#add-ingr-with-plus").slideToggle({ direction: "up" }, 600);
-        //$("#add-ingr-with-plus").slideDown();
-        // $("#add-ingr-with-plus").show('slide', {direction: 'down'}, 400);
-        // $("#add-ingr-with-plus").slideUp(2000, 'linear');
-        // $("#add-ingr-with-plus").fadeIn(2000);
-        // $("#add-ingr-with-plus").fadeIn(2000, function() {
-        //     $("#add-ingr-with-plus").animate({ top: 50 }, 2000);
-        // });
-        // $("#add-ingr-with-plus").animate({ bottom: 0 }, 2000);
         $("#add-ingr-with-plus").fadeIn(800);
     });
 
     $('#close-overlap').click(function() {
-        // $("#add-ingr-with-plus").hide('slide', {direction: 'up'}, 400);
-        // $("#add-ingr-with-plus").slideDown('slow', 'linear');
         $("#add-ingr-with-plus").fadeOut(800);
     });
 
@@ -450,13 +439,11 @@ $(document).ready(function() {
 
     /*-- back to main page --*/
     $("#back-to-main").on('click', function() {
-        // $("#recipe-ingredients").show("slide", { direction: "right" }, 1000);
         $("#recipe-ingredients").fadeOut();
         $("#main").fadeIn();
     });
 
     $("#back-to-main-from-cooking").on('click', function() {
-        // $("#recipe-ingredients").show("slide", { direction: "right" }, 1000);
         $("#recipe-cooking").fadeOut();
         $("#main").fadeIn();
     });

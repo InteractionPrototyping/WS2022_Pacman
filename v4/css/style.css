@@ -190,7 +190,6 @@
     border-radius: 16px;
     display: flex;
     height: 62px;
-    /* min-width: 280px; */
     position: absolute;
     top: 710px;
     margin-left: 110px;
@@ -208,7 +207,6 @@
     border-radius: 16px;
     display: flex;
     height: 62px;
-    /* min-width: 280px; */
     position: absolute;
     top: 710px;
     margin-left: 110px;
@@ -334,12 +332,8 @@
 }
 
 .position-button-remove-ingredient {
-    /* display: flex;
-    position: center;
-    justify-content: center; */
     position: relative;
     top: 10px;
-    /* width: 100px; */
     left: 30px;
 }
 
@@ -389,15 +383,6 @@
     flex-shrink: 0;
     pointer-events: auto;
 }
-
-
-/* .logo {
-    height: 42px;
-    left: 169px;
-    position: absolute;
-    top: 273px;
-    width: 42px;
-} */
 
 .search {
     position: absolute;
@@ -519,7 +504,6 @@
     position: absolute;
     display: flex;
     height: 42px;
-    /* padding: 0 72px; */
     width: 360px;
     top: 831px;
     left: 76px;
@@ -741,7 +725,6 @@
 
 #welcome .overlap-group1 {
     height: 5000px;
-    /* margin-left: -141px; */
     margin-top: -220.0px;
     position: relative;
     width: 640px;
@@ -1151,9 +1134,7 @@
 
 #info-diet-options .option {
     height: 86px;
-    /* left: -3px; */
     position: absolute;
-    /* top: 1px; */
     width: 76px;
 }
 
@@ -1172,7 +1153,6 @@
     border-radius: 35px;
     height: 65px;
     left: 6px;
-    /* position: absolute; */
     top: 0;
     width: 65px;
 }
@@ -1269,7 +1249,6 @@
 #select-pantry .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -1290,15 +1269,6 @@
 #select-pantry .span1 {
     color: var(--green3);
 }
-
-
-/* #select-pantry .logo {
-    height: 42px;
-    left: 104px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
 
 .text-2 {
     left: 166px;
@@ -1418,8 +1388,6 @@
 #pantry-selection-cereals .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-left: -75.59px; */
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -1528,19 +1496,9 @@
 #pantry-bar .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
-
-
-/* #pantry-bar .logo {
-    height: 42px;
-    left: 104px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
 
 .category-container-selected-pantry {
     display: flex;
@@ -1684,8 +1642,6 @@
 #main .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-left: -75.59px; */
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -1706,15 +1662,6 @@
 #main .span1 {
     color: var(--green3);
 }
-
-
-/* #main .logo {
-    height: 42px;
-    left: 104px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
 
 .text-7-1 {
     height: 42px;
@@ -1839,14 +1786,11 @@
 
 .breakfast {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     border-radius: 30px;
     height: 33px;
     left: 0;
     min-width: 100px;
     position: absolute;
-    /* top: 0; */
     cursor: pointer;
 }
 
@@ -1886,13 +1830,10 @@
 
 .lunch {
     display: flex;
-    /*align-items: center;
-    justify-content: center;*/
     border-radius: 30px;
     height: 33px;
     left: 106px;
     position: absolute;
-    /*top: 2px;*/
     width: 100px;
     cursor: pointer;
 }
@@ -1934,13 +1875,10 @@
 
 .dinner {
     display: flex;
-    /*align-items: center;
-    justify-content: center;*/
     border-radius: 30px;
     height: 33px;
     left: 212px;
     position: absolute;
-    /*top: 2px;*/
     width: 100px;
     cursor: pointer;
 }
@@ -2230,20 +2168,9 @@
 #user-profile .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-left: -75.59px; */
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
-
-
-/* #user-profile .logo {
-    height: 42px;
-    left: 109px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
 
 .user-profile {
     display: flex;
@@ -2441,20 +2368,9 @@
 #cookbook .overlap-group9 {
     align-self: center;
     height: 5000px;
-    /* margin-left: -75.59px; */
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
-
-
-/* #cookbook .logo {
-    height: 42px;
-    left: 109px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
 
 .text-7 {
     height: 42px;
@@ -2594,28 +2510,13 @@
     overflow: hidden;
 }
 
-
-/* #recipe-cooking .logo {
-    height: 42px;
-    left: 109px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
-
 #recipe-cooking::-webkit-scrollbar {
     display: none;
 }
 
 #recipe-cooking .overlap-group-recipe-cooking {
-    /* height: 1958px;
-    margin-left: -76px;
-    margin-top: -110.87px;
-    position: relative;
-    width: 546px; */
     align-self: center;
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -2736,8 +2637,6 @@
 
 .content-cooking {
     align-items: center;
-    /* display: flex;
-    flex-direction: column; */
     left: 108px;
     height: 300px;
     position: absolute;
@@ -2751,7 +2650,6 @@
 }
 
 #recipe-cooking .cooking-step-img {
-    /* height: 147px; */
     left: 0;
     position: relative;
     align-items: center;
@@ -2807,7 +2705,6 @@
 }
 
 #recipe-cooking .cooking-steps-text {
-    /* left: 6px; */
     letter-spacing: 0;
     position: relative;
     align-items: center;
@@ -2850,7 +2747,6 @@
 #recipe-ingredients .overlap-group5 {
     align-self: center;
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -3003,8 +2899,6 @@
     letter-spacing: 0;
     margin-right: 2.0px;
     margin-top: 8px;
-    /* min-height: 32px;
-    width: 74px; */
     text-align: center;
     width: 110px;
     line-height: 20px;
@@ -3121,7 +3015,6 @@
     display: flex;
     height: 40px;
     min-width: 40px;
-    /* padding: 10.8px; */
     cursor: pointer;
 }
 
@@ -3289,14 +3182,11 @@
 
 .ingredients {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     border-radius: 30px;
     height: 33px;
     left: 0;
     min-width: 153px;
     position: absolute;
-    /* top: 0; */
     cursor: pointer;
 }
 
@@ -3395,8 +3285,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--black-2);
-    /* height: 760px;
-    width: 360px; */
     overflow: hidden;
     z-index: 100;
 }
@@ -3404,18 +3292,13 @@
 #info-what-you-need .overlap-group-info-what-you-need {
     align-self: center;
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1000px;
-    /* background-color: gray; */
 }
 
 #info-what-you-need .info-what-you-need-container {
-    /* align-items: flex-end; */
     background-color: var(--darkgrey);
     border-radius: 50px;
-    /* display: flex; */
-    /* flex-direction: column; */
     min-height: 200px;
     left: 10px;
     padding: 30px 10px 40px 30px;
@@ -3448,7 +3331,6 @@
     left: 250px;
     top: 20px;
     height: 50px;
-    /* margin-left: 7px; */
     min-width: 50px;
 }
 
@@ -3506,7 +3388,6 @@
     margin-top: 250px;
     position: absolute;
     width: 1000px;
-    /* background-color: gray; */
 }
 
 #remove-ingredient .remove-ingredient-info {
@@ -3551,13 +3432,6 @@
     top: 30px;
     height: 50px;
     min-width: 50px;
-    /* align-items: flex-start;
-    cursor: pointer;
-    display: flex;
-    height: 42px;
-    justify-content: center;
-    margin-left: 7px;
-    min-width: 42px; */
 }
 
 #remove-ingredient .overlap-group-close {
@@ -3674,31 +3548,24 @@
 #add-ingr-with-plus .overlap-group-add-ingr {
     align-self: center;
     height: 5000px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1000px;
-    /* background-color: gray; */
 }
 
 #add-ingr-with-plus .info-add-ingr-container {
-    /* align-items: flex-end; */
-    /*background-color: #7E7E7E;*/
     border-radius: 20px 20px 0px 0px;
     display: flex;
-    /* flex-direction: column; */
     height: 450px;
     left: 1px;
     padding: 30px 10px 40px 30px;
     position: absolute;
     top: 311px;
-    /*bottom: 4050px;*/
     width: 320px;
     z-index: 1;
     justify-content: center;
 }
 
 #add-ingr-with-plus .background-opacity {
-    /* opacity: 0.88; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3842,7 +3709,6 @@
 #recipe-video .overlap-group4 {
     align-self: center;
     height: 4780px;
-    /* margin-top: -111px; */
     position: absolute;
     width: 1000px;
 }
@@ -3850,12 +3716,9 @@
 #recipe-video .bottom-bar {
     align-items: flex-start;
     justify-content: center;
-    /* position: absolute; */
     display: flex;
     height: 42px;
-    /* padding: 0 72px; */
     width: 360px;
-    /* top: 718.5px; */
     /* Gray 5 */
     background: #E0E0E0;
 }
@@ -3872,12 +3735,7 @@
 }
 
 .bottom-bar-video {
-    /* align-items: flex-start;
-    justify-content: center; */
-    /* position: absolute; */
-    /* display: flex; */
     height: 42px;
-    /* padding: 0 72px; */
     width: 360px;
     position: absolute;
     top: 721px;
@@ -3886,9 +3744,6 @@
 }
 
 #recipe-video .tab-bar {
-    /* align-items: flex-end;
-    background-color: var(--green---fdy);
-    display: flex; */
     height: 59px;
     justify-content: space-around;
     left: 0px;
@@ -3896,36 +3751,6 @@
     position: absolute;
     top: 662px;
 }
-
-
-/* #recipe-video .tab-bar {
-    background-color: var(--green---fdy);
-    position: fixed;
-    background-size: 100% 100%;
-    height: 59px;
-    left: 0;
-    position: absolute;
-    top: 661px;
-    width: 360px;
-} */
-
-
-/* #recipe-video .bottom-bar {
-    height: 43px;
-    left: 0px;
-    position: absolute;
-    top: 719px;
-    width: 360px;
-} */
-
-
-/* .bottom-bar {
-    height: 43px;
-    left: 76px;
-    position: absolute;
-    top: 830px;
-    width: 360px;
-} */
 
 #recipe-video .video-preview {
     height: 661px;
@@ -4034,11 +3859,6 @@
 }
 
 #recipe-video .rectangle-1 {
-    /* height: 103px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 360px; */
     position: absolute;
     width: 360px;
     height: 103px;
@@ -4071,10 +3891,7 @@
 }
 
 #you-are-set .overlap-group8 {
-    /* align-self: flex-start; */
     height: 5000px;
-    /* margin-left: -75.59px;
-    margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
@@ -4141,15 +3958,6 @@
 }
 
 
-/* #you-are-set .logo {
-    height: 42px;
-    left: 104px;
-    position: absolute;
-    top: 164px;
-    width: 42px;
-} */
-
-
 /* ------------- 
 
 ##################################
@@ -4172,10 +3980,7 @@
 }
 
 #updating-recipes .overlap-group8 {
-    /* align-self: flex-start; */
     height: 5000px;
-    /* margin-left: -75.59px; */
-    /* margin-top: -111px; */
     position: absolute;
     width: 1150px;
 }
