@@ -1605,11 +1605,12 @@
 }
 
 .open1 {
-    height: 25px;
+    height: 30px;
     width: 60px;
     position: absolute;
     left: 115px;
-    top: 164px;
+    top: 160px;
+    cursor: pointer;
 }
 
 .container-padding1 {
